@@ -36,7 +36,7 @@ export default defineConfig({
     outlineTitle: '在此页面中',
     returnToTopLabel: '回到顶部',
     footer: {
-      copyright: '© 2023 aboutTrans'
+      copyright: '© 2023-2024 aboutTrans 我们仍在'
     },
     docFooter: {
       prev: '上一页',
