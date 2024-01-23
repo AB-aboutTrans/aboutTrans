@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "aboutTrans",
-  description: "一个科普跨性别相关知识的小站",
+  description: "关于跨性别，你想知道的一切",
   head: [
     ['link', { rel: 'icon', href: '/icon.png'}]
   ],
@@ -50,29 +50,27 @@ export default defineConfig({
         text: '#概念',
         items: [
           { text: '相关词汇及定义', link: '/document/words.md' },
-          { text: '相关医疗及诊断', link: '/document/medical.md' },
-          { text: '相关节日纪念日', link: '/document/days.md' }
-        ]
-      },
-      {
-        text: '#文章',
-        items: [
-          { text: '例1', link: '/document/2023-08-15.md' },
-          { text: '例2', link: '/document/2023-08-16.md' }
+          { text: '相关诊断及医疗', link: '/document/medical.md' },
+          { text: '相关节日纪念日', link: '/document/days.md' },
+          { text: '相关调研与资料', link: '/document/research.md' }
         ]
       },
       {
         text: '#问答',
         items: [
-          { text: '问答合集', link: 'document/Q&A.md'}
+          { text: '相关误区与问答', link: '/document/Q&A.md' }
+        ]
+      },
+      {
+        text: '#文章',
+        items: [
+          { text: '相关文章与报道', link: '/document/publish.md' }
         ]
       },
       {
         text: '#关于',
         items: [
-          { text: '关于我们', link: '/document/about.md'},
-          { text: '投稿通道', link: '/document/post.md'},
-          { text: '特别鸣谢', link: '/document/thanks.md'}
+          { text: '关于本站', link: '/document/about.md' }
         ]
       },
     ],
