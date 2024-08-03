@@ -5,11 +5,14 @@ hero:
   name: aboutTrans
   text: "跨性别相关知识科普站\n你想知道的都在这里"
   image:
-    src: /twi.png
+    src: /icon.svg
   actions:
     - theme: brand
       text: 查看文档
       link: welcome.md
+    - theme: alt
+      text: 在GitHub上编辑
+      link: https://github.com/ChisakaKanako/aboutTrans
 features:
   - icon: 📖
     title: "#概念"
