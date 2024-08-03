@@ -3,7 +3,7 @@ export default defineConfig({
   title: "aboutTrans",
   description: "关于跨性别，你想知道的一切",
   head: [
-    ['link', { rel: 'icon', href: '/icon.png'}]
+    ['link', { rel: 'icon', href: '/icon.svg'}]
   ],
   themeConfig: {
     search: {
@@ -32,7 +32,7 @@ export default defineConfig({
       }
     },
     sidebarMenuLabel: '目录',
-    darkModeSwitchLabel: '切换深色模式',
+    darkModeSwitchLabel: '深色模式',
     outlineTitle: '在此页面中',
     returnToTopLabel: '回到顶部',
     footer: {
@@ -47,30 +47,15 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: '#概念',
         items: [
-          { text: '相关词汇及定义', link: '/document/words.md' },
-          { text: '相关诊断及医疗', link: '/document/medical.md' },
-          { text: '相关节日纪念日', link: '/document/days.md' },
-          { text: '相关调研与资料', link: '/document/research.md' }
-        ]
-      },
-      {
-        text: '#问答',
-        items: [
-          { text: '相关误区与问答', link: '/document/Q&A.md' }
-        ]
-      },
-      {
-        text: '#文章',
-        items: [
-          { text: '相关文章与报道', link: '/document/publish.md' }
-        ]
-      },
-      {
-        text: '#关于',
-        items: [
-          { text: '关于本站', link: '/document/about.md' }
+          { text: '相关概念与释义', link: '/document/Concepts&Definitions.md' },
+          { text: '相关诊断与医疗', link: '/document/Diagnosis&Medical.md' },
+          { text: '相关政策与法规', link: '/document/Policies&Regulations.md' },
+          { text: '相关国际纪念日', link: '/document/Days&Festivals.md' },
+          { text: '相关调研与资料', link: '/document/Research&Materials.md' },
+          { text: '相关误区与问答', link: '/document/Q&A.md' },
+          { text: '相关文章与报道', link: '/document/Articles&Coverage.md' },
+          { text: '关于我们', link: '/document/AboutUs.md' }
         ]
       },
     ],
