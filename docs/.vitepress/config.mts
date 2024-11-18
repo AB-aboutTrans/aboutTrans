@@ -54,13 +54,13 @@ export default defineConfig({
     sidebar: [
       {
         items: [
-          { text: '相关概念与释义', link: '/document/Concepts&Definitions.md' },
-          { text: '相关诊断与医疗', link: '/document/Diagnosis&Medical.md' },
-          { text: '相关政策与法规', link: '/document/Policies&Regulations.md' },
-          { text: '相关国际纪念日', link: '/document/Days&Festivals.md' },
+          { text: '相关概念与释义', link: '/document/concepts-and-definitions.md' },
+          { text: '相关诊断与医疗', link: '/document/diagnosis-and-medical.md' },
+          { text: '相关政策与法规', link: '/document/policies-and-regulations.md' },
+          { text: '相关国际纪念日', link: '/document/days-and-festivals.md' },
           { text: '相关调研与资料', link: '/document/research-and-materials.md' },
-          { text: '相关误区与问答', link: '/document/Q&A.md' },
-          { text: '相关文章与报道', link: '/document/Articles&Coverage.md' },
+          { text: '相关误区与问答', link: '/document/q-and-a.md' },
+          { text: '相关文章与报道', link: '/document/articles-and-coverage.md' },
           { text: '关于我们', link: '/about.md' }
         ]
       },
