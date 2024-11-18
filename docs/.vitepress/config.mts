@@ -61,7 +61,7 @@ export default defineConfig({
           { text: '相关调研与资料', link: '/document/research-and-materials.md' },
           { text: '相关误区与问答', link: '/document/Q&A.md' },
           { text: '相关文章与报道', link: '/document/Articles&Coverage.md' },
-          { text: '关于我们', link: '/document/AboutUs.md' }
+          { text: '关于我们', link: '/about.md' }
         ]
       },
     ],
