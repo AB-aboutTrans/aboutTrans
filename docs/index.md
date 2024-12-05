@@ -5,7 +5,7 @@ hero:
   name: aboutTrans
   text: "跨性别相关知识科普站\n你想知道的都在这里"
   image:
-    src: /flag.svg
+    src: /flag.png
   actions:
     - theme: brand
       text: 查看文档
