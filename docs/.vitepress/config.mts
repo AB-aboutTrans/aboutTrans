@@ -4,7 +4,7 @@ export default defineConfig({
   title: "aboutTrans",
   description: "关于跨性别，你想知道的一切",
   head: [
-    ['link', { rel: 'icon', href: '/icon.svg'}]
+    ['link', { rel: 'icon', href: '/icon.png'}]
   ],
   markdown: {
     config(md) {
