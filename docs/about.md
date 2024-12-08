@@ -1,5 +1,6 @@
 ---
 title: 关于我们
+lastUpdated: false
 ---
 
 # 跨越偏见、拥抱多元

@@ -12,6 +12,12 @@ export default defineConfig({
     },
   },
   themeConfig: {
+    lastUpdated: {
+      text: '本页面最后更新于',
+      formatOptions: {
+        dateStyle: 'medium'
+      }
+    },
     search: {
       provider: 'local',
       options: {
@@ -54,16 +60,16 @@ export default defineConfig({
     sidebar: [
       {
         items: [
-          { text: '相关概念与释义', link: '/document/concepts-and-definitions.md' },
-          { text: '相关诊断与医疗', link: '/document/diagnosis-and-medical.md' },
-          { text: '相关政策与法规', link: '/document/policies-and-regulations.md' },
-          { text: '相关国际纪念日', link: '/document/days-and-festivals.md' },
-          { text: '相关调研与资料', link: '/document/research-and-materials.md' },
-          { text: '相关误区与问答', link: '/document/q-and-a.md' },
-          { text: '相关文章与报道', link: '/document/articles-and-coverage.md' },
-          { text: '关于我们', link: '/about.md' }
+          { text: '相关概念与释义', link: '/document/concepts-and-definitions' },
+          { text: '相关诊断与医疗', link: '/document/diagnosis-and-medical' },
+          { text: '相关政策与法规', link: '/document/policies-and-regulations' },
+          { text: '相关国际纪念日', link: '/document/days-and-festivals' },
+          { text: '相关调研与资料', link: '/document/research-and-materials' },
+          { text: '相关误区与问答', link: '/document/q-and-a' },
+          { text: '相关文章与报道', link: '/document/articles-and-coverage' },
+          { text: '关于我们', link: '/about' }
         ]
-      },
-    ],
+      }
+    ]
   }
 })
