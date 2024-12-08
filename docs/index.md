@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 查看文档
-      link: welcome.md
+      link: welcome
 features:
   - icon: 📖
     title: "#概念"
