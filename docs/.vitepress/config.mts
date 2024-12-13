@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 import mdPangu from 'markdown-it-pangu'
 export default defineConfig({
   title: "aboutTrans",
-  description: "关于跨性别，你想知道的一切",
+  description: "关于跨性别，你想知道的都在这里",
   head: [
     ['link', { rel: 'icon', href: '/icon.png'}]
   ],
@@ -48,7 +48,7 @@ export default defineConfig({
     outlineTitle: '在此页面中',
     returnToTopLabel: '回到顶部',
     footer: {
-      copyright: '© 2023-2024 aboutTrans 我们仍在'
+      copyright: '© 2023-2025 aboutTrans 我们仍在'
     },
     docFooter: {
       prev: '上一页',
