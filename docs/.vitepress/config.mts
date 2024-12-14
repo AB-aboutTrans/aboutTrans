@@ -56,6 +56,7 @@ export default defineConfig({
     },
     nav: [
       { text: '主页', link: '/' },
+      { text: '关于我们', link: 'about' }
     ],
     sidebar: [
       {
@@ -65,8 +66,7 @@ export default defineConfig({
           { text: '相关诊断与医疗', link: '/document/diagnosis-and-medical' },
           { text: '相关政策与法规', link: '/document/policies-and-regulations' },
           { text: '相关国际纪念日', link: '/document/days-and-festivals' },
-          { text: '相关误区与问答', link: '/document/q-and-a' },
-          { text: '关于我们与贡献', link: '/about' }
+          { text: '相关误区与问答', link: '/document/q-and-a' }
         ]
       },
       {
