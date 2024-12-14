@@ -1,5 +1,6 @@
 ---
 title: 关于我们
+next: false
 lastUpdated: false
 ---
 
@@ -35,6 +36,11 @@ const members = [
     name: 'Lee',
     title: '技术支持',
   },
+    {
+    avatar: 'https://github.com/github.png',
+    name: '匿名小伙伴',
+    title: '内容贡献',
+  }
 ]
 </script>
 <VPTeamMembers size="small" :members="members" />
@@ -50,6 +56,6 @@ const members = [
 `邮箱` chisakakanako@gmail.com
 :::
 
-如果你希望在Github上进行贡献，我们也一并欢迎。
+如果你希望在Github上提出PR或Issues，我们也一并欢迎。
 
 [访问Github仓库](https://github.com/ChisakaKanako/aboutTrans)
