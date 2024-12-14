@@ -12,15 +12,12 @@ hero:
       link: welcome
 features:
   - icon: 📖
-    title: "#概念"
-    details: 跨性别相关概念词条
-  - icon: 💬
-    title: "#问答"
-    details: 跨性别相关误区问答
-  - icon: 📑
-    title: "#文章"
-    details: 跨性别相关文章报道
+    title: "跨性别相关概念词条"
+    details: 汇总并详解跨性别相关的名词及专业术语，涵盖生活、医疗及易混淆等拓展概念。
+  - icon: ❓
+    title: "跨性别相关误区问答"
+    details: 关注跨性别议题中常见的问题和误解，结合跨儿视角和当代科学研究进行解答。
   - icon: 🔬
-    title: "#客观"
-    details: 科学事实与友善用语
+    title: "客观事实与友善用语"
+    details: 在内容编写时遵循当代客观事实及友善用语，提供更加准确、理性和包容的内容。
 ---
