@@ -13,7 +13,7 @@ export default defineConfig({
   },
   themeConfig: {
     lastUpdated: {
-      text: '本页面最后更新于',
+      text: '当前页面最后更新于',
       formatOptions: {
         dateStyle: 'medium'
       }
@@ -48,7 +48,7 @@ export default defineConfig({
     outlineTitle: '在此页面中',
     returnToTopLabel: '回到顶部',
     footer: {
-      copyright: '© 2023-2025 aboutTrans 我们仍在'
+      copyright: '© 2023-2025 aboutTrans <a href="https://github.com/transzh-program">中文跨性别维基</a>项目'
     },
     docFooter: {
       prev: '上一页',
@@ -59,15 +59,20 @@ export default defineConfig({
     ],
     sidebar: [
       {
+        text: "本站页面导航",
         items: [
           { text: '相关概念与释义', link: '/document/concepts-and-definitions' },
           { text: '相关诊断与医疗', link: '/document/diagnosis-and-medical' },
           { text: '相关政策与法规', link: '/document/policies-and-regulations' },
           { text: '相关国际纪念日', link: '/document/days-and-festivals' },
           { text: '相关误区与问答', link: '/document/q-and-a' },
-          { text: '相关文章与报道', link: '/document/articles-and-coverage' },
-          { text: '相关调研与资料', link: '/document/research-and-materials' },
-          { text: '关于我们', link: '/about' }
+          { text: '关于我们与贡献', link: '/about' }
+        ]
+      },
+      {
+        text: "想了解更多文章报道与调研资料？",
+        items: [
+          { text: '访问我们的项目存档网站', link: 'https://transzh-program.github.io/docs/' }
         ]
       }
     ]
