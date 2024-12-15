@@ -72,7 +72,7 @@ export default defineConfig({
       {
         text: "想了解更多文章报道与调研资料？",
         items: [
-          { text: '访问我们的项目存档网站', link: 'https://transzh-program.github.io/docs/' }
+          { text: '访问我们的项目存档网站', link: 'https://docs.transzh.org/' }
         ]
       }
     ]
