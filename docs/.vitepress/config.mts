@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress'
-import mdPangu from 'markdown-it-pangu'
 import footnote from 'markdown-it-footnote'
 export default defineConfig({
   locales: {
@@ -15,7 +14,6 @@ export default defineConfig({
   ],
   markdown: {
     config(md) {
-      md.use(mdPangu),
       md.use(footnote)
     }
   },
