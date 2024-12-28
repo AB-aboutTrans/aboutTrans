@@ -56,4 +56,4 @@ const members = [
 > 
 > [通过邮件联系](mailto:chisakakanako@gmail.com)
 > 
-> [访问Github仓库](https://github.com/transzh-program/aboutTrans)
+> [访问Github仓库](https://github.com/ChisakaKanako/aboutTrans)
