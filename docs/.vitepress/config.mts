@@ -54,7 +54,7 @@ export default defineConfig({
     outlineTitle: '在此页面中',
     returnToTopLabel: '回到顶部',
     footer: {
-      copyright: '© 2023-2025 aboutTrans <a href="https://github.com/transzh-program">中文跨性别维基</a>项目'
+      copyright: '© 2023-2025 aboutTrans'
     },
     docFooter: {
       prev: '上一页',
