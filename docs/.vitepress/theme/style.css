@@ -5,3 +5,7 @@
 .main {
     text-align: center;
 } */
+body {
+    user-select: none !important;
+    -webkit-user-select: none !important;
+  }
