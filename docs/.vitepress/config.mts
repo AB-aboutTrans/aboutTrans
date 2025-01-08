@@ -8,7 +8,7 @@ export default defineConfig({
     }
   },
   title: "aboutTrans",
-  description: "关于跨性别，你想知道的都在这里",
+  description: "关于跨性别，你想知道的都在这里。\naboutTrans是一个主要面向不了解或希望了解跨性别群体的人的一个科普网站。",
   head: [
     ['link', { rel: 'icon', href: '/icon.png'}]
   ],
