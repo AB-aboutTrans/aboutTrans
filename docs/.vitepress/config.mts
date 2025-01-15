@@ -68,15 +68,15 @@ export default defineConfig({
       {
         text: "本站页面导航",
         items: [
-          { text: '相关概念与释义', link: '/document/concepts-and-definitions' },
+          { text: '相关概念与释义', link: '/document/concept-and-definition' },
           { text: '相关诊断与医疗', link: '/document/diagnosis-and-medical' },
-          { text: '相关政策与法规', link: '/document/policies-and-regulations' },
-          { text: '相关国际纪念日', link: '/document/days-and-festivals' },
+          { text: '相关政策与法规', link: '/document/policy-and-regulation' },
+          { text: '相关国际纪念日', link: '/document/day-and-festival' },
           { text: '相关误区与问答', link: '/document/q-and-a' }
         ]
       },
       {
-        text: "想了解更多文章报道与调研资料？",
+        text: "想了解跨性别相关文章报道与调研资料？",
         items: [
           { text: '访问我们的项目文档网站', link: 'https://docs.transzh.org/' }
         ]
