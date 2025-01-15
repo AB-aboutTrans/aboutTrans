@@ -52,7 +52,6 @@ const members = [
 我们欢迎任何对内容、文章编写感兴趣的小伙伴们加入我们，与我们共同完善aboutTrans，或对本站内容有任何修改建议的，也欢迎积极联系我们。如果你希望在Github上提出PR或Issues，我们也一并欢迎。
 
 > [!NOTE] 联系方式
-> [通过推特联系](https://x.com/ChisakaKanako)
 > 
 > [通过邮件联系](mailto:chisakakanako@gmail.com)
 > 
