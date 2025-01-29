@@ -74,12 +74,6 @@ export default defineConfig({
           { text: '相关国际纪念日', link: '/document/day-and-festival' },
           { text: '相关误区与问答', link: '/document/q-and-a' }
         ]
-      },
-      {
-        text: "想了解跨性别相关文章报道与调研资料？",
-        items: [
-          { text: '访问我们的项目文档网站', link: 'https://docs.transzh.org/' }
-        ]
       }
     ]
   }
