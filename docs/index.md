@@ -1,10 +1,11 @@
 ---
 layout: home
 hero:
-  name: aboutTrans
-  text: "跨性别相关知识科普站\n你想知道的都在这里"
+  name: 
+  text: "关于跨性别\n你想知道的都在这里"
+  tagline: 一个由跨儿搭建的跨性别相关知识科普站
   image:
-    src: /flag.png
+    src: /hero.png
   actions:
     - theme: brand
       text: 查看文档
