@@ -6,7 +6,7 @@ lastUpdated: false
 
 # 跨越偏见、拥抱多元
 
-aboutTrans项目于2023年下半年启动，我们致力于为大家提供有关跨性别的相关知识，以帮助更多人了解和支持跨性别群体！
+aboutTrans项目于2023年下半年启动，项目名称来源于“关于跨性别”的英译。我们致力于为大家提供有关跨性别的相关知识，以帮助更多人了解和支持跨性别群体！
 
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
