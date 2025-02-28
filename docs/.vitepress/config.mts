@@ -68,11 +68,11 @@ export default defineConfig({
       {
         text: "本站页面导航",
         items: [
-          { text: '相关概念与释义', link: '/document/concept-and-definition' },
-          { text: '相关诊断与医疗', link: '/document/diagnosis-and-medical' },
-          { text: '相关政策与法规', link: '/document/policy-and-regulation' },
-          { text: '相关国际纪念日', link: '/document/day-and-festival' },
-          { text: '相关误区与问答', link: '/document/q-and-a' }
+          { text: '相关概念与释义', link: '/documents/concept-and-definition' },
+          { text: '相关诊断与医疗', link: '/documents/diagnosis-and-medical' },
+          { text: '相关政策与法规', link: '/documents/policy-and-regulation' },
+          { text: '相关国际纪念日', link: '/documents/day-and-festival' },
+          { text: '相关误区与问答', link: '/documents/q-and-a' }
         ]
       }
     ]
