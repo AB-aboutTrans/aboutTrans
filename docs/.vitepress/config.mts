@@ -12,6 +12,7 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/icon.png'}]
   ],
+  cleanUrls: true,
   markdown: {
     config(md) {
       md.use(footnote)
@@ -66,7 +67,7 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: "本站页面导航",
+        text: "页面导航",
         items: [
           { text: '相关概念与释义', link: '/documents/concept-and-definition' },
           { text: '相关诊断与医疗', link: '/documents/diagnosis-and-medical' },
