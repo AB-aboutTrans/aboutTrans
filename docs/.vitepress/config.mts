@@ -19,6 +19,7 @@ export default defineConfig({
     }
   },
   themeConfig: {
+    logo: '/icon.png',
     lastUpdated: {
       text: '当前页面最后更新于',
       formatOptions: {
