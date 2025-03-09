@@ -26,6 +26,10 @@ export default defineConfig({
         dateStyle: 'medium'
       }
     },
+    editLink: {
+      pattern: 'https://github.com/ChisakaKanako/aboutTrans/edit/main/docs/:path',
+      text: '对当前页面提出修改建议'
+    },
     search: {
       provider: 'local',
       options: {
@@ -33,8 +37,8 @@ export default defineConfig({
           root: {
             translations: {
               button: {
-                buttonText: '搜索文档',
-                buttonAriaLabel: '搜索文档'
+                buttonText: '搜索内容',
+                buttonAriaLabel: '搜索内容'
               },
               modal: {
                 displayDetails: '显示详细列表',
@@ -67,14 +71,14 @@ export default defineConfig({
       { text: '关于我们', link: 'about' }
     ],
     sidebar: [
-      {
-        text: "页面导航",
+      { text: '目录',
         items: [
-          { text: '相关概念与释义', link: '/documents/concept-and-definition' },
-          { text: '相关诊断与医疗', link: '/documents/diagnosis-and-medical' },
-          { text: '相关政策与法规', link: '/documents/policy-and-regulation' },
-          { text: '相关国际纪念日', link: '/documents/day-and-festival' },
-          { text: '相关误区与问答', link: '/documents/q-and-a' }
+          { text: '概念词条', link: '/documents/concept-and-definition' },
+          { text: '医疗照护', link: '/documents/diagnosis-and-medical' },
+          { text: '政策法规', link: '/documents/policy-and-regulation' },
+          { text: '国际节日', link: '/documents/day-and-festival' },
+          { text: '误区问答', link: '/documents/q-and-a' },
+          { text: '关于我们', link: '/about' }
         ]
       }
     ]
