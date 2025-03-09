@@ -36,12 +36,17 @@ const members = [
     name: '闻千',
     title: '内容贡献',
   },
-   {
+  {
     avatar: 'https://github.com/Leetfs.png',
     name: 'Lee',
     title: '技术支持',
   },
-    {
+  {
+    avatar: 'https://github.com/HazelPenn.png',
+    name: 'HazelPenn',
+    title: '内容贡献',
+  },
+  {
     avatar: 'https://github.com/github.png',
     name: '匿名小伙伴',
     title: '内容贡献',
