@@ -66,3 +66,5 @@ const members = [
 > [通过邮件联系](mailto:chisakakanako@gmail.com)
 > 
 > [访问Github仓库](https://github.com/ChisakaKanako/aboutTrans)
+>
+> [内容反馈群](https://qm.qq.com/q/ExEqmGZ16g)
