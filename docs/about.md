@@ -49,7 +49,12 @@ const members = [
   {
     avatar: 'https://github.com/epifirumu.png',
     name: '昙花',
-    title: '内容贡献',
+    title: '内容贡献与技术支持',
+  },
+  {
+    avatar: 'https://github.com/nekomeowww.png',
+    name: 'Neko Ayaka',
+    title: '技术支持',
   },
   {
     avatar: 'https://github.com/github.png',
