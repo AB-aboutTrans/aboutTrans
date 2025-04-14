@@ -1,6 +1,10 @@
 {
   "devDependencies": {
+    "@iconify-json/octicon": "^1.2.5",
     "@nolebase/vitepress-plugin-enhanced-mark": "^2.16.0",
+    "@unocss/preset-attributify": "^66.1.0-beta.11",
+    "@unocss/preset-icons": "^66.1.0-beta.11",
+    "unocss": "^66.1.0-beta.11",
     "vitepress": "^1.5.0"
   },
   "scripts": {
@@ -9,6 +13,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
+    "@vueuse/core": "^13.1.0",
     "markdown-it-footnote": "^4.0.0"
   }
 }
