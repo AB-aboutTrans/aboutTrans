@@ -1,6 +1,12 @@
 import { defineConfig } from 'vitepress'
 import footnote from 'markdown-it-footnote'
+import UnoCSS from 'unocss/vite'
 export default defineConfig({
+  vite: {
+    plugins: [
+      UnoCSS(),
+    ]
+  },
   locales: {
     root: {
       label: '中文',
