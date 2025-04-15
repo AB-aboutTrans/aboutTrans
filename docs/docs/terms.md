@@ -6,9 +6,7 @@ title: 概念词条
 
 ## 跨性别
 
-跨性别（Transgender，简写为Trans），指那些性别认同与其指派性别不同的个体，是一种先天性的生理错位状态。跨性别是一个伞式术语，包括跨性别女性、跨性别男性和非二元性别。国内最新的医疗照护（ICD-11[^1]）中，将“跨性别者”称作“性别不一致人群”，社群近年来多为使用“跨儿”这一更具包容性和多元化的词汇。
-
-[^1]: [Gender incongruence and transgender health in the ICD](https://www.who.int/standards/classifications/frequently-asked-questions/gender-incongruence-and-transgender-health-in-the-icd)
+跨性别（Transgender，简写为Trans），指那些性别认同与其指派性别不同的个体，是一种先天性的生理错位状态。跨性别是一个伞式术语，包括跨性别女性、跨性别男性和非二元性别。国内最新的医疗照护中，将“跨性别者”称作“性别不一致人群”，社群近年来多为使用“跨儿”这一更具包容性和多元化的词汇。
 
 ## 跨性别女性
 
