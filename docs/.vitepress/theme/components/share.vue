@@ -1,16 +1,25 @@
 <script lang="ts" setup>
 import { useClipboard } from '@vueuse/core'
-import { ref, watch } from 'vue'
+import { ref, watch, onMounted } from 'vue'
 import { useRoute } from 'vitepress'
 
 const route = useRoute()
 const shareLink = ref('')
+const isMounted = ref(false)
 
-watch(() => route.path, () => {
-  if (typeof window === 'undefined')
+// Ensure component only runs on client-side
+onMounted(() => {
+  isMounted.value = true
+  updateShareLink()
+})
+
+function updateShareLink() {
+  if (typeof window === 'undefined' || !isMounted.value)
     return
   shareLink.value = window.location.href
-}, { immediate: true })
+}
+
+watch(() => route.path, updateShareLink, { immediate: true })
 
 const { copy, copied: shareSuccess } = useClipboard()
 function copyShareLink() {
@@ -26,7 +35,7 @@ function copyShareLink() {
       shareSuccess ? '!text-green-400' : '',
       shareLink ? 'hover:sm:text-$vp-c-brand' : '!cursor-wait',
     ]"
-    :disabled="!shareLink || shareSuccess"
+    :disabled="(!isMounted || !shareLink || shareSuccess)"
     @click="copyShareLink()"
   >
     <Transition
