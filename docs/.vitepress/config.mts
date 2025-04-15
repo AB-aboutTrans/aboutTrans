@@ -79,11 +79,11 @@ export default defineConfig({
     sidebar: [
       { text: '目录',
         items: [
-          { text: '概念词条', link: '/documents/concept-and-definition' },
-          { text: '医疗照护', link: '/documents/diagnosis-and-medical' },
-          { text: '政策法规', link: '/documents/policy-and-regulation' },
-          { text: '国际节日', link: '/documents/day-and-festival' },
-          { text: '误区问答', link: '/documents/q-and-a' },
+          { text: '概念词条', link: '/docs/terms' },
+          { text: '医疗照护', link: '/docs/medical' },
+          { text: '政策法规', link: '/docs/policy' },
+          { text: '纪念节日', link: '/docs/days' },
+          { text: '误区问答', link: '/docs/faq' },
           { text: '关于我们', link: '/about' }
         ]
       }
