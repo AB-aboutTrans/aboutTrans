@@ -86,6 +86,14 @@ export default defineConfig({
           { text: '误区问答', link: '/docs/faq' },
           { text: '关于我们', link: '/about' }
         ]
+      },
+      {
+        text: '附件',
+        collapsed: true,
+        items: [
+          { text: '跨性别相关知识测试问卷', link: '/跨性别相关知识测试问卷.pdf'},
+          { text: '问卷参考答案', link: '/问卷参考答案.pdf'}
+        ]
       }
     ]
   }
