@@ -1,10 +1,8 @@
-import { defineConfig, presetAttributify, presetIcons, presetUno } from 'unocss'
+import { defineConfig, presetAttributify, presetIcons, presetWind4 } from 'unocss'
 
 export default defineConfig({
   presets: [
-    presetUno({
-      dark: 'class',
-    }),
+    presetWind4(),
     presetAttributify(),
     presetIcons({
       prefix: 'i-',
