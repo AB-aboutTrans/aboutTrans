@@ -15,7 +15,7 @@ title: 医疗照护
 >
 >上述诊断在临床上具备相同效力，均可用于进行激素治疗及性别肯定手术。
 
-需要注意的是，<mark>跨性别本身并不是精神疾病</mark>，根据世卫组织最新修订的《国际疾病分类》（ICD-11），跨性别相关条目被从“精神和行为障碍”一章移除，转入新的“性健康相关情况”章节[^1]，这表明跨性别和多元性别认同不是精神疾病，而将其归类为精神疾病会带来巨大的污名。
+需要注意的是，<mark>跨性别本身并不是精神疾病</mark>，根据世卫组织最新修订的《国际疾病分类》（ICD-11），跨性别相关条目被从“精神和行为障碍”一章移除，转入新的“性健康相关情况”章节[^1]，这表明跨性别和多元性别认同不是精神疾病，若将其归类为精神疾病则会带来巨大的污名。
 
 [^1]: [Gender incongruence and transgender health in the ICD](https://www.who.int/standards/classifications/frequently-asked-questions/gender-incongruence-and-transgender-health-in-the-icd)
 
