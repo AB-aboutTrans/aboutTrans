@@ -44,12 +44,12 @@ export default defineConfig({
             translations: {
               button: {
                 buttonText: '搜索内容',
-                buttonAriaLabel: '搜索内容'
+                buttonAriaLabel: '搜索内容',
               },
               modal: {
-                displayDetails: '显示详细列表',
+                displayDetails: '显示详细内容',
                 noResultsText: '没有相关结果',
-                resetButtonTitle: '清除查询条件',
+                resetButtonTitle: '清除输入内容',
                 footer: {
                   selectText: '选择',
                   navigateText: '切换',
@@ -63,7 +63,7 @@ export default defineConfig({
     },
     sidebarMenuLabel: '目录',
     darkModeSwitchLabel: '深色模式',
-    outlineTitle: '在此页面中',
+    outlineTitle: '当前页面中',
     returnToTopLabel: '回到顶部',
     footer: {
       copyright: '© 2023-2025 aboutTrans'
@@ -79,7 +79,7 @@ export default defineConfig({
     sidebar: [
       { text: '目录',
         items: [
-          { text: '概念词条', link: '/docs/terms' },
+          { text: '概念术语', link: '/docs/terms' },
           { text: '医疗照护', link: '/docs/medical' },
           { text: '政策法规', link: '/docs/policy' },
           { text: '纪念节日', link: '/docs/days' },

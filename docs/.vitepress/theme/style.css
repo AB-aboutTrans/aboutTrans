@@ -12,3 +12,18 @@
     --vp-button-brand-active-border: var(--vp-c-brand-2); /*按钮点击边框颜色*/
     --vp-button-brand-active-bg: var(--vp-c-brand-2); /*按钮点击背景颜色*/
 }
+.VPFeature {
+    border-color: transparent !important;
+}
+.DocSearch-Button {
+    border-color: transparent !important;
+}
+.search-bar:focus-within {
+    border-color: var(--vp-c-divider) !important;
+}
+.VPSwitch {
+    border-color: transparent !important;
+}
+.pager-link {
+    border-color: var(--vp-c-divider) !important;
+}
