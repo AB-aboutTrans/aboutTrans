@@ -57,6 +57,11 @@ const members = [
     title: '技术支持',
   },
   {
+    avatar: 'https://github.com/sheepbox8646.png',
+    name: '📦小箱子Acbox',
+    title: '技术支持',
+  },
+  {
     avatar: 'https://github.com/github.png',
     name: '匿名小伙伴',
     title: '内容贡献',
