@@ -83,8 +83,8 @@ export default defineConfig({
           { text: '医疗照护', link: '/docs/medical' },
           { text: '政策法规', link: '/docs/policy' },
           { text: '纪念节日', link: '/docs/days' },
-          { text: '误区问答', link: '/docs/faq' },
-          { text: '关于我们', link: '/about' }
+          { text: '社会支持', link: '/docs/support' },
+          { text: '误区问答', link: '/docs/faq' }
         ]
       },
       {
