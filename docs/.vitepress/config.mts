@@ -91,8 +91,8 @@ export default defineConfig({
         text: '附件',
         collapsed: true,
         items: [
-          { text: '跨性别相关知识测试问卷', link: '/跨性别相关知识测试问卷.pdf'},
-          { text: '问卷参考答案', link: '/问卷参考答案.pdf'}
+          { text: '跨性别相关知识测试问卷', link: 'https://file.aboutrans.info/跨性别相关知识测试问卷.pdf'},
+          { text: '问卷参考答案', link: 'https://file.aboutrans.info/问卷参考答案.pdf'}
         ]
       }
     ]
