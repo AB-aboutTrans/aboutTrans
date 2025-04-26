@@ -27,3 +27,6 @@
 .pager-link {
     border-color: var(--vp-c-divider) !important;
 }
+mark {
+  background-color: #fcf0c5
+}
