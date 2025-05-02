@@ -23,8 +23,8 @@ features:
     details: 了解有关在完成性别肯定手术后进行身份信息及学籍相关信息变更的具体方式与要求。
     linkText: 浏览页面
   - icon: 🪅
-    link: /docs/days
-    title: 跨性别相关纪念节日
+    link: /docs/events
+    title: 跨性别相关纪念活动
     details: 介绍与跨性别群体有关的国际节日和纪念日，了解其背景及对跨性别者群体的意义。
     linkText: 浏览页面
   - icon: 🎗️
