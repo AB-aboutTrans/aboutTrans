@@ -35,3 +35,6 @@
 mark {
     background-color: #fcf0c5
 }
+.VPBadge {
+    vertical-align: middle !important;
+}
