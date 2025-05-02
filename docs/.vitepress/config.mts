@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import mdPangu from 'markdown-it-pangu'
 import footnote from 'markdown-it-footnote'
 import UnoCSS from 'unocss/vite'
 export default defineConfig({
@@ -22,6 +23,7 @@ export default defineConfig({
   markdown: {
     config(md) {
       md.use(footnote)
+      md.use(mdPangu)
     }
   },
   themeConfig: {
