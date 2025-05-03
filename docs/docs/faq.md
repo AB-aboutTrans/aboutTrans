@@ -43,7 +43,7 @@ next: false
 
 [^5]: [A national transgender health survey from China assessing gender identity conversion practice, mental health, substance use and suicidality](https://doi.org/10.1038/s44220-023-00041-z)
 
-## 为什么现在未成年跨性别者越来越多了？
+## 跨性别者中大多数是未成年人吗，为什么现在能看到的未成年跨性别者越来越多了？
 
 <mark>随着网络的普及，未成年跨性别者会更容易接触到跨性别相关信息并发觉自己的性别认同，且研究表明，近年来发觉自己是跨性别者的未成年人比例有所提高</mark>。
 
