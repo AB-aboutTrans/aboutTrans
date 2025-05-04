@@ -75,7 +75,7 @@ export default defineConfig({
       next: '下一页',
     },
     nav: [
-      { text: '主页', link: '/' },
+      { text: '主页', link: 'index' },
       { text: '关于我们', link: 'about' }
     ],
     sidebar: [
@@ -87,14 +87,6 @@ export default defineConfig({
           { text: '纪念活动', link: '/docs/events' },
           { text: '社会支持', link: '/docs/support' },
           { text: '误区问答', link: '/docs/faq' }
-        ]
-      },
-      {
-        text: '附件',
-        collapsed: true,
-        items: [
-          { text: '跨性别相关知识测试问卷', link: 'https://file.aboutrans.info/跨性别相关知识测试问卷.pdf'},
-          { text: '问卷参考答案', link: 'https://file.aboutrans.info/问卷参考答案.pdf'}
         ]
       }
     ]
