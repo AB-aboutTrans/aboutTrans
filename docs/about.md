@@ -8,12 +8,11 @@ next: false
 aboutTrans项目于2023年下半年启动，项目名称来源于“关于跨性别”的英译。我们致力于为大家提供有关跨性别的相关知识，以帮助更多人了解和支持跨性别群体！
 
 > [!TIP] 内容须知：
-> aboutTrans是一个主要面向不了解或希望了解跨性别群体的人的一个科普网站，我们目前还在起步阶段，在内容编写方面可能存在些许不足，如有错误欢迎积极指出也欢迎加入我们一同参与网站建设！本站在内容编写时参考了维基百科“跨性别”相关词条[^1]、潘柏林《走出性别困境》[^2]、SOC-8[^3]、GLAAD[^4]以及社群伙伴们的意见，在此一并致谢！
+> aboutTrans是一个主要面向不了解或希望了解跨性别群体的人的一个科普网站，我们目前还在起步阶段，在内容编写方面可能存在些许不足，如有错误欢迎积极指出也欢迎加入我们一同参与网站建设！本站在内容编写时参考了潘柏林《走出性别困境》[^1]、SOC-8[^2]、GLAAD[^3]以及社群伙伴们的意见，在此一并致谢！
 
-[^1]: [Transgender](https://en.wikipedia.org/wiki/Transgender)
-[^2]: [走出性别困境](https://book.douban.com/subject/36473977/)
-[^3]: [Standards of Care 8](https://wpath.org/publications/soc8/)
-[^4]: [GLAAD Media Reference Guide](https://glaad.org/reference/)
+[^1]: [走出性别困境：“跨性别”与“性别焦虑”的医疗援助](https://search.worldcat.org/zh-cn/title/1457264217)
+[^2]: [Standards of Care 8](https://wpath.org/publications/soc8/)
+[^3]: [GLAAD Media Reference Guide - 11th Edition](https://glaad.org/reference/)
 
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
