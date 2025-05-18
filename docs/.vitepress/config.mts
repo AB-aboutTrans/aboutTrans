@@ -28,12 +28,6 @@ export default defineConfig({
   },
   themeConfig: {
     logo: '/icon.png',
-    lastUpdated: {
-      text: '当前页面最后更新于',
-      formatOptions: {
-        dateStyle: 'medium'
-      }
-    },
     editLink: {
       pattern: 'https://github.com/ChisakaKanako/aboutTrans/edit/main/docs/:path',
       text: '对当前页面提出修改建议'
@@ -68,7 +62,7 @@ export default defineConfig({
     outlineTitle: '当前页面中',
     returnToTopLabel: '回到顶部',
     footer: {
-      copyright: '© 2023-2025 aboutTrans'
+      copyright: '© 2023-2025 AB aboutTrans'
     },
     docFooter: {
       prev: '上一页',
