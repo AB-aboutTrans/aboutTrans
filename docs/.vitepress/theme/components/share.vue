@@ -59,3 +59,10 @@ function copyShareLink() {
   </button>
   <div class="bg-$vp-c-divider-light" mx2 block h-24px w-1px md:hidden />
 </template>
+
+<style>
+span.i-octicon\:share-16,
+span.i-octicon\:checkbox-16 {
+  mask-size: contain;
+}
+</style>
