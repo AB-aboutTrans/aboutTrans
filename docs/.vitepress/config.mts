@@ -57,6 +57,13 @@ export default defineConfig({
         }
       }
     },
+    notFound: {
+      title: '页面未找到',
+      quote:
+        '但如果你不改变方向，并且继续寻找，你可能最终会到达你所前往的地方。',
+      linkLabel: '返回首页',
+      linkText: '返回首页'
+    },
     sidebarMenuLabel: '目录',
     darkModeSwitchLabel: '深色模式',
     outlineTitle: '当前页面中',
