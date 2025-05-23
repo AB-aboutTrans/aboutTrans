@@ -114,7 +114,7 @@ title: 跨性别相关概念术语
 
 ## 性别肯定激素治疗 <Badge type="tip" text="演变性词汇" />
 
-性别肯定激素治疗（Gender-affirming hormone therapy，缩写为GAHT），旧称激素替代治疗（Hormone replacement therapy，缩写为HRT），指通过药物使个体的第二性征与其性别认同趋近的方法，包括女性化激素治疗和男性化激素治疗，通常适用于女性倾向及男性倾向认同的跨性别者。
+性别肯定激素治疗（Gender-affirming hormone therapy，缩写为GAHT），旧称激素替代治疗（Hormone replacement therapy，缩写为HRT），指通过药物使个体的第二性征与其性别认同趋近的方法，包括女性化激素治疗，即使用抗雄激素和雌激素，暂停身体的第二性征男性化进程并使其朝着女性化方向发展，通常适用于女性倾向认同的跨性别者；男性化激素治疗，即使用雄激素，使身体第二性征开始朝着男性化方向发展，通常适用于男性倾向认同的跨性别者。
 
 ## 性别肯定手术 <Badge type="tip" text="演变性词汇" />
 
