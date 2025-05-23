@@ -30,7 +30,7 @@ features:
   - icon: 🎗️
     link: /docs/support
     title: 跨性别相关社会支持
-    details: 从医疗到报道再到政策变化，了解近年来社会各界为支持跨性别群体所做的努力。
+    details: 从医疗支持到新闻报道再到政策变化，了解近年来社会各界为支持跨性别群体所做的努力。
     linkText: 浏览页面
   - icon: ❓
     link: /docs/faq
