@@ -15,7 +15,7 @@ export default defineConfig({
     }
   },
   title: "aboutTrans",
-  description: "关于跨性别，你想知道的都在这里。\naboutTrans是一个主要面向不了解或希望了解跨性别群体的人的一个科普网站。",
+  description: "关于跨性别，你想知道的都在这里。这是一个主要面向不了解或希望了解跨性别群体的人的一个科普网站，跨性别社群的伙伴们也可以在此获取到有用的信息！",
   head: [
     ['link', { rel: 'icon', href: '/icon.png'}]
   ],
@@ -62,7 +62,7 @@ export default defineConfig({
     outlineTitle: '当前页面中',
     returnToTopLabel: '回到顶部',
     footer: {
-      copyright: '© 2023-2025 AB aboutTrans'
+      copyright: '2023-2025 AB aboutTrans'
     },
     docFooter: {
       prev: '上一页',
