@@ -38,3 +38,7 @@ mark {
 .VPBadge {
     vertical-align: middle !important;
 }
+
+header > div > div.wrapper > div > div.content {
+    overflow: hidden;
+}
