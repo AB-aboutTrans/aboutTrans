@@ -69,7 +69,8 @@ export default defineConfig({
     outlineTitle: '当前页面中',
     returnToTopLabel: '回到顶部',
     footer: {
-      copyright: '2023-2025 AB aboutTrans'
+      message: '本站内容基于 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh-hans">CC BY 4.0</a> 许可发布',
+      copyright: `2023-${new Date().getFullYear()} AB aboutTrans`
     },
     docFooter: {
       prev: '上一页',
