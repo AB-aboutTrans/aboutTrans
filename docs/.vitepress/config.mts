@@ -77,7 +77,8 @@ export default defineConfig({
     },
     nav: [
       { text: '主页', link: 'index' },
-      { text: '关于我们', link: 'about' }
+      { text: '关于我们', link: 'about' },
+      { text: '更新记录', link: 'https://github.com/ChisakaKanako/aboutTrans/commits/main/' }
     ],
     sidebar: [
       { text: '目录',
