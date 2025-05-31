@@ -1,6 +1,7 @@
 .footnotes {
     font-size: 14px !important;
 }
+
 :root {
     --vp-c-brand-0: #e50073;
     --vp-c-brand-1: #cc1470;
@@ -14,30 +15,42 @@
     --vp-button-brand-active-bg: var(--vp-c-brand-2); /*按钮点击背景颜色*/
     --vp-badge-tip-text: var(--vp-c-brand-3); /*提示文本颜色*/
 }
+
 .dark {
     --vp-badge-tip-text: var(--vp-c-indigo-1); /*深色模式下提示徽章文本颜色*/
   }
+
 .VPFeature {
     border-color: transparent !important;
 }
+
 .DocSearch-Button {
     border-color: transparent !important;
 }
+
 .search-bar:focus-within {
     border-color: var(--vp-c-divider) !important;
 }
+
 .VPSwitch {
     border-color: transparent !important;
 }
+
 .pager-link {
     border-color: var(--vp-c-divider) !important;
 }
+
 mark {
     background-color: #fcf0c5
 }
+
 .VPBadge {
     vertical-align: middle !important;
 }
 header > div > div.wrapper > div > div.content {
     overflow: hidden;
+}
+
+.VPContent > .VPDoc {
+    padding-top: 48px;
 }
