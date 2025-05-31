@@ -16,5 +16,4 @@ const ExtendedTheme: Theme = {
       app.component('Share', Share)
     },
   }
-  
-  export default ExtendedTheme
+export default ExtendedTheme
