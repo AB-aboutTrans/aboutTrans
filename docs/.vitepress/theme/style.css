@@ -1,56 +1,51 @@
 .footnotes {
-    font-size: 14px !important;
+  font-size: 14px !important;
 }
 
 :root {
-    --vp-c-brand-0: #e50073;
-    --vp-c-brand-1: #cc1470;
-    --vp-c-brand-2: #b3246b;
-    --vp-c-brand-3: #3451b2;
-    --vp-button-brand-border: var(--vp-c-brand-0); /* 按钮边框颜色*/
-    --vp-button-brand-bg: var(--vp-c-brand-0); /*按钮背景颜色*/
-    --vp-button-brand-hover-border: var(--vp-c-brand-1); /*按钮悬停边框颜色*/
-    --vp-button-brand-hover-bg: var(--vp-c-brand-1); /*按钮悬停背景颜色*/
-    --vp-button-brand-active-border: var(--vp-c-brand-2); /*按钮点击边框颜色*/
-    --vp-button-brand-active-bg: var(--vp-c-brand-2); /*按钮点击背景颜色*/
-    --vp-badge-tip-text: var(--vp-c-brand-3); /*提示文本颜色*/
+  --vp-c-brand-0: #e50073;
+  --vp-c-brand-1: #cc1470;
+  --vp-c-brand-2: #b3246b;
+  --vp-button-brand-border: var(--vp-c-brand-0); /* 按钮边框颜色 */
+  --vp-button-brand-bg: var(--vp-c-brand-0); /* 按钮背景颜色 */
+  --vp-button-brand-hover-border: var(--vp-c-brand-1); /* 按钮悬停边框颜色 */
+  --vp-button-brand-hover-bg: var(--vp-c-brand-1); /* 按钮悬停背景颜色 */
+  --vp-button-brand-active-border: var(--vp-c-brand-2); /* 按钮点击边框颜色 */
+  --vp-button-brand-active-bg: var(--vp-c-brand-2); /* 按钮点击背景颜色 */
 }
 
-.dark {
-    --vp-badge-tip-text: var(--vp-c-indigo-1); /*深色模式下提示徽章文本颜色*/
-  }
-
 .VPFeature {
-    border-color: transparent !important;
+  border-color: transparent !important;
 }
 
 .DocSearch-Button {
-    border-color: transparent !important;
+  border-color: transparent !important;
 }
 
 .search-bar:focus-within {
-    border-color: var(--vp-c-divider) !important;
+  border-color: var(--vp-c-divider) !important;
 }
 
 .VPSwitch {
-    border-color: transparent !important;
+  border-color: transparent !important;
 }
 
 .pager-link {
-    border-color: var(--vp-c-divider) !important;
+  border-color: var(--vp-c-divider) !important;
 }
 
 mark {
-    background-color: #fcf0c5
+  background-color: #fcf0c5;
 }
 
 .VPBadge {
-    vertical-align: middle !important;
+  vertical-align: middle !important;
 }
+
 header > div > div.wrapper > div > div.content {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .VPContent > .VPDoc {
-    padding-top: 48px;
+  padding-top: 48px;
 }
