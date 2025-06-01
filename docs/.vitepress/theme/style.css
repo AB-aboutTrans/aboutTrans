@@ -42,8 +42,10 @@ mark {
   vertical-align: middle !important;
 }
 
-header > div > div.wrapper > div > div.content {
-  overflow: hidden;
+@media (max-width: 768px) {
+  header > div > div.wrapper > div > div.content {
+    overflow: hidden;
+  }
 }
 
 .VPContent > .VPDoc {
