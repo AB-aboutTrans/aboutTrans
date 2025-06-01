@@ -19,6 +19,7 @@ export default defineConfig({
   description: '关于跨性别，你想知道的都在这里。这是一个主要面向不了解或希望了解跨性别群体的人的一个科普网站，跨性别社群的伙伴们也可以在此获取到有用的信息！',
   head: [
     ['link', { rel: 'icon', href: '/icon.png' }],
+    ['meta', { property: 'og:image', content: 'https://aboutrans.info/social.png' }],
   ],
   cleanUrls: true,
   markdown: {
