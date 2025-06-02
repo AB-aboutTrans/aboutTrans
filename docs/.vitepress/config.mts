@@ -18,7 +18,7 @@ export default defineConfig({
   title: 'aboutTrans',
   description: '关于跨性别，你想知道的都在这里。这是一个主要面向不了解或希望了解跨性别群体的人的一个科普网站，跨性别社群的伙伴们也可以在此获取到有用的信息！',
   head: [
-    ['link', { rel: 'icon', href: '/icon.png' }],
+    ['link', { rel: 'icon', href: '/favicon.png' }],
     ['meta', { property: 'og:image', content: 'https://aboutrans.info/social.png' }],
   ],
   cleanUrls: true,
@@ -29,7 +29,7 @@ export default defineConfig({
     },
   },
   themeConfig: {
-    logo: '/icon.png',
+    logo: '/favicon.png',
     editLink: {
       pattern: 'https://github.com/ChisakaKanako/aboutTrans/edit/main/docs/:path',
       text: '对当前页面提出修改建议',
