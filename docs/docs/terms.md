@@ -42,7 +42,7 @@
 
 ## 性少数群体
 
-性少数群体（Sexual and gender minorities），指性取向和性别认同与社会上的大多数人不同的个体，主要包括非异性恋者和非顺性别者。
+性少数群体（Sexual and gender minorities），指性取向和性别认同与社会上的大多数人不同的个体，主要包括非异性恋者和非顺性别者，例如LGBTQ人群：女同性恋（Lesbian）、男同性恋（Gay）、双性恋者（Bisexual）、跨性别者（Transgender）和酷儿（Queer）。
 
 ## 非常规性别
 
