@@ -65,6 +65,11 @@ const members = [
     title: '技术支持',
   },
   {
+    avatar: 'https://github.com/AnnaBeiyan.png',
+    name: 'Anna',
+    title: '内容贡献',
+  },
+  {
     avatar: 'https://github.com/github.png',
     name: '匿名小伙伴',
     title: '内容贡献',
