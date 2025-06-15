@@ -70,6 +70,11 @@ const members = [
     title: '内容贡献',
   },
   {
+    avatar: 'https://github.com/Catherina0.png',
+    name: 'Catherina Grace',
+    title: '内容贡献',
+  },
+  {
     avatar: 'https://github.com/github.png',
     name: '匿名小伙伴',
     title: '内容贡献',
