@@ -89,7 +89,7 @@ const members = [
 
 > [!NOTE] 参与方式：
 > 
-> [通过邮件联系](mailto:chisakakanako@gmail.com)
+> [通过邮件联系](mailto:contact@aboutrans.info)
 >
 > [加入内容反馈群](https://qm.qq.com/q/ExEqmGZ16g)
 > 
