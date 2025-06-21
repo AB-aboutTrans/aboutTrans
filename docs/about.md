@@ -93,4 +93,4 @@ const members = [
 > 
 > [加入内容反馈群](https://qm.qq.com/q/ExEqmGZ16g)
 > 
-> [访问Github仓库](https://github.com/ChisakaKanako/aboutTrans)
+> [访问Github仓库](https://github.com/AB-aboutTrans/aboutTrans)
