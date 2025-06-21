@@ -29,7 +29,7 @@ export default defineConfig({
   themeConfig: {
     logo: '/favicon.png',
     editLink: {
-      pattern: 'https://github.com/ChisakaKanako/aboutTrans/edit/main/docs/:path',
+      pattern: 'https://github.com/AB-aboutTrans/aboutTrans/edit/main/docs/:path',
       text: '对当前页面提出修改建议',
     },
     search: {
