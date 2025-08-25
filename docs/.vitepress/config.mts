@@ -69,7 +69,7 @@ export default defineConfig({
     returnToTopLabel: '回到顶部',
     footer: {
       message: '本站内容基于 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh-hans">CC BY 4.0</a> 许可发布',
-      copyright: `2023-${new Date().getFullYear()} AB aboutTrans`,
+      copyright: `版权所有 © 2023-${new Date().getFullYear()} AB aboutTrans`,
     },
     docFooter: {
       prev: '上一页',
