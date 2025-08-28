@@ -91,6 +91,19 @@ export default defineConfig({
           },
         ],
       },
+      { 
+        text: '字重',
+        items: [
+          { 
+            text: '正文加粗',
+            link: '#' 
+          },
+          { 
+            text: '恢复默认',
+            link: '#'
+          },
+        ],
+      },
     ],
     sidebar: [
       {
