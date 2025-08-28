@@ -1,5 +1,6 @@
 export const switchFontWeight = (weight) => {
   document.body.style.fontWeight = weight;
+  localStorage.setItem('fontWeight', weight);
 };
 
 export const addFontWeightSwitchListener = () => {
@@ -17,4 +18,11 @@ export const addFontWeightSwitchListener = () => {
       }
     });
   });
+
+  const savedWeight = localStorage.getItem('fontWeight');
+  if (savedWeight) {
+    document.body.style.fontWeight = savedWeight;
+  } else {
+    document.body.style.fontWeight = 400;
+  }
 };
