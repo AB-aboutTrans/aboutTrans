@@ -4,20 +4,31 @@ export const switchFontWeight = (weight) => {
 };
 
 export const addFontWeightSwitchListener = () => {
-  const items = document.querySelectorAll('.items a');
 
-  items.forEach(item => {
-    item.addEventListener('click', (e) => {
-      e.preventDefault();
-      const text = e.target.innerText.trim();
+  const bindItems = () => {
+    const items = document.querySelectorAll('.items a');
+    items.forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
+        const text = e.target.innerText.trim();
 
-      if (text === '正文加粗') {
-        switchFontWeight(600);
-      } else if (text === '恢复默认') {
-        switchFontWeight(400);
-      }
+        if (text === '正文加粗') {
+          switchFontWeight(600);
+        } else if (text === '恢复默认') {
+          switchFontWeight(400);
+        }
+      });
     });
-  });
+  };
+
+  bindItems();
+
+  const hamburger = document.querySelector('.VPNavBarHamburger');
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      setTimeout(bindItems, 0);
+    });
+  }
 
   const savedWeight = localStorage.getItem('fontWeight');
   if (savedWeight) {
