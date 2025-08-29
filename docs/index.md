@@ -5,7 +5,7 @@ hero:
   text: 你想知道的都在这里
   tagline: 一个由跨儿搭建的跨性别相关知识科普站
   image:
-    src: /hero.png
+    src: /hero.svg
 features:
   - icon: 📑
     link: /docs/terms
