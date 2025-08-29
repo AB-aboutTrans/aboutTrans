@@ -1,51 +1,35 @@
-.footnotes {
-  font-size: 14px !important;
-}
-
 :root {
   --vp-c-brand-0: #e50073;
   --vp-c-brand-1: #e50073;
   --vp-c-brand-2: #e50073;
-  --vp-button-brand-border: var(--vp-c-brand-0); /* 按钮边框颜色 */
-  --vp-button-brand-bg: var(--vp-c-brand-0); /* 按钮背景颜色 */
-  --vp-button-brand-hover-border: var(--vp-c-brand-1); /* 按钮悬停边框颜色 */
-  --vp-button-brand-hover-bg: var(--vp-c-brand-1); /* 按钮悬停背景颜色 */
-  --vp-button-brand-active-border: var(--vp-c-brand-2); /* 按钮点击边框颜色 */
-  --vp-button-brand-active-bg: var(--vp-c-brand-2); /* 按钮点击背景颜色 */
+  --vp-button-brand-border: var(--vp-c-brand-0);
+  --vp-button-brand-bg: var(--vp-c-brand-0);
+  --vp-button-brand-hover-border: var(--vp-c-brand-1);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-1);
+  --vp-button-brand-active-border: var(--vp-c-brand-2);
+  --vp-button-brand-active-bg: var(--vp-c-brand-2);
 }
 
-.VPFeature {
-  border-color: transparent !important;
-}
-
+.VPFeature,
+.VPSwitch,
 .DocSearch-Button {
   border-color: transparent !important;
 }
 
+.DocSearch-Button-Placeholder,
+.DocSearch-Input,
+.DocSearch-Clear,
+.DocSearch-AskAiScreen-Disclaimer {
+  font-weight: 400 !important;
+}
+
+.pager-link,
 .search-bar:focus-within {
   border-color: var(--vp-c-divider) !important;
 }
 
-.VPSwitch {
-  border-color: transparent !important;
-}
-
-.pager-link {
-  border-color: var(--vp-c-divider) !important;
-}
-
-mark {
-  background-color: #fcf0c5;
-}
-
 .VPBadge {
   vertical-align: middle !important;
-}
-
-@media (max-width: 768px) {
-  header > div > div.wrapper > div > div.content {
-    overflow: hidden;
-  }
 }
 
 .VPContent > .VPDoc {
@@ -54,4 +38,18 @@ mark {
 
 .VPHomeHero .image-src {
   height: unset;
+}
+
+mark {
+  background-color: #fcf0c5;
+}
+
+.footnotes {
+  font-size: 14px !important;
+}
+
+@media (max-width: 768px) {
+  header > div > div.wrapper > div > div.content {
+    overflow: hidden;
+  }
 }
