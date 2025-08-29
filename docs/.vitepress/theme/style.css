@@ -16,11 +16,23 @@
   border-color: transparent !important;
 }
 
-.DocSearch-Button-Placeholder,
 .DocSearch-Input,
 .DocSearch-Clear,
 .DocSearch-AskAiScreen-Disclaimer {
   font-weight: 400 !important;
+}
+
+.DocSearch-Button-Placeholder {
+  font-weight: 500 !important;
+}
+
+.DocSearch-Search-Icon circle,
+.DocSearch-Search-Icon path {
+  stroke-width: 2;
+}
+
+.DocSearch-Button-Keys {
+  display: none;
 }
 
 .pager-link,
