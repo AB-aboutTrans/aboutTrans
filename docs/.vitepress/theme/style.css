@@ -51,3 +51,7 @@ mark {
 .VPContent > .VPDoc {
   padding-top: 48px;
 }
+
+.VPHomeHero .image-src {
+  height: unset;
+}
