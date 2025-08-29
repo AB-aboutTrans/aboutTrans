@@ -1,8 +1,19 @@
-import { defineConfig, presetAttributify, presetIcons, presetWind4 } from 'unocss'
+import { defineConfig, presetAttributify, presetIcons } from 'unocss'
+import { presetMini } from '@unocss/preset-mini'
 
 export default defineConfig({
+  preflights: [],
+  variants: [
+    (matcher: string) => {
+      if (!matcher) return matcher;
+      return {
+        matcher,
+        selector: (s: string) => `.unocss-scope ${s}`,
+      };
+    },
+  ],
   presets: [
-    presetWind4(),
+    presetMini(),
     presetAttributify(),
     presetIcons({
       prefix: 'i-',
