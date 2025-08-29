@@ -4,7 +4,7 @@
     "@unocss/preset-attributify": "^66.1.0-beta.11",
     "@unocss/preset-icons": "^66.1.0-beta.11",
     "unocss": "^66.1.0-beta.11",
-    "vitepress": "^1.6.3"
+    "vitepress": "^2.0.0-alpha.12"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
