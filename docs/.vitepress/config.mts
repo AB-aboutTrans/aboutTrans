@@ -15,7 +15,7 @@ export default defineConfig({
     },
   },
   title: 'aboutTrans',
-  description: '关于跨性别，你想知道的都在这里～这是一个面向不了解或希望了解跨性别群体的人的一个科普网站，同时，社群伙伴们也可以在此获取到有用的信息！',
+  description: '关于跨性别，你想知道的都在这里～这是一个跨性别相关知识科普网站，无论是社群伙伴还是盟友朋友们都可以在此获取到有用的信息！',
   head: [
     ['link', { rel: 'icon', href: '/favicon.png' }],
     ['meta', { property: 'og:image', content: 'https://aboutrans.info/social.png' }],
@@ -28,6 +28,12 @@ export default defineConfig({
   },
   themeConfig: {
     logo: '/favicon.png',
+    lastUpdated: {
+      text: '当前页面最后更新于',
+      formatOptions: {
+        dateStyle: 'short',
+      }
+    },
     editLink: {
       pattern: 'https://github.com/AB-aboutTrans/aboutTrans/edit/main/docs/:path',
       text: '对当前页面提出修改建议',
