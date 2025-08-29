@@ -88,7 +88,7 @@ export default defineConfig({
                   reportMissingResultsText: '您认为该查询应该有结果？',
                   reportMissingResultsLinkText: '点击反馈'
                 },
-                resultsScreen: { askAiPlaceholder: '继续向 AI 提问（需网络支持）' },
+                resultsScreen: { askAiPlaceholder: '向 AI 提问（需网络支持）' },
                 askAiScreen: {
                   disclaimerText: '结果由 AI 生成，请注意核查。',
                   relatedSourcesText: '相关来源',
