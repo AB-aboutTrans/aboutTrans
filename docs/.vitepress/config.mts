@@ -27,7 +27,7 @@ export default defineConfig({
     },
   },
   themeConfig: {
-    logo: '/favicon.png',
+    logo: '/favicon.svg',
     lastUpdated: {
       text: '当前页面最后更新于',
       formatOptions: {
@@ -52,7 +52,7 @@ export default defineConfig({
         },
         locales: {
           root: {
-            placeholder: '搜索内容或向 AI 提问',
+            placeholder: '搜索内容或向 AI 提问（需网络支持）',
             translations: {
               button: { buttonText: '搜索内容', buttonAriaLabel: '搜索内容' },
               modal: {
@@ -61,7 +61,7 @@ export default defineConfig({
                   clearButtonAriaLabel: '清除查询条件',
                   closeButtonText: '关闭',
                   closeButtonAriaLabel: '关闭',
-                  placeholderText: '搜索内容或向 AI 提问',
+                  placeholderText: '搜索内容或向 AI 提问（需网络支持）',
                   placeholderTextAskAi: '向 AI 提问',
                   placeholderTextAskAiStreaming: '思考中...',
                   searchInputLabel: '搜索',
