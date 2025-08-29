@@ -17,7 +17,7 @@ export default defineConfig({
   title: 'aboutTrans',
   description: '关于跨性别，你想知道的都在这里～这是一个跨性别相关知识科普网站，无论是社群伙伴还是盟友朋友们都可以在此获取到有用的信息！',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.png' }],
+    ['link', { rel: 'icon', href: '/favicon.svg' }],
     ['meta', { property: 'og:image', content: 'https://aboutrans.info/social.png' }],
   ],
   cleanUrls: true,
@@ -52,16 +52,16 @@ export default defineConfig({
         },
         locales: {
           root: {
-            placeholder: '搜索文档或向 AI 提问',
+            placeholder: '搜索内容或向 AI 提问',
             translations: {
-              button: { buttonText: '搜索文档', buttonAriaLabel: '搜索文档' },
+              button: { buttonText: '搜索内容', buttonAriaLabel: '搜索内容' },
               modal: {
                 searchBox: {
                   clearButtonTitle: '清除查询条件',
                   clearButtonAriaLabel: '清除查询条件',
                   closeButtonText: '关闭',
                   closeButtonAriaLabel: '关闭',
-                  placeholderText: '搜索文档或向 AI 提问',
+                  placeholderText: '搜索内容或向 AI 提问',
                   placeholderTextAskAi: '向 AI 提问',
                   placeholderTextAskAiStreaming: '思考中...',
                   searchInputLabel: '搜索',
@@ -90,7 +90,7 @@ export default defineConfig({
                 },
                 resultsScreen: { askAiPlaceholder: '向 AI 提问' },
                 askAiScreen: {
-                  disclaimerText: '负责生成回答的 AI 也可能犯错，请注意核查回复。',
+                  disclaimerText: '结果由 AI 生成，请注意核查。',
                   relatedSourcesText: '相关来源',
                   thinkingText: '思考中...',
                   copyButtonText: '复制',
@@ -98,7 +98,7 @@ export default defineConfig({
                   copyButtonTitle: '复制',
                   likeButtonTitle: '赞',
                   dislikeButtonTitle: '踩',
-                  thanksForFeedbackText: '感谢您的反馈！',
+                  thanksForFeedbackText: '感谢反馈！',
                   preToolCallText: '搜索中...',
                   duringToolCallText: '搜索 ',
                   afterToolCallText: '已搜索'
