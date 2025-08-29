@@ -40,6 +40,14 @@
   height: unset;
 }
 
+.DocSearch-Input {
+  padding-block-start: unset;
+}
+
+.DocSearch-StreamingIndicator {
+  display: none;
+}
+
 mark {
   background-color: #fcf0c5;
 }
