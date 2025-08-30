@@ -22,6 +22,11 @@
   font-weight: 400 !important;
 }
 
+
+.DocSearch-Button-Placeholder {
+  font-weight: 500 !important;
+}
+
 .DocSearch-Button-Keys {
   display: none;
 }
@@ -63,4 +68,13 @@ mark {
   header > div > div.wrapper > div > div.content {
     overflow: hidden;
   }
+}
+
+.DocSearch-Search-Icon {
+    --icon: url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%3E%3Cg%20fill%3D%27none%27%20stroke%3D%27black%27%20stroke%2Dlinecap%3D%27round%27%20stroke%2Dlinejoin%3D%27round%27%20stroke%2Dwidth%3D%272%27%3E%3Cpath%20d%3D%27m21%2021l%2D4%2E34%2D4%2E34%27%2F%3E%3Ccircle%20cx%3D%2711%27%20cy%3D%2711%27%20r%3D%278%27%20stroke%2Dwidth%3D%272%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+}
+
+.DocSearch-Search-Icon circle,
+.DocSearch-Search-Icon path {
+  stroke-width: 2 ;
 }
