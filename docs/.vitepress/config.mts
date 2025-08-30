@@ -42,7 +42,7 @@ export default defineConfig({
       provider: 'algolia',
       options: {
         appId: '116OHOGKSO',
-        apiKey: '064f8589eaca71692d88be99c52e3f7c',
+        apiKey: 'ac690e86bfae8e8965ca0eb54624758b',
         indexName: 'index_ab_vitepress_crawls',
         askAi: {
           assistantId: 'LPOC8VnwcNjG'
