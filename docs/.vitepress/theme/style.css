@@ -22,15 +22,6 @@
   font-weight: 400 !important;
 }
 
-.DocSearch-Button-Placeholder {
-  font-weight: 500 !important;
-}
-
-.DocSearch-Search-Icon circle,
-.DocSearch-Search-Icon path {
-  stroke-width: 2;
-}
-
 .DocSearch-Button-Keys {
   display: none;
 }
