@@ -42,7 +42,7 @@ export default defineConfig({
       provider: 'algolia',
       options: {
         appId: '116OHOGKSO',
-        apiKey: 'e7394e55ca3575018010fdc93e1f0662',
+        apiKey: 'sk-438ae2ef928740528f7676ef9c69812e',
         indexName: 'index_ab_vitepress_crawls',
         askAi: {
           assistantId: 'LPOC8VnwcNjG'
@@ -52,7 +52,7 @@ export default defineConfig({
         },
         locales: {
           root: {
-            placeholder: '搜索内容或向 AI 提问（需网络支持）',
+            placeholder: '搜索内容或向 AI 提问',
             translations: {
               button: { buttonText: '搜索内容', buttonAriaLabel: '搜索内容' },
               modal: {
@@ -61,7 +61,7 @@ export default defineConfig({
                   clearButtonAriaLabel: '清除查询条件',
                   closeButtonText: '关闭',
                   closeButtonAriaLabel: '关闭',
-                  placeholderText: '搜索内容或向 AI 提问（需网络支持）',
+                  placeholderText: '搜索内容或向 AI 提问',
                   placeholderTextAskAi: '向 AI 提问',
                   placeholderTextAskAiStreaming: '思考中...',
                   searchInputLabel: '搜索',
