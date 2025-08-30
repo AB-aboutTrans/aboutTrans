@@ -9,11 +9,7 @@ next: false
 aboutTrans 项目创立于 2023 年 7 月，项目名称来源于“关于跨性别”的英译。我们致力于为大家提供有关跨性别的相关知识，以帮助更多人了解和支持跨性别群体！
 
 > [!TIP] 内容须知：
-> aboutTrans 是一个跨性别相关知识科普网站，无论是社群伙伴还是盟友朋友们都可以在此获取到有用的信息！本站内容为面向中国大陆跨性别社群编写，我们参考了潘柏林《走出性别困境》[^1]、SOC-8[^2]、GLAAD[^3]以及社群伙伴们的意见，如有错误欢迎积极指出也欢迎加入我们一同参与内容编写，感谢所有为跨性别事业所努力的社群工作者以及构建者们，我们在此一并致谢！
-
-[^1]: [走出性别困境：“跨性别”与“性别焦虑”的医疗援助](https://search.worldcat.org/zh-cn/title/1457264217)
-[^2]: [Standards of Care 8](https://wpath.org/publications/soc8/)
-[^3]: [GLAAD Media Reference Guide - 11th Edition](https://glaad.org/reference/)
+> aboutTrans 是一个跨性别相关知识科普网站，无论是社群伙伴还是盟友朋友们都可以在此获取到有用的信息！本站内容为面向中国大陆跨性别社群编写，我们参考了潘柏林《走出性别困境》[^1]、SOC-8[^2]、GLAAD[^3] 以及社群伙伴们的意见，如有错误欢迎积极指出也欢迎加入我们一同参与内容编写，感谢所有为跨性别事业所努力的社群工作者以及构建者们，我们在此一并致谢！
 
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
@@ -82,6 +78,10 @@ const members = [
 </script>
 <VPTeamMembers size="small" :members="members" />
 
+[^1]: [走出性别困境：“跨性别”与“性别焦虑”的医疗援助](https://search.worldcat.org/zh-cn/title/1457264217)
+[^2]: [Standards of Care 8](https://wpath.org/publications/soc8/)
+[^3]: [GLAAD Media Reference Guide - 11th Edition](https://glaad.org/reference/)
+
 ## 消除歧视与污名，需要你我的共同努力
 
 我们欢迎任何对跨性别相关知识科普感兴趣的人加入我们，与我们共同建设 aboutTrans，如果你对本站内容有任何修改建议，也欢迎积极联系我们，如果你希望在 GitHub 上提出 PR 或 Issues，我们也一并欢迎～
@@ -90,6 +90,6 @@ const members = [
 > 
 > [通过邮件联系](mailto:contact@aboutrans.info)
 > 
-> [加入内容反馈群](https://qm.qq.com/q/ExEqmGZ16g)
+> [加入项目交流群](https://qm.qq.com/q/ExEqmGZ16g)
 > 
-> [访问Github仓库](https://github.com/AB-aboutTrans/aboutTrans)
+> [访问 Github 仓库](https://github.com/AB-aboutTrans/aboutTrans)
