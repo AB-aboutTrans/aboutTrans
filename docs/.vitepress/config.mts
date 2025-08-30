@@ -141,33 +141,8 @@ export default defineConfig({
     },
     nav: [
       { text: '主页', link: 'index' },
-      { text: '关于', link: 'about' },
-      { 
-        text: '更多',
-        items: [
-          { 
-            text: '更新记录',
-            link: 'https://github.com/AB-aboutTrans/aboutTrans/commits/main/' 
-          },
-          { 
-            text: '在 X 上关注',
-            link: 'https://x.com/AB_aboutTrans'
-          },
-        ],
-      },
-      { 
-        text: '字重',
-        items: [
-          { 
-            text: '正文加粗',
-            link: '#' 
-          },
-          { 
-            text: '恢复默认',
-            link: '#'
-          },
-        ],
-      },
+      { text: '关于我们', link: 'about' },
+      { text: '在 X 上关注', link: 'https://x.com/AB_aboutTrans' },
     ],
     sidebar: [
       {
