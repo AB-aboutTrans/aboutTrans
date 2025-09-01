@@ -4,6 +4,7 @@ import './style.css'
 import 'virtual:uno.css'
 import { h } from 'vue'
 import Share from './components/share.vue'
+import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
 
 const ExtendedTheme: Theme = {
   extends: DefaultTheme,
