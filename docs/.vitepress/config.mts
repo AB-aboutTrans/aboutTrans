@@ -153,7 +153,7 @@ export default defineConfig({
           { text: '政策法规', link: '/docs/policy' },
           { text: '社会支持', link: '/docs/support' },
           { text: '纪念活动', link: '/docs/events' },
-          { text: '误区问答', link: '/docs/faq' },
+          { text: '议题问答', link: '/docs/faq' },
         ],
       },
     ],
