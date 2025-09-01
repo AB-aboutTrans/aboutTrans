@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@iconify-json/octicon": "^1.2.5",
+    "@nolebase/vitepress-plugin-enhanced-mark": "^2.18.2",
     "@unocss/preset-attributify": "^66.1.0-beta.11",
     "@unocss/preset-icons": "^66.1.0-beta.11",
     "@unocss/preset-mini": "^66.4.2",
