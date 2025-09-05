@@ -101,8 +101,14 @@ export default defineConfig({
                   thanksForFeedbackText: '感谢反馈！',
                   preToolCallText: '搜索中...',
                   duringToolCallText: '搜索 ',
-                  afterToolCallText: '已搜索'
-                },
+                  afterToolCallText: '已搜索',
+                  aggregatedToolCallText: (queries: string[]) => ({
+                    before: '已搜索 ',
+                    separator: '、',
+                    lastSeparator: ' 和 ',
+                    after: ''
+                  })
+                } as any,
                 footer: {
                   selectText: '查看',
                   submitQuestionText: '提交问题',
