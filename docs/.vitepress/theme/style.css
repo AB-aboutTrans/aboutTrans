@@ -18,7 +18,8 @@
 
 .DocSearch-Input,
 .DocSearch-Clear,
-.DocSearch-AskAiScreen-Disclaimer {
+.DocSearch-AskAiScreen-Disclaimer,
+.DocSearch-Title {
   font-weight: 400 !important;
 }
 
@@ -27,7 +28,9 @@
   font-weight: 500 !important;
 }
 
-.DocSearch-Button-Keys {
+.DocSearch-Button-Keys,
+.DocSearch-Help,
+.DocSearch-NoResults-Prefill-List-Items p {
   display: none;
 }
 
