@@ -6,8 +6,6 @@
 
 生理情况是复杂的，包含性染色体、生殖系统等多个组成部分。医学上通常通过出生时的第一性征来判断性别，但被指派的性别并不代表个人必然拥有完全相符的性别认同或生理特征，例如跨性别者或间性人的情况。“生理性别”并非自然事实，而是文化建构的产物，这是一种社会强加的归类方式[^1]。生理特征不能决定一个人的认同或表达，因此我们提倡使用“指派性别”这一更客观的描述词。需要注意的是，当前中文语境中普遍将“生理性别”等同于一个人的性别，并认为应具有相应的认同和表达，但这种观点在科学上不严谨，在实践中也存在偏颇。
 
-[^1]: [首先，我们不认为存在生理性别｜跨儿中心回应](https://www.douban.com/note/714723666/)
-
 ## 跨性别是西方现代文化的产物吗？
 
 <mark>无论古今中外，跨性别者始终存在于世界各地的各种文化中</mark>。
@@ -20,15 +18,17 @@
 
 2011 年的一项研究[^2]表明，性别认同在出生前由大脑的性别分化决定，而这一分化受出生前激素水平的直接影响，与第一性征无关。1995 年的一项研究[^3]发现，跨性别者的大脑结构更接近其认同的性别。2019 年的一项研究[^4]显示，跨性别者在儿童时期就表现出与性别认同相关的表达，且没有证据表明出生后的成长经历会影响性别认同。需要注意的是，将“在后天了解到跨性别概念后发觉身份”视为“性别认同是后天形成的”是一种偷换概念的做法。
 
-[^2]: [Sexual differentiation of the human brain: Relation to gender identity, sexual orientation and neuropsychiatric disorders](https://doi.org/10.1016/j.yfrne.2011.02.007)
-[^3]: [A sex difference in the human brain and its relation to transsexuality](https://doi.org/10.1038/378068a0)
-[^4]: [Similarity in transgender and cisgender children’s gender development](https://doi.org/10.1073/pnas.1909367116)
-
 ## 为什么会出现跨性别的情况，这是不正常的吗？
 
 <mark>跨性别与否取决于指派性别与性别认同是否一致</mark>。
 
 探讨跨性别“成因”往往带有顺性别霸权视角，认为其是“不正常”或“可治愈”的，但跨性别是一种处境而非选择，无法被“成为”。性别认同与生俱来且终生不变，性别多样性如同性取向多元化一样，人人生而不同但平等。跨性别是完全正常的现象，与顺性别之间只有多数与少数之别，无高低优劣之分。
+
+## 跨性别者在人群中的比例有多高？
+
+<mark>跨性别在亚太地区的发生率约为千分之三</mark>。
+
+根据联合国开发署 2012 年发布的报告[^5]，在亚太地区，跨性别发生率约为千分之三。按照这个比例推算，我国约有四百万跨性别者。但由于社会环境、统计方法等因素影响，有些跨性别者可能并未意识到自己的性别身份，实际人数可能更多。
 
 ## 为什么有些跨性别者会投入大量精力在性别探索上？
 
@@ -58,9 +58,7 @@
 
 <mark>扭转治疗缺乏科学依据，且会导致严重的心理健康问题</mark>。
 
-基于性取向或性别认同的扭转行为被广泛认为是违背道德的伪科学，在许多地区已被立法禁止。2023 年中国的一项研究[^5]表明，扭转治疗会导致抑郁、焦虑、创伤后应激等问题，并增加自杀风险，对未成年人的危害尤为严重。
-
-[^5]: [A national transgender health survey from China assessing gender identity conversion practice, mental health, substance use and suicidality](https://doi.org/10.1038/s44220-023-00041-z)
+基于性取向或性别认同的扭转行为被广泛认为是违背道德的伪科学，在许多地区已被立法禁止。2023 年中国的一项研究[^6]表明，扭转治疗会导致抑郁、焦虑、创伤后应激等问题，并增加自杀风险，对未成年人的危害尤为严重。
 
 ## 跨性别者都需要进行激素治疗或性别肯定手术吗？
 
@@ -72,9 +70,7 @@
 
 <mark>几乎没有人对手术本身感到后悔</mark>。
 
-2021 年的一项荟萃分析[^8]显示，只有约 1% 的跨性别女性和不到 1% 的跨性别男性因术后外观或并发症不满，几乎无人后悔手术本身，且国内尚无因手术本身后悔的案例。而2021 年报告[^7]显示，仅 3.7% 的跨性别女性和 10.1% 的跨性别男性接受了手术。即使存在个别后悔案例，也不能因此否定大多数人的医疗需求。
-
-[^8]: [Regret after Gender-affirmation Surgery: A Systematic Review and Meta-analysis of Prevalence](https://doi.org/10.1097/GOX.0000000000003477)
+2021 年的一项荟萃分析[^8]显示，只有约 1% 的跨性别女性和不到 1% 的跨性别男性因术后外观或并发症不满，几乎无人后悔手术本身，且国内尚无因手术本身后悔的案例。而 2021 年报告[^7]显示，仅 3.7% 的跨性别女性和 10.1% 的跨性别男性接受了手术。即使存在个别后悔案例，也不能因此否定大多数人的医疗需求。
 
 ## 跨性别者接受了性别肯定医疗后会对自身寿命产生影响吗？
 
@@ -82,21 +78,26 @@
 
 中文互联网上“接受性别肯定医疗会活不过 40 岁”的说法是缺乏科学依据的谣言，其逻辑漏洞在于：90 后顺性别者至今也无一人年满 40 岁。研究反而表明，性别肯定医疗能极大改善心理健康，减轻焦虑，提升自我接纳和生活质量，2022 年的一项研究[^9]显示，这类护理显著降低了抑郁和自伤自杀风险。
 
-[^9]: [Mental Health Outcomes in Transgender and Nonbinary Youths Receiving Gender-Affirming Care](https://doi.org/10.1001/jamanetworkopen.2022.0978)
-
 ## 跨性别者中大多数是未成年人吗，为什么现在能看到的未成年跨性别者越来越多了？
 
 <mark>互联网普及使未成年人更容易接触相关信息并较早意识到自己的性别认同</mark>。
 
-网络和社交媒体的发展加快了信息传播，让更多未成年人能够了解跨性别概念。2017 年报告[^6]显示，跨性别者意识到认同与指派性别不同的年龄主要集中在 7-12 岁和 13-17 岁。2021 年报告[^7]中这一比例有所上升。需要注意的是，避免让孩子接触相关信息并不能防止其“成为跨性别”，反而可能让跨性别儿童在困惑中长大。
-
-[^6]: [2017 中国跨性别群体生存现状调研报告](https://file.aboutrans.info/2017中国跨性别群体生存现状调研报告——跨性别者与非性别常规者.pdf)
-[^7]: [2021 全国跨性别健康调研报告](https://file.aboutrans.info/2021全国跨性别健康调研报告（勘误版）.pdf)
+网络和社交媒体的发展加快了信息传播，让更多未成年人能够了解跨性别概念。2017 年报告[^10]显示，跨性别者意识到认同与指派性别不同的年龄主要集中在 7-12 岁和 13-17 岁。2021 年报告[^7]中这一比例有所上升。需要注意的是，避免让孩子接触相关信息并不能防止其“成为跨性别”，反而可能让跨性别儿童在困惑中长大。
 
 ## 为什么跨性别本身不是精神问题但却需由精神科医师进行诊断？
 
 <mark>这主要是历史遗留的医疗体系问题</mark>。
 
-跨性别曾被视为精神疾病，如 DSM-4 中的“性别认同障碍”，但随着医学进步，ICD-11 已将其改为“性别不一致”，并从精神疾病章节移至性健康相关章节[^10]，这表明跨性别是一种正常的多样性表现。然而医疗政策更新有滞后性，国内尚未设立专门门诊，因此诊断仍由精神科医师负责。
+跨性别曾被视为精神疾病，如 DSM-4 中的“性别认同障碍”，但随着医学进步，ICD-11 已将其改为“性别不一致”，并从精神疾病章节移至性健康相关章节[^11]，这表明跨性别是一种正常的多样性表现。然而医疗政策的更新具有滞后性，国内尚未设立专门门诊，因此诊断仍由精神科医师负责。
 
-[^10]: [Gender incongruence and transgender health in the ICD](https://www.who.int/standards/classifications/frequently-asked-questions/gender-incongruence-and-transgender-health-in-the-icd)
+[^1]: [首先，我们不认为存在生理性别｜跨儿中心回应](https://www.douban.com/note/714723666/)
+[^2]: [Sexual differentiation of the human brain: Relation to gender identity, sexual orientation and neuropsychiatric disorders](https://doi.org/10.1016/j.yfrne.2011.02.007)
+[^3]: [A sex difference in the human brain and its relation to transsexuality](https://doi.org/10.1038/378068a0)
+[^4]: [Similarity in transgender and cisgender children’s gender development](https://doi.org/10.1073/pnas.1909367116)
+[^5]: [Lost in Transition: Transgender People, Rights and HIV Vulnerability in the Asia-Pacific Region](https://www.undp.org/sites/g/files/zskgke326/files/publications/UNDP_HIV_Transgender_report_Lost_in_Transition_May_2012.pdf)
+[^6]: [A national transgender health survey from China assessing gender identity conversion practice, mental health, substance use and suicidality](https://doi.org/10.1038/s44220-023-00041-z)
+[^7]: [2021 全国跨性别健康调研报告](https://file.aboutrans.info/2021全国跨性别健康调研报告（勘误版）.pdf)
+[^8]: [Regret after Gender-affirmation Surgery: A Systematic Review and Meta-analysis of Prevalence](https://doi.org/10.1097/GOX.0000000000003477)
+[^9]: [Mental Health Outcomes in Transgender and Nonbinary Youths Receiving Gender-Affirming Care](https://doi.org/10.1001/jamanetworkopen.2022.0978)
+[^10]: [2017 中国跨性别群体生存现状调研报告](https://file.aboutrans.info/2017中国跨性别群体生存现状调研报告——跨性别者与非性别常规者.pdf)
+[^11]: [Gender incongruence and transgender health in the ICD](https://www.who.int/standards/classifications/frequently-asked-questions/gender-incongruence-and-transgender-health-in-the-icd)
