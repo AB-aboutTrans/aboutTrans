@@ -117,8 +117,6 @@
 > [!NOTE] 性别肯定激素治疗过程中的注意事项：
 > 禁止吸烟、减少饮酒与高油饮食摄入、适度运动、避免久坐、按需补充维生素。
 
-[^1]: [Standards of Care for the Health of Transgender and Gender Diverse People, Version 8](https://doi.org/10.1080/26895269.2022.2100644)
-
 ## 性别肯定手术
 
 性别肯定手术包括男跨女性别肯定手术[^2]和女跨男性别肯定手术[^3]，分别适用于跨性别女性和跨性别男性。<mark>性别肯定手术的目的是为了减少原指派性别的部分性征并促进自我认同的性征表达，以提升自我接纳程度和缓解性别焦虑，改善心理健康状况，从而实现性别身份的顺利过渡</mark>。
@@ -152,9 +150,6 @@
 
 需要注意的是，不同医院开展的手术项目可能并不相同，且国内目前仅有少数几家医院具有进行性别肯定手术的资质。
 
-[^2]: [手术治疗 男→女（MTF）](https://www.haodf.com/neirong/wenzhang/567472283.html)
-[^3]: [手术治疗 女→男（FTM）](https://www.haodf.com/neirong/wenzhang/567462634.html)
-
 ## 跨性别嗓音训练
 
 跨性别嗓音训练是指通过训练的方式实现嗓音的改变，是性别肯定护理的一部分，主要适用于女性倾向跨性别者。<mark>嗓音训练的目的是通过接受训练使个体的嗓音更符合其所认同性别的声音，以提升自我接纳和缓解性别焦虑，改善心理健康，从而帮助性别身份的顺利过渡</mark>。
@@ -173,3 +168,7 @@
 > * 通过调整声道和气息将基频提升至超过 175 Hz
 > * 通过调整嘴形、呼吸等方式对音色进行修饰
 > * 通过对话等练习保证自发言语状态下的嗓音稳定性
+
+[^1]: [Standards of Care for the Health of Transgender and Gender Diverse People, Version 8](https://doi.org/10.1080/26895269.2022.2100644)
+[^2]: [手术治疗 男→女（MTF）](https://www.haodf.com/neirong/wenzhang/567472283.html)
+[^3]: [手术治疗 女→男（FTM）](https://www.haodf.com/neirong/wenzhang/567462634.html)
