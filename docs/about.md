@@ -81,10 +81,6 @@ const members = [
 </script>
 <VPTeamMembers size="small" :members="members" />
 
-[^1]: [走出性别困境：“跨性别”与“性别焦虑”的医疗援助](https://search.worldcat.org/zh-cn/title/1457264217)
-[^2]: [Standards of Care 8](https://wpath.org/publications/soc8/)
-[^3]: [GLAAD Media Reference Guide - 11th Edition](https://glaad.org/reference/)
-
 ## 消除歧视与污名，需要你我的共同努力
 
 我们欢迎任何对跨性别相关知识科普感兴趣的人加入我们，与我们共同建设 aboutTrans，如果你对本站内容有任何修改建议，也欢迎积极联系我们，如果你希望在 GitHub 上提出 PR 或 Issues，我们也一并欢迎～
@@ -96,3 +92,7 @@ const members = [
 > [加入项目交流群](https://qm.qq.com/q/ExEqmGZ16g)
 > 
 > [访问 Github 仓库](https://github.com/AB-aboutTrans/aboutTrans)
+
+[^1]: [走出性别困境：“跨性别”与“性别焦虑”的医疗援助](https://search.worldcat.org/zh-cn/title/1457264217)
+[^2]: [Standards of Care 8](https://wpath.org/publications/soc8/)
+[^3]: [GLAAD Media Reference Guide - 11th Edition](https://glaad.org/reference/)
