@@ -31,7 +31,8 @@
 
 .DocSearch-Button-Keys,
 .DocSearch-Help,
-.DocSearch-NoResults-Prefill-List-Items p {
+.DocSearch-NoResults-Prefill-List-Items p,
+.DocSearch-AskAiScreen-RelatedSources {
   display: none;
 }
 
