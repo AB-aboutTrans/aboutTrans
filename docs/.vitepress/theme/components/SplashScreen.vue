@@ -18,23 +18,28 @@ const isHome = computed(() => route.path === '/')
 const show = ref<boolean>(false)
 let timer: number | undefined
 
-const startTimer = () => {
+const resetAndStartTimer = () => {
   if (isHome.value) {
-    show.value = true
     clearTimeout(timer)
-    timer = window.setTimeout(() => {
-      show.value = false
-    }, 2000)
+    show.value = false
+
+    requestAnimationFrame(() => {
+      show.value = true
+      timer = window.setTimeout(() => {
+        show.value = false
+      }, 2000)
+    })
   }
 }
 
 onMounted(async () => {
   await nextTick()
-  startTimer()
+  resetAndStartTimer()
 })
 
 onBeforeUnmount(() => {
   clearTimeout(timer)
+  show.value = false
 })
 </script>
 
