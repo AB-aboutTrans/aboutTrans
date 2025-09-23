@@ -1,5 +1,7 @@
 ---
 next: false
+lastUpdated: false
+editLink: false
 ---
 
 # 关于我们
