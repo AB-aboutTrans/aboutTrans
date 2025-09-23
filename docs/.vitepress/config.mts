@@ -2,25 +2,32 @@ import { defineConfig } from 'vitepress'
 import footnote from 'markdown-it-footnote'
 import UnoCSS from 'unocss/vite'
 
+function getCurrentYear(): number {
+  const now = new Date()
+  const utc = now.getTime() + (now.getTimezoneOffset() * 60000)
+  const currentTime = new Date(utc + (8 * 3600000))
+  return currentTime.getFullYear()
+}
+
 export default defineConfig({
-  vite: {
-    plugins: [
-      UnoCSS(),
-    ],
-  },
+  title: 'aboutTrans',
+  description: '关于跨性别，你想知道的都在这里～这是一个跨性别相关知识科普网站，无论是社群伙伴还是盟友朋友们都可以在此获取到有用的信息！',
+  cleanUrls: true,
   locales: {
     root: {
       label: '中文',
       lang: 'zh',
     },
   },
-  title: 'aboutTrans',
-  description: '关于跨性别，你想知道的都在这里～这是一个跨性别相关知识科普网站，无论是社群伙伴还是盟友朋友们都可以在此获取到有用的信息！',
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg' }],
     ['meta', { property: 'og:image', content: 'https://aboutrans.info/social.png' }],
   ],
-  cleanUrls: true,
+  vite: {
+    plugins: [
+      UnoCSS(),
+    ],
+  },
   markdown: {
     config(md) {
       md.use(footnote)
@@ -28,6 +35,10 @@ export default defineConfig({
   },
   themeConfig: {
     logo: '/favicon.svg',
+    sidebarMenuLabel: '目录',
+    darkModeSwitchLabel: '深色模式',
+    outlineTitle: '在当前页面中',
+    returnToTopLabel: '回到顶部',
     lastUpdated: {
       text: '当前页面最后更新于',
       formatOptions: {
@@ -38,6 +49,24 @@ export default defineConfig({
       pattern: 'https://github.com/AB-aboutTrans/aboutTrans/edit/main/docs/:path',
       text: '对当前页面提出修改建议',
     },
+    nav: [
+      { text: '主页', link: 'index' },
+      { text: '关于我们', link: 'about' },
+      { text: '在 X 上关注', link: 'https://x.com/AB_aboutTrans' },
+    ],
+    sidebar: [
+      {
+        text: '目录',
+        items: [
+          { text: '概念术语', link: '/docs/terms' },
+          { text: '医疗照护', link: '/docs/medical' },
+          { text: '政策法规', link: '/docs/policy' },
+          { text: '社会支持', link: '/docs/support' },
+          { text: '纪念活动', link: '/docs/events' },
+          { text: '议题问答', link: '/docs/faq' },
+        ],
+      },
+    ],
     search: {
       provider: 'algolia',
       options: {
@@ -54,7 +83,10 @@ export default defineConfig({
           root: {
             placeholder: '搜索内容或向 AI 提问',
             translations: {
-              button: { buttonText: '搜索内容', buttonAriaLabel: '搜索内容' },
+              button: { 
+                buttonText: '搜索内容', 
+                buttonAriaLabel: '搜索内容' 
+              },
               modal: {
                 searchBox: {
                   clearButtonTitle: '清除查询条件',
@@ -88,7 +120,9 @@ export default defineConfig({
                   reportMissingResultsText: '您认为该查询应该有结果？',
                   reportMissingResultsLinkText: '点击反馈'
                 },
-                resultsScreen: { askAiPlaceholder: '向 AI 提问' },
+                resultsScreen: { 
+                  askAiPlaceholder: '向 AI 提问' 
+                },
                 askAiScreen: {
                   disclaimerText: '结果由 AI 生成，请注意核查。',
                   relatedSourcesText: '相关来源',
@@ -102,13 +136,13 @@ export default defineConfig({
                   preToolCallText: '搜索中...',
                   duringToolCallText: '搜索 ',
                   afterToolCallText: '已搜索',
-                  aggregatedToolCallText: (queries: string[]) => ({
+                  aggregatedToolCallText: ((queries: string[]) => ({
                     before: '已搜索 ',
                     separator: '、',
                     lastSeparator: ' 和 ',
                     after: ''
-                  })
-                } as any,
+                  })) as unknown as string,
+                },
                 footer: {
                   selectText: '查看',
                   submitQuestionText: '提交问题',
@@ -133,35 +167,13 @@ export default defineConfig({
       linkLabel: '返回首页',
       linkText: '返回首页',
     },
-    sidebarMenuLabel: '目录',
-    darkModeSwitchLabel: '深色模式',
-    outlineTitle: '当前页面中',
-    returnToTopLabel: '回到顶部',
     footer: {
       message: '本站内容基于 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh-hans">CC BY 4.0</a> 许可发布',
-      copyright: `版权所有 © 2023-${new Date().getFullYear()} AB aboutTrans`,
+      copyright: `版权所有 © 2023-${getCurrentYear()} AB aboutTrans`,
     },
     docFooter: {
       prev: '上一页',
       next: '下一页',
     },
-    nav: [
-      { text: '主页', link: 'index' },
-      { text: '关于我们', link: 'about' },
-      { text: '在 X 上关注', link: 'https://x.com/AB_aboutTrans' },
-    ],
-    sidebar: [
-      {
-        text: '目录',
-        items: [
-          { text: '概念术语', link: '/docs/terms' },
-          { text: '医疗照护', link: '/docs/medical' },
-          { text: '政策法规', link: '/docs/policy' },
-          { text: '社会支持', link: '/docs/support' },
-          { text: '纪念活动', link: '/docs/events' },
-          { text: '议题问答', link: '/docs/faq' },
-        ],
-      },
-    ],
   },
 })
