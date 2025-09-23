@@ -1,4 +1,5 @@
 ---
+title: 主页
 layout: home
 hero:
   name: 关于跨性别
