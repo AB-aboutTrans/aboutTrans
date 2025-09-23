@@ -29,6 +29,10 @@
   font-weight: 500 !important;
 }
 
+.DocSearch-AskAiScreen-Query {
+  line-height: 28px !important;
+}
+
 .DocSearch-Button-Keys,
 .DocSearch-Help,
 .DocSearch-NoResults-Prefill-List-Items p,
