@@ -94,7 +94,7 @@
 
 <mark>这主要是历史遗留的医疗体系问题</mark>。
 
-跨性别曾被视为精神疾病，如 DSM-4 中的“性别认同障碍”，但随着医学进步，ICD-11 已将其改为“性别不一致”，并从精神疾病章节移至性健康相关章节[^11]，这表明跨性别是一种正常的多样性表现。然而医疗政策的更新具有滞后性，国内尚未设立专门门诊，因此诊断仍由精神科医师负责。
+跨性别曾被视为精神疾病，如 DSM-4 中的“性别认同障碍”，但随着医学进步，ICD-11 已将其改为“性别不一致”，并从精神疾病章节移至性健康相关章节，这表明跨性别是一种正常的多样性表现。然而医疗政策的更新具有滞后性，国内尚未设立专门门诊，因此诊断仍由精神科医师负责。
 
 [^1]: [首先，我们不认为存在生理性别｜跨儿中心回应](https://www.douban.com/note/714723666/)
 [^2]: [Sexual differentiation of the human brain: Relation to gender identity, sexual orientation and neuropsychiatric disorders](https://doi.org/10.1016/j.yfrne.2011.02.007)
@@ -106,4 +106,3 @@
 [^8]: [Regret after Gender-affirmation Surgery: A Systematic Review and Meta-analysis of Prevalence](https://doi.org/10.1097/GOX.0000000000003477)
 [^9]: [Mental Health Outcomes in Transgender and Nonbinary Youths Receiving Gender-Affirming Care](https://doi.org/10.1001/jamanetworkopen.2022.0978)
 [^10]: [2017 中国跨性别群体生存现状调研报告](https://file.aboutrans.info/2017中国跨性别群体生存现状调研报告——跨性别者与非性别常规者.pdf)
-[^11]: [Gender incongruence and transgender health in the ICD](https://www.who.int/standards/classifications/frequently-asked-questions/gender-incongruence-and-transgender-health-in-the-icd)
