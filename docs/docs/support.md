@@ -56,7 +56,7 @@
 
 ## 世界卫生组织
 
-2018 年，发布《国际疾病分类》第十一版（ICD-11），
+2018 年，发布《国际疾病分类》第十一版（ICD-11），该版本对描述跨性别的条目进行了重要修订，将原有的“性别认同障碍”更名为“性别不一致”，并将其从精神疾病章节中移除，归入到新的性健康章节中[^12]，这一改变反映了跨性别和多元性别认同并非精神疾病，而将其归类为精神疾病可能会带来巨大的污名。这一修订有助于减少跨性别者所面临的歧视和偏见，促进其获得更好的医疗服务和社会支持。
 
 [^1]: [北医三院易性症序列医疗团队成立](https://www.sar.com.cn/xinwen/news/12295.html)
 [^2]: [学术论坛｜第五届中国性别肯定医疗论坛回顾](https://mp.weixin.qq.com/s/9Ev6Uxb75SBnHslyzw91Zg)
@@ -69,3 +69,4 @@
 [^9]: [跨性别人群生存困境调查：多数人有遭受校园暴力经历](https://news.cctv.com/2020/02/22/ARTIJ5mYNQzX05v1IZiDuRoN200222.shtml)
 [^10]: [跨性别群体的伤痛需要社会合力抚平](https://moment.rednet.cn/pc/content/2021/11/06/10370904.html)
 [^11]: [国家卫生健康委办公厅关于印发国家限制类技术目录和临床应用管理规范（2022 年版）的通知](https://www.nhc.gov.cn/yzygj/c100068/202204/2655831f6f444b00b3e50604e67531f5.shtml)
+[^12]: [Gender incongruence and transgender health in the ICD](https://www.who.int/standards/classifications/frequently-asked-questions/gender-incongruence-and-transgender-health-in-the-icd)
