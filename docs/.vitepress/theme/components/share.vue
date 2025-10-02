@@ -29,7 +29,7 @@ function copyShareLink() {
 
 <template>
   <div class="unocss-scope" style="display: flex; align-items: center; justify-content: center;">
-    <button h-full ws-nowrap px3 text-sm font-medium text="$vp-c-text-1" :class="[
+    <button h-full ws-nowrap px3 text-sm font-semibold text="$vp-c-text-1" :class="[
       shareSuccess ? '!text-green-400' : '',
       shareLink ? 'hover:sm:text-$vp-c-brand' : '!cursor-wait',
     ]" :disabled="(!isMounted || !shareLink || shareSuccess)" @click="copyShareLink()">
