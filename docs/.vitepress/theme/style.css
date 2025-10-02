@@ -80,3 +80,8 @@
     overflow: hidden !important;
   }
 }
+
+.VPDocFooter a.pager-link,
+.VPLocalNavOutlineDropdown > div.items {
+  border-radius: 12px;
+}
