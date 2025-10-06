@@ -86,10 +86,10 @@
   border-radius: 12px;
 }
 
-:root:where(:lang(zh)) {
+/* :root:where(:lang(zh)) {
     --vp-font-family-base: "Inter", sans-serif !important;
-}
+} */
 
 body {
-  font-synthesis: initial !important;
+  font-synthesis: initial;
 }
