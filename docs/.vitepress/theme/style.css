@@ -87,9 +87,9 @@
 }
 
 :root:where(:lang(zh)) {
-    --vp-font-family-base: "Inter", sans-serif;
+    --vp-font-family-base: "Inter", sans-serif !important;
 }
 
 body {
-  font-synthesis: initial;
+  font-synthesis: initial !important;
 }
