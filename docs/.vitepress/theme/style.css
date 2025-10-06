@@ -85,3 +85,11 @@
 .VPLocalNavOutlineDropdown > div.items {
   border-radius: 12px;
 }
+
+:root:where(:lang(zh)) {
+    --vp-font-family-base: "Inter", sans-serif;
+}
+
+body {
+  font-synthesis: initial;
+}
