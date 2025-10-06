@@ -82,6 +82,7 @@
 }
 
 .VPDocFooter a.pager-link,
-.VPLocalNavOutlineDropdown > div.items {
+.VPLocalNavOutlineDropdown > div.items,
+.custom-block {
   border-radius: 12px;
 }
