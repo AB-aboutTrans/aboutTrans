@@ -83,8 +83,6 @@
 
 .VPDocFooter a.pager-link,
 .VPLocalNavOutlineDropdown > div.items,
-.custom-block,
-.DocSearch-Modal,
-.DocSearch-Footer {
+.custom-block {
   border-radius: 12px;
 }
