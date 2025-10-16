@@ -1,7 +1,10 @@
 ---
+sidebar: false
+aside: false
+outline: false
 next: false
-lastUpdated: false
 editLink: false
+lastUpdated: false
 ---
 
 # 关于我们
