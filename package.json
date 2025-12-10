@@ -6,7 +6,7 @@
     "@unocss/preset-icons": "^66.1.0-beta.11",
     "@unocss/preset-mini": "^66.4.2",
     "unocss": "^66.1.0-beta.11",
-    "vitepress": "^2.0.0-alpha.12"
+    "vitepress": "^2.0.0-alpha.15"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
