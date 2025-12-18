@@ -11,20 +11,12 @@ const injectButtonToH2 = (h2: HTMLHeadingElement) => {
   if (h2.classList.contains('share-btn-processed')) return
   h2.classList.add('share-btn-processed')
 
-  // Find the end of the section (before next header)
-  let lastElement: Element = h2
-  let next = h2.nextElementSibling
-  while (next && !['H1', 'H2', 'H3', 'H4', 'H5', 'H6'].includes(next.tagName)) {
-    lastElement = next
-    next = next.nextElementSibling
-  }
-
   const container = document.createElement('div')
   container.className = 'share-btn-container'
   // Style is now handled in CSS or here
-  // container.style.display = 'flex'
-  // container.style.justifyContent = 'flex-end'
-  // container.style.marginTop = '10px'
+  container.style.display = 'flex'
+  container.style.justifyContent = 'flex-start'
+  container.style.marginTop = '10px'
 
   const btn = document.createElement('span')
   btn.className = 'share-btn-injected'
@@ -44,7 +36,9 @@ const injectButtonToH2 = (h2: HTMLHeadingElement) => {
     // Grab up to 2 blocks or until next header
     while (next && !['H1', 'H2', 'H3', 'H4', 'H5', 'H6'].includes(next.tagName) && count < 2) {
       // Capture content from valid content elements
-      if (!['SCRIPT', 'STYLE', 'LINK', 'TEMPLATE'].includes(next.tagName) && !next.classList.contains('share-btn-container')) {
+      if (!['SCRIPT', 'STYLE', 'LINK', 'TEMPLATE'].includes(next.tagName) && 
+          !next.classList.contains('share-btn-container') && 
+          !next.classList.contains('custom-block')) {
         let innerHTML = (next as HTMLElement).innerHTML
         
         // Remove footnote references
@@ -70,11 +64,11 @@ const injectButtonToH2 = (h2: HTMLHeadingElement) => {
   
   container.appendChild(btn)
   
-  // Insert container after the last element of the section
-  if (lastElement.nextSibling) {
-    lastElement.parentNode?.insertBefore(container, lastElement.nextSibling)
+  // Insert container after the h2
+  if (h2.nextSibling) {
+    h2.parentNode?.insertBefore(container, h2.nextSibling)
   } else {
-    lastElement.parentNode?.appendChild(container)
+    h2.parentNode?.appendChild(container)
   }
 }
 
