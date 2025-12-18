@@ -78,9 +78,9 @@ const members = [
     title: '内容贡献',
   },
   {
-    avatar: 'https://github.com/github.png',
-    name: '匿名小伙伴',
-    title: '内容贡献',
+    avatar: 'https://github.com/dongguacute.png',
+    name: '冬瓜',
+    title: '技术支持',
   }
 ]
 </script>
