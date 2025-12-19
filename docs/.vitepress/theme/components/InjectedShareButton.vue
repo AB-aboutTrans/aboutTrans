@@ -60,12 +60,6 @@ function handleClick() {
   transition: all 0.2s;
 }
 
-:global(.dark) .share-button {
-  background: var(--vp-c-bg-soft);
-  border: 1px solid var(--vp-c-divider);
-  color: var(--vp-c-text-2);
-}
-
 .share-button:hover {
   border-color: var(--vp-c-brand);
   color: var(--vp-c-brand);
