@@ -1,11 +1,17 @@
 import { reactive } from 'vue'
 
+export interface ShareTag {
+  text: string
+  type: string
+}
+
 interface ShareState {
   isOpen: boolean
   title: string
   content: string
   url: string
   note?: string
+  tags?: ShareTag[]
 }
 
 export const shareState = reactive<ShareState>({
@@ -13,14 +19,16 @@ export const shareState = reactive<ShareState>({
   title: '',
   content: '',
   url: '',
-  note: ''
+  note: '',
+  tags: []
 })
 
-export function openShare(title: string, content: string, url: string, note: string = '') {
+export function openShare(title: string, content: string, url: string, note: string = '', tags: ShareTag[] = []) {
   shareState.title = title
   shareState.content = content
   shareState.url = url
   shareState.note = note
+  shareState.tags = tags
   shareState.isOpen = true
 }
 

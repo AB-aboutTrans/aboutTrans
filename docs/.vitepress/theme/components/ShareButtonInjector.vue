@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, watch, createApp, type App } from 'vue'
-import { useRoute } from 'vitepress'
-import { openShare } from './shareState'
+import { useRoute, useData } from 'vitepress'
+import { openShare, type ShareTag } from './shareState'
 import InjectedShareButton from './InjectedShareButton.vue'
 
 const route = useRoute()
+const { frontmatter } = useData()
 let observer: MutationObserver | null = null
 let bodyObserver: MutationObserver | null = null
 // Track mounted app instances to properly unmount them later
@@ -30,7 +31,19 @@ const injectButtonToH2 = (h2: HTMLHeadingElement) => {
   const handleShare = () => {
     // Clone and remove children to get text only
     const clone = h2.cloneNode(true) as HTMLElement
-    const childBtns = clone.querySelectorAll('.share-btn-injected, .header-anchor')
+    
+    // Extract badges
+    const badges: ShareTag[] = Array.from(clone.querySelectorAll('.VPBadge')).map(el => {
+      const text = el.textContent?.trim() || ''
+      let type = 'info'
+      if (el.classList.contains('tip')) type = 'tip'
+      else if (el.classList.contains('warning')) type = 'warning'
+      else if (el.classList.contains('danger')) type = 'danger'
+      return { text, type }
+    }).filter(b => b.text)
+    
+    // Remove injected buttons, anchors, and badges from title
+    const childBtns = clone.querySelectorAll('.share-btn-injected, .header-anchor, .VPBadge')
     childBtns.forEach(el => el.remove())
     const title = clone.innerText.trim()
     
@@ -60,7 +73,10 @@ const injectButtonToH2 = (h2: HTMLHeadingElement) => {
     
     const url = window.location.origin + window.location.pathname + '#' + h2.id
     
-    openShare(title, content, url)
+    // Combine frontmatter tags and inline badges
+    const frontmatterTags = (frontmatter.value.tags || []).map((t: string) => ({ text: t, type: 'info' }))
+    const tags = [...frontmatterTags, ...badges]
+    openShare(title, content, url, '', tags)
   }
 
   // Mount the Share Button Component

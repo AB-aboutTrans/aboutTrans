@@ -78,7 +78,12 @@ onUnmounted(() => {
         <div ref="cardRef" class="share-card">
           <!-- Main Content -->
           <div class="card-content">
-            <h2 class="card-title">{{ shareState.title }}</h2>
+            <h2 class="card-title">
+              {{ shareState.title }}
+              <div class="card-tags" v-if="shareState.tags && shareState.tags.length">
+                <span v-for="tag in shareState.tags" :key="tag.text" class="tag" :class="tag.type">{{ tag.text }}</span>
+              </div>
+            </h2>
             <div class="card-url">{{ shareState.url }}</div>
             
             <div class="card-body vp-doc" v-html="shareState.content"></div>
@@ -169,6 +174,46 @@ onUnmounted(() => {
   line-height: 1.3;
   margin: 0 0 10px 0;
   color: var(--vp-c-text-1);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-tags {
+  display: inline-flex;
+  gap: 6px;
+  vertical-align: middle;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+  line-height: 18px;
+  display: inline-block;
+  transform: translateY(-1px);
+}
+
+.tag.tip {
+  color: var(--vp-c-brand-1);
+  background-color: var(--vp-c-brand-soft);
+}
+
+.tag.warning {
+  color: var(--vp-c-yellow-1);
+  background-color: var(--vp-c-yellow-soft);
+}
+
+.tag.danger {
+  color: var(--vp-c-red-1);
+  background-color: var(--vp-c-red-soft);
+}
+
+.tag.info {
+  color: var(--vp-c-text-2);
+  background-color: var(--vp-c-bg-soft);
 }
 
 .card-url {
