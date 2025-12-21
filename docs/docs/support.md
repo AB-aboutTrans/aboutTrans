@@ -48,7 +48,7 @@
 
 2022 年，发布《国家卫生健康委办公厅关于印发国家限制类技术目录和临床应用管理规范（2022 年版）的通知》（国卫办医发〔2022〕6 号）[^13]，其中最新修订的《G05 性别重置技术临床应用管理规范》与旧版相比主要作出了如下进步：
 
-* 在诊断证明方面，进一步规范医师资质，将“易性病”表述调整为不含疾病表述的“易性症”，同时增加了对“性别焦虑 / 性别不一致”诊断同等效力的认可，进一步符合世界卫生组织《国际疾病分类》第十一版（ICD-11）等国际规范的相关要求。
+* 在诊断证明方面，进一步规范医师资质，将原有对跨性别对表述“易性病”调整为不含疾病表述的“易性症”，同时增加了对“性别焦虑 / 性别不一致”诊断同等效力的认可，进一步符合世界卫生组织《国际疾病分类》第十一版（ICD-11）等国际规范的相关要求。
 
 * 取消对本人要求手术的书面报告的公证要求，仅需本人签字即可，从而减少了手术的前置成本与流程。
 
@@ -77,4 +77,4 @@
 [^11]: [中国跨性别群体生存现状调查报告圆满发布](https://mp.weixin.qq.com/s/3GUBJlaRJjnbeMfp4RUL-g)
 [^12]: [国内大样本量《2021 全国跨性别健康调研报告》正式发布](https://mp.weixin.qq.com/s/HSFpurun7c2UBqXBBbYIiQ)
 [^13]: [国家卫生健康委办公厅关于印发国家限制类技术目录和临床应用管理规范（2022 年版）的通知](https://www.nhc.gov.cn/yzygj/c100068/202204/2655831f6f444b00b3e50604e67531f5.shtml)
-[^14]: [Gender incongruence and transgender health in the ICD](https://www.who.int/standards/classifications/frequently-asked-questions/gender-incongruence-and-transgender-health-in-the-icd)
+[^14]: [国际疾病分类中的性别不一致和跨性别健康（英文）](https://www.who.int/standards/classifications/frequently-asked-questions/gender-incongruence-and-transgender-health-in-the-icd)
