@@ -56,5 +56,6 @@ function copyShareLink() {
 span.i-octicon\:share-16,
 span.i-octicon\:checkbox-16 {
   mask-size: contain;
+  margin-inline-end: 4px;
 }
 </style>
