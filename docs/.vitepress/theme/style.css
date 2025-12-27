@@ -87,3 +87,7 @@
 .custom-block {
   border-radius: 12px;
 }
+
+.header-anchor {
+  opacity: 0 !important;
+}
