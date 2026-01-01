@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useClipboard } from '@vueuse/core'
-import { ref, watch, onMounted } from 'vue'
+import { ref, watch, onMounted, computed } from 'vue'
 import { useRoute } from 'vitepress'
 
 const route = useRoute()
@@ -25,6 +25,10 @@ const { copy, copied: shareSuccess } = useClipboard()
 function copyShareLink() {
   copy(shareLink.value)
 }
+
+function getIsDisabled() {
+  return !isMounted.value || !shareLink.value || shareSuccess.value
+}
 </script>
 
 <template>
@@ -32,7 +36,7 @@ function copyShareLink() {
     <button h-full ws-nowrap px3 text-sm font-semibold text="$vp-c-text-1" :class="[
       shareSuccess ? '!text-green-400' : '',
       shareLink ? 'hover:sm:text-$vp-c-brand' : '!cursor-wait',
-    ]" :disabled="(!isMounted || !shareLink || shareSuccess)" @click="copyShareLink()">
+    ]" :disabled="getIsDisabled()" @click="copyShareLink()">
       <Transition mode="out-in" enter-active-class="transition-all duration-250 ease-out"
         leave-active-class="transition-all duration-250 ease-out"
         enter-from-class="transform translate-y-30px opacity-0" leave-to-class="transform translate-y--30px opacity-0"

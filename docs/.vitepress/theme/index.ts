@@ -3,7 +3,7 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import 'virtual:uno.css'
 import { h } from 'vue'
-import Share from './components/share.vue'
+import { Share, SharePopup, ShareButtonInjector, registerComponents } from './components'
 import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
 
 const ExtendedTheme: Theme = {
@@ -11,11 +11,15 @@ const ExtendedTheme: Theme = {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       'nav-bar-content-after': () => h(Share),
+      'layout-bottom': () => [
+        h(SharePopup),
+        h(ShareButtonInjector)
+      ]
     })
   },
   enhanceApp(ctx) {
     const { app } = ctx
-    app.component('Share', Share)
+    registerComponents(app)
   }
 }
 
