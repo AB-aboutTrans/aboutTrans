@@ -131,21 +131,12 @@ export default defineConfig({
                   preToolCallText: '搜索中...',
                   duringToolCallText: '搜索 ',
                   afterToolCallText: '已搜索',
-                  aggregatedToolCallNode: undefined,
-                  aggregatedToolCallText: undefined,
-                  stoppedStreamingText: '已停止本次回答',
-                  aggregatedToolCallText: ((queries: string[]) => ({
-                    before: '已搜索 ',
-                    separator: '、',
-                    lastSeparator: ' 和 ',
-                    after: ''
-                  })) as unknown as string,
                 },
                 footer: {
                   selectText: '选择',
                   submitQuestionText: '提交问题',
                   selectKeyAriaLabel: '回车键',
-                  navigateText: '导航',
+                  navigateText: '切换',
                   navigateUpKeyAriaLabel: '向上箭头',
                   navigateDownKeyAriaLabel: '向下箭头',
                   closeText: '关闭',
