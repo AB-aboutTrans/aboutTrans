@@ -27,7 +27,8 @@
 .DocSearch-NoResults-Prefill-List-Items p,
 .DocSearch-AskAiScreen-RelatedSources,
 .DocSearch-AskAiScreen-Answer-Footer,
-.DocSearch-StreamingIndicator {
+.DocSearch-StreamingIndicator,
+.vp-doc .header-anchor:before  {
   display: none !important;
 }
 
