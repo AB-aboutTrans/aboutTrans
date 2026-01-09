@@ -22,14 +22,14 @@
   border-color: var(--vp-c-divider) !important;
 }
 
-.DocSearch-Button-Keys,
+/* .DocSearch-Button-Keys,
 .DocSearch-Help,
 .DocSearch-NoResults-Prefill-List-Items p,
 .DocSearch-AskAiScreen-RelatedSources,
 .DocSearch-AskAiScreen-Answer-Footer,
 .DocSearch-StreamingIndicator {
   display: none !important;
-}
+} */
 
 .DocSearch-Input,
 .DocSearch-Clear,
