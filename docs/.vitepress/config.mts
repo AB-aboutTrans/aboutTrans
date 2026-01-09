@@ -136,7 +136,7 @@ export default defineConfig({
                   selectText: '选择',
                   submitQuestionText: '提交问题',
                   selectKeyAriaLabel: '回车键',
-                  navigateText: '切换',
+                  navigateText: '导航',
                   navigateUpKeyAriaLabel: '向上箭头',
                   navigateDownKeyAriaLabel: '向下箭头',
                   closeText: '关闭',
