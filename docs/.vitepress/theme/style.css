@@ -76,7 +76,12 @@
   height: unset !important;
 }
 
-.footnotes {
+.DocSearch-AskAiScreen-Disclaimer {
+  margin: -5 0 0 5px, !important;
+}
+
+.footnotes,
+.DocSearch-AskAiScreen-Disclaimer {
   font-size: 14px !important;
 }
 
