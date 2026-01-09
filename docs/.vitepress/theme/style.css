@@ -38,7 +38,8 @@
 .DocSearch-Input,
 .DocSearch-Clear,
 .DocSearch-AskAiScreen-Disclaimer,
-.DocSearch-Title {
+.DocSearch-Title,
+.DocSearch-Modal-heading.shimmer {
   font-weight: 400 !important;
 }
 
@@ -83,6 +84,11 @@
 .footnotes,
 .DocSearch-AskAiScreen-Disclaimer {
   font-size: 14px !important;
+}
+
+.DocSearch-Action.DocSearch-Close,
+.DocSearch-Action.DocSearch-AskAi-Return {
+  background-color: transparent !important;
 }
 
 @media (max-width: 768px) {
