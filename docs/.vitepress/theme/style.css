@@ -31,7 +31,8 @@
 .DocSearch-Menu-trigger.DocSearch-Action,
 .DocSearch-Action.DocSearch-StopStreaming,
 .DocSearch-Divider,
-.DocSearch-AskAiScreen-MessageContent-Tool.Tool--Result {
+.DocSearch-AskAiScreen-MessageContent-Tool.Tool--Result,
+.vp-doc.header-anchor:before {
   display: none !important;
 }
 
