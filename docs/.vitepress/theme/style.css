@@ -27,7 +27,10 @@
 .DocSearch-NoResults-Prefill-List-Items p,
 .DocSearch-AskAiScreen-RelatedSources,
 .DocSearch-AskAiScreen-Answer-Footer,
-.DocSearch-StreamingIndicator {
+.DocSearch-StreamingIndicator,
+.DocSearch-Menu-trigger.DocSearch-Action,
+.DocSearch-Action.DocSearch-StopStreaming,
+.DocSearch-Divider {
   display: none !important;
 }
 
