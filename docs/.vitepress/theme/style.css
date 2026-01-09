@@ -32,7 +32,7 @@
 .DocSearch-Action.DocSearch-StopStreaming,
 .DocSearch-Divider,
 .DocSearch-AskAiScreen-MessageContent-Tool.Tool--Result,
-.vp-doc.header-anchor:before {
+.vp-doc .header-anchor:before {
   display: none !important;
 }
 
