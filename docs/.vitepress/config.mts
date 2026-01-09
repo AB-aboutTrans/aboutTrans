@@ -115,7 +115,7 @@ export default defineConfig({
                   helpText: '请检查网络连接',
                 },
                 noResultsScreen: {
-                  noResultsText: '无法找到相关结果',
+                  noResultsText: '没有找到相关结果',
                   suggestedQueryText: '你可以尝试查询',
                   reportMissingResultsText: '你认为该查询应该有结果？',
                   reportMissingResultsLinkText: '点击反馈',
@@ -142,7 +142,7 @@ export default defineConfig({
                   closeText: '关闭',
                   backToSearchText: '返回搜索',
                   closeKeyAriaLabel: 'Esc 键',
-                  poweredByText: '搜索提供者',
+                  poweredByText: '搜索提供',
                 }
               }
             }
