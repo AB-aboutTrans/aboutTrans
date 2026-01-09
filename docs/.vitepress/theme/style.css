@@ -30,7 +30,8 @@
 .DocSearch-StreamingIndicator,
 .DocSearch-Menu-trigger.DocSearch-Action,
 .DocSearch-Action.DocSearch-StopStreaming,
-.DocSearch-Divider {
+.DocSearch-Divider,
+.DocSearch-AskAiScreen-MessageContent-Tool.Tool--Result {
   display: none !important;
 }
 
