@@ -99,12 +99,6 @@ export default defineConfig({
                   enterKeyHint: '搜索内容',
                   enterKeyHintAskAi: '向 AI 提问',
                   searchInputLabel: '搜索内容',
-                  backToKeywordSearchButtonText: '返回关键词搜索',
-                  backToKeywordSearchButtonAriaLabel: '返回关键词搜索',
-                  newConversationPlaceholder: 'Ask a question',
-                  conversationHistoryTitle: '我的对话历史',
-                  startNewConversationText: '开始新的对话',
-                  viewConversationHistoryText: '对话历史',
                 },
                 startScreen: {
                   recentSearchesTitle: '搜索历史',
@@ -134,8 +128,6 @@ export default defineConfig({
                   disclaimerText: '结果由 AI 生成，请注意核查。',
                   relatedSourcesText: '相关来源',
                   thinkingText: '思考中...',
-                  copyButtonText: '复制',
-                  copyButtonCopiedText: '已复制',
                   preToolCallText: '搜索中...',
                   duringToolCallText: '搜索 ',
                   afterToolCallText: '已搜索',
@@ -160,10 +152,6 @@ export default defineConfig({
                   backToSearchText: '返回搜索',
                   closeKeyAriaLabel: 'Esc 键',
                   poweredByText: '搜索提供者',
-                },
-                newConversation: {
-                  newConversationTitle: '我可以如何帮助你？',
-                  newConversationDescription: '我可以帮你快速搜索、总结这个网站文档中的内容，或者回答你关于跨性别相关的其他问题。',
                 }
               }
             }
