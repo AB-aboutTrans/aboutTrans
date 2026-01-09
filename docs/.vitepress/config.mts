@@ -85,7 +85,7 @@ export default defineConfig({
             translations: {
               button: { 
                 buttonText: '搜索内容', 
-                buttonAriaLabel: '搜索内容' 
+                buttonAriaLabel: '搜索内容',
               },
               modal: {
                 searchBox: {
@@ -95,10 +95,16 @@ export default defineConfig({
                   closeButtonAriaLabel: '关闭',
                   placeholderText: '搜索内容或向 AI 提问',
                   placeholderTextAskAi: '向 AI 提问',
-                  placeholderTextAskAiStreaming: '思考中...',
-                  searchInputLabel: '搜索',
-                  backToKeywordSearchButtonText: '返回关键字搜索',
-                  backToKeywordSearchButtonAriaLabel: '返回关键字搜索'
+                  placeholderTextAskAiStreaming: '回答中...',
+                  enterKeyHint: '搜索内容',
+                  enterKeyHintAskAi: '向 AI 提问',
+                  searchInputLabel: '搜索内容',
+                  backToKeywordSearchButtonText: '返回关键词搜索',
+                  backToKeywordSearchButtonAriaLabel: '返回关键词搜索',
+                  newConversationPlaceholder: 'Ask a question',
+                  conversationHistoryTitle: '我的对话历史',
+                  startNewConversationText: '开始新的对话',
+                  viewConversationHistoryText: '对话历史',
                 },
                 startScreen: {
                   recentSearchesTitle: '搜索历史',
@@ -108,34 +114,34 @@ export default defineConfig({
                   favoriteSearchesTitle: '收藏',
                   removeFavoriteSearchButtonTitle: '从收藏中移除',
                   recentConversationsTitle: '最近的对话',
-                  removeRecentConversationButtonTitle: '从历史记录中删除对话'
+                  removeRecentConversationButtonTitle: '从历史记录中删除对话',
                 },
                 errorScreen: {
                   titleText: '无法获取结果',
-                  helpText: '请检查网络连接'
+                  helpText: '请检查网络连接',
                 },
                 noResultsScreen: {
                   noResultsText: '无法找到相关结果',
-                  suggestedQueryText: '您可以尝试查询',
-                  reportMissingResultsText: '您认为该查询应该有结果？',
-                  reportMissingResultsLinkText: '点击反馈'
+                  suggestedQueryText: '你可以尝试查询',
+                  reportMissingResultsText: '你认为该查询应该有结果？',
+                  reportMissingResultsLinkText: '点击反馈',
                 },
                 resultsScreen: { 
-                  askAiPlaceholder: '向 AI 提问' 
+                  askAiPlaceholder: '向 AI 提问',
+                  noResultsAskAiPlaceholder: '没有在文档中找到？试试向 AI 提问吧！',
                 },
                 askAiScreen: {
                   disclaimerText: '结果由 AI 生成，请注意核查。',
                   relatedSourcesText: '相关来源',
                   thinkingText: '思考中...',
                   copyButtonText: '复制',
-                  copyButtonCopiedText: '已复制！',
-                  copyButtonTitle: '复制',
-                  likeButtonTitle: '赞',
-                  dislikeButtonTitle: '踩',
-                  thanksForFeedbackText: '感谢反馈！',
+                  copyButtonCopiedText: '已复制',
                   preToolCallText: '搜索中...',
                   duringToolCallText: '搜索 ',
                   afterToolCallText: '已搜索',
+                  aggregatedToolCallNode: undefined,
+                  aggregatedToolCallText: undefined,
+                  stoppedStreamingText: '已停止本次回答',
                   aggregatedToolCallText: ((queries: string[]) => ({
                     before: '已搜索 ',
                     separator: '、',
@@ -144,16 +150,20 @@ export default defineConfig({
                   })) as unknown as string,
                 },
                 footer: {
-                  selectText: '查看',
+                  selectText: '选择',
                   submitQuestionText: '提交问题',
-                  selectKeyAriaLabel: 'Enter 键',
-                  navigateText: '选择',
+                  selectKeyAriaLabel: '回车键',
+                  navigateText: '导航',
                   navigateUpKeyAriaLabel: '向上箭头',
                   navigateDownKeyAriaLabel: '向下箭头',
                   closeText: '关闭',
                   backToSearchText: '返回搜索',
                   closeKeyAriaLabel: 'Esc 键',
-                  poweredByText: '搜索提供者'
+                  poweredByText: '搜索提供者',
+                },
+                newConversation: {
+                  newConversationTitle: '我可以如何帮助你？',
+                  newConversationDescription: '我可以帮你快速搜索、总结这个网站文档中的内容，或者回答你关于跨性别相关的其他问题。',
                 }
               }
             }
