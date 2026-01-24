@@ -37,7 +37,7 @@ export default defineConfig({
     logo: '/favicon.svg',
     sidebarMenuLabel: '目录',
     darkModeSwitchLabel: '深色模式',
-    outlineTitle: '在当前页面中',
+    outlineTitle: '当前页面内容',
     returnToTopLabel: '回到顶部',
     lastUpdated: {
       text: '当前页面最后更新于',
