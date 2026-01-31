@@ -14,11 +14,11 @@
 
 ## 跨性别女性
 
-跨性别女性（Transgender female），也称男跨女（Male to Female，简写为 MTF），指出生指派性别为男性且性别认同为女性的女性个体。
+跨性别女性（Transgender female），也称跨女，指出生指派性别为男性且性别认同为女性的女性个体。
 
 ## 跨性别男性
 
-跨性别男性（Transgender male），也称女跨男（Female to Male，简写为 FTM），指出生指派性别为女性且性别认同为男性的男性个体。
+跨性别男性（Transgender male），也称跨男，指出生指派性别为女性且性别认同为男性的男性个体。
 
 ## 非二元性别
 
