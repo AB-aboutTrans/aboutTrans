@@ -99,6 +99,8 @@ export default defineConfig({
                   enterKeyHint: '搜索内容',
                   enterKeyHintAskAi: '向 AI 提问',
                   searchInputLabel: '搜索内容',
+                  backToKeywordSearchButtonText: '返回关键词搜索',
+                  backToKeywordSearchButtonAriaLabel: '返回关键词搜索',
                 },
                 startScreen: {
                   recentSearchesTitle: '搜索历史',
