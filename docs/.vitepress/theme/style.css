@@ -10,6 +10,20 @@
   --vp-button-brand-active-bg: var(--vp-c-brand-2);
 }
 
+.VPContent > .VPDoc {
+  padding-top: 48px !important;
+}
+
+.VPHomeHero .image-src {
+  height: unset !important;
+}
+
+@media (max-width: 768px) {
+  header > div > div.wrapper > div > div.content {
+    overflow: hidden !important;
+  }
+}
+
 .VPFeature,
 .VPSwitch,
 .DocSearch-Button,
@@ -20,6 +34,16 @@
 .pager-link,
 .search-bar:focus-within {
   border-color: var(--vp-c-divider) !important;
+}
+
+.VPDocFooter a.pager-link,
+.VPLocalNavOutlineDropdown > div.items,
+.custom-block {
+  border-radius: 12px;
+}
+
+.dark .VPHome .VPFeature {
+  background-color: rgba(37, 37, 41, 0.5);
 }
 
 .DocSearch-Button-Keys,
@@ -52,6 +76,15 @@
   line-height: 28px !important;
 }
 
+.DocSearch-AskAiScreen-Disclaimer {
+  margin: -5px 0 0 5px !important;
+}
+
+.footnotes,
+.DocSearch-AskAiScreen-Disclaimer {
+  font-size: 14px !important;
+}
+
 .DocSearch-Input {
   padding-block-start: unset !important;
 }
@@ -65,36 +98,7 @@
   stroke-width: 2 !important;
 }
 
-.VPContent > .VPDoc {
-  padding-top: 48px !important;
-}
-
-.VPHomeHero .image-src {
-  height: unset !important;
-}
-
-.DocSearch-AskAiScreen-Disclaimer {
-  margin: -5px 0 0 5px !important;
-}
-
-.footnotes,
-.DocSearch-AskAiScreen-Disclaimer {
-  font-size: 14px !important;
-}
-
 .DocSearch-Action.DocSearch-Close,
 .DocSearch-Action.DocSearch-AskAi-Return {
   background-color: transparent !important;
-}
-
-@media (max-width: 768px) {
-  header > div > div.wrapper > div > div.content {
-    overflow: hidden !important;
-  }
-}
-
-.VPDocFooter a.pager-link,
-.VPLocalNavOutlineDropdown > div.items,
-.custom-block {
-  border-radius: 12px;
 }
