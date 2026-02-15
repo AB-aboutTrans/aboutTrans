@@ -36,7 +36,10 @@ export default defineConfig({
   themeConfig: {
     logo: '/favicon.svg',
     sidebarMenuLabel: '目录',
-    darkModeSwitchLabel: '深色模式',
+    darkModeSwitchLabel: '外观',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
+    skipToContentLabel: '跳转到内容',
     outlineTitle: '当前页面内容',
     returnToTopLabel: '回到顶部',
     lastUpdated: {
