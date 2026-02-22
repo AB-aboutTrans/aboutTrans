@@ -36,11 +36,11 @@
   border-color: var(--vp-c-divider) !important;
 }
 
-.VPDocFooter a.pager-link,
+/* .VPDocFooter a.pager-link,
 .VPLocalNavOutlineDropdown > div.items,
 .custom-block {
   border-radius: 12px;
-}
+} */
 
 .dark .VPHome .VPFeature {
   background-color: rgba(37, 37, 41, 0.5);
