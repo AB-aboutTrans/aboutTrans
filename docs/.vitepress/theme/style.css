@@ -10,24 +10,36 @@
   --vp-button-brand-active-bg: var(--vp-c-brand-2);
 }
 
-.VPContent > .VPDoc {
-  padding-top: 48px !important;
+.DocSearch-Action[title="Conversation history"],
+.DocSearch-Action[title="Start a new conversation"],
+.DocSearch-Action.DocSearch-StopStreaming,
+.DocSearch-AskAiScreen-Answer-Footer,
+.DocSearch-AskAiScreen-MessageContent-Tool.Tool--Result,
+.DocSearch-AskAiScreen-RelatedSources,
+.DocSearch-Button-Keys,
+.DocSearch-Divider,
+.DocSearch-Help,
+.DocSearch-Menu-trigger.DocSearch-Action,
+.DocSearch-NoResults-Prefill-List-Items p,
+.DocSearch-Sidepanel-Screen--introduction,
+.DocSearch-StreamingIndicator,
+.vp-doc .header-anchor:before {
+  display: none !important;
 }
 
-.VPHomeHero .image-src {
-  height: unset !important;
+.DocSearch-Action.DocSearch-AskAi-Return,
+.DocSearch-Action.DocSearch-Close,
+.DocSearch-Action.DocSearch-Sidepanel-Action-close,
+.DocSearch-Action.DocSearch-Sidepanel-Action-expand,
+.DocSearch-Sidepanel-Prompt--submit,
+.VPNavBarAskAiButton {
+  background-color: transparent !important;
 }
 
-@media (max-width: 768px) {
-  header > div > div.wrapper > div > div.content {
-    overflow: hidden !important;
-  }
-}
-
-.VPFeature,
-.VPSwitch,
 .DocSearch-Button,
-.link {
+.link,
+.VPFeature,
+.VPSwitch {
   border-color: transparent !important;
 }
 
@@ -36,40 +48,21 @@
   border-color: var(--vp-c-divider) !important;
 }
 
-/* .VPDocFooter a.pager-link,
-.VPLocalNavOutlineDropdown > div.items,
-.custom-block {
-  border-radius: 12px;
-} */
-
-.dark .VPHome .VPFeature {
-  background-color: rgba(37, 37, 41, 0.5);
-}
-
-.DocSearch-Button-Keys,
-.DocSearch-Help,
-.DocSearch-NoResults-Prefill-List-Items p,
-.DocSearch-AskAiScreen-RelatedSources,
-.DocSearch-AskAiScreen-Answer-Footer,
-.DocSearch-StreamingIndicator,
-.DocSearch-Menu-trigger.DocSearch-Action,
-.DocSearch-Action.DocSearch-StopStreaming,
-.DocSearch-Divider,
-.DocSearch-AskAiScreen-MessageContent-Tool.Tool--Result,
-.vp-doc .header-anchor:before {
-  display: none !important;
-}
-
-.DocSearch-Input,
-.DocSearch-Clear,
 .DocSearch-AskAiScreen-Disclaimer,
-.DocSearch-Title,
-.DocSearch-Modal-heading.shimmer {
+.DocSearch-Clear,
+.DocSearch-Input,
+.DocSearch-Modal-heading.shimmer,
+.DocSearch-Title {
   font-weight: 400 !important;
 }
 
 .DocSearch-Button-Placeholder {
   font-weight: 500 !important;
+}
+
+.DocSearch-AskAiScreen-Disclaimer,
+.footnotes {
+  font-size: 14px !important;
 }
 
 .DocSearch-AskAiScreen-Query {
@@ -80,13 +73,12 @@
   margin: -5px 0 0 5px !important;
 }
 
-.footnotes,
-.DocSearch-AskAiScreen-Disclaimer {
-  font-size: 14px !important;
-}
-
 .DocSearch-Input {
   padding-block-start: unset !important;
+}
+
+.DocSearch-Sidepanel-Prompt--submit:not([aria-disabled="true"]):hover {
+  color: #e5006a !important;
 }
 
 .DocSearch-Search-Icon {
@@ -98,7 +90,28 @@
   stroke-width: 2 !important;
 }
 
-.DocSearch-Action.DocSearch-Close,
-.DocSearch-Action.DocSearch-AskAi-Return {
-  background-color: transparent !important;
+.VPContent > .VPDoc {
+  padding-top: 48px !important;
+}
+
+.VPHomeHero .image-src {
+  height: unset !important;
+}
+
+.dark .DocSearch-Sidepanel-Content,
+.dark .profile,
+.dark .VPHome .VPFeature {
+  background-color: rgba(37, 37, 41, 0.5) !important;
+}
+
+/* .VPDocFooter a.pager-link,
+.VPLocalNavOutlineDropdown > div.items,
+.custom-block {
+  border-radius: 12px;
+} */
+
+@media (max-width: 768px) {
+  header > div > div.wrapper > div > div.content {
+    overflow: hidden !important;
+  }
 }

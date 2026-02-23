@@ -35,23 +35,6 @@ export default defineConfig({
   },
   themeConfig: {
     logo: '/favicon.svg',
-    sidebarMenuLabel: '目录',
-    darkModeSwitchLabel: '外观',
-    lightModeSwitchTitle: '切换到浅色模式',
-    darkModeSwitchTitle: '切换到深色模式',
-    skipToContentLabel: '跳转到内容',
-    outlineTitle: '当前页面内容',
-    returnToTopLabel: '回到顶部',
-    lastUpdated: {
-      text: '当前页面最后更新于',
-      formatOptions: {
-        dateStyle: 'short',
-      }
-    },
-    editLink: {
-      pattern: 'https://github.com/AB-aboutTrans/aboutTrans/edit/main/docs/:path',
-      text: '对当前页面提出修改建议',
-    },
     nav: [
       { text: '主页', link: 'index' },
       { text: '关于我们', link: 'about' },
@@ -73,21 +56,32 @@ export default defineConfig({
     search: {
       provider: 'algolia',
       options: {
-        appId: '116OHOGKSO',
-        apiKey: 'ac690e86bfae8e8965ca0eb54624758b',
-        indexName: 'index_ab_vitepress_crawls',
+        mode: 'sidePanel',
         askAi: {
-          assistantId: 'LPOC8VnwcNjG'
+          assistantId: 'LPOC8VnwcNjG',
+          appId: '116OHOGKSO',
+          apiKey: 'ac690e86bfae8e8965ca0eb54624758b',
+          indexName: 'index_ab_vitepress_crawls',
+          sidePanel: true,
         },
         searchParameters: {
-          facetFilters: []
+          facetFilters: [],
+        //   attributesToSnippet: [
+        //     "hierarchy.lvl1:15",
+        //     "hierarchy.lvl2:15",
+        //     "hierarchy.lvl3:15",
+        //     "hierarchy.lvl4:15",
+        //     "hierarchy.lvl5:15",
+        //     "hierarchy.lvl6:15",
+        //     "content:50"
+        //   ],
         },
         locales: {
           root: {
             placeholder: '搜索内容或向 AI 提问',
             translations: {
-              button: { 
-                buttonText: '搜索内容', 
+              button: {
+                buttonText: '搜索内容',
                 buttonAriaLabel: '搜索内容',
               },
               modal: {
@@ -115,17 +109,10 @@ export default defineConfig({
                   recentConversationsTitle: '最近的对话',
                   removeRecentConversationButtonTitle: '从历史记录中删除对话',
                 },
-                errorScreen: {
-                  titleText: '无法获取结果',
-                  helpText: '请检查网络连接',
+                newConversation: {
+                  newConversationTitle: '有什么想问的吗？',
                 },
-                noResultsScreen: {
-                  noResultsText: '没有找到相关结果',
-                  suggestedQueryText: '你可以尝试查询',
-                  reportMissingResultsText: '你认为该查询应该有结果？',
-                  reportMissingResultsLinkText: '点击反馈',
-                },
-                resultsScreen: { 
+                resultsScreen: {
                   askAiPlaceholder: '向 AI 提问',
                   noResultsAskAiPlaceholder: '没有在文档中找到？试试向 AI 提问吧！',
                 },
@@ -136,6 +123,19 @@ export default defineConfig({
                   preToolCallText: '搜索中...',
                   duringToolCallText: '搜索 ',
                   afterToolCallText: '已搜索',
+                  stoppedStreamingText: '你已停止此回复',
+                  errorTitleText: '聊天错误',
+                  threadDepthExceededMessage: '由于对话过长，为保持回答准确，此对话已关闭。',
+                },
+                errorScreen: {
+                  titleText: '无法获取结果',
+                  helpText: '请检查网络连接',
+                },
+                noResultsScreen: {
+                  noResultsText: '没有找到相关结果',
+                  suggestedQueryText: '你可以尝试查询',
+                  reportMissingResultsText: '你认为该查询应该有结果？',
+                  reportMissingResultsLinkText: '点击反馈',
                 },
                 footer: {
                   selectText: '选择',
@@ -148,12 +148,61 @@ export default defineConfig({
                   backToSearchText: '返回搜索',
                   closeKeyAriaLabel: 'Esc 键',
                   poweredByText: '搜索提供',
-                }
-              }
-            }
-          }
-        }
-      }
+                },
+              },
+            },
+            askAi: {
+              panel: {
+                translations: {
+                  promptForm: {
+                    promptPlaceholderText: '在这里输入问题',
+                    promptAnsweringText: '正在回答...',
+                    promptAskAnotherQuestionText: '继续向 AI 提问',
+                    promptDisclaimerText: '结果由 AI 生成，请注意核查。',
+                    promptLabelText: '按回车发送，Shift + 回车换行。',
+                    promptAriaLabelText: '问题输入框',
+                  },
+                  newConversationScreen: {
+                    titleText: '有什么想问的吗？',
+                  },
+                  conversationScreen: {
+                    preToolCallText: '搜索中...',
+                    searchingText: '搜索中...',
+                    toolCallResultText: '已搜索',
+                    conversationDisclaimer: '结果由 AI 生成，请注意核查。',
+                    reasoningText: '推理中...',
+                    thinkingText: '思考中...',
+                    relatedSourcesText: '相关来源',
+                    stoppedStreamingText: '你已停止此回复',
+                    errorTitleText: '聊天错误',
+                  },
+                  logo: {
+                    poweredByText: '搜索提供',
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    editLink: {
+      pattern: 'https://github.com/AB-aboutTrans/aboutTrans/edit/main/docs/:path',
+      text: '对当前页面提出修改建议',
+    },
+    lastUpdated: {
+      text: '当前页面最后更新于',
+      formatOptions: {
+        dateStyle: 'short',
+      },
+    },
+    docFooter: {
+      prev: '上一页',
+      next: '下一页',
+    },
+    footer: {
+      message: '本站内容基于 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh-hans">CC BY 4.0</a> 许可发布',
+      copyright: `版权所有 © 2023-${new Date().getFullYear()} AB aboutTrans`,
     },
     notFound: {
       title: '页面未找到',
@@ -161,13 +210,12 @@ export default defineConfig({
       linkLabel: '返回首页',
       linkText: '返回首页',
     },
-    footer: {
-      message: '本站内容基于 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh-hans">CC BY 4.0</a> 许可发布',
-      copyright: `版权所有 © 2023-${new Date().getFullYear()} AB aboutTrans`,
-    },
-    docFooter: {
-      prev: '上一页',
-      next: '下一页',
-    },
+    sidebarMenuLabel: '目录',
+    outlineTitle: '当前页面内容',
+    darkModeSwitchLabel: '外观',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
+    skipToContentLabel: '跳转到内容',
+    returnToTopLabel: '回到顶部',
   },
 })
