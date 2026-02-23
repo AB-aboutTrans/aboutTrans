@@ -59,7 +59,7 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: '目录',
+        text: '文档',
         items: [
           { text: '概念术语', link: '/docs/terms' },
           { text: '医疗照护', link: '/docs/medical' },
