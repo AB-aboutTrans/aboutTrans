@@ -61,12 +61,12 @@ export default defineConfig({
       {
         text: '文档',
         items: [
-          { text: '概念术语', link: '/docs/terms' },
-          { text: '医疗照护', link: '/docs/medical' },
-          { text: '政策法规', link: '/docs/policy' },
-          { text: '社会支持', link: '/docs/support' },
-          { text: '纪念活动', link: '/docs/events' },
-          { text: '议题问答', link: '/docs/faq' },
+          { text: '📑 概念术语', link: '/docs/terms' },
+          { text: '💉 医疗照护', link: '/docs/medical' },
+          { text: '📚 政策法规', link: '/docs/policy' },
+          { text: '🎗️ 社会支持', link: '/docs/support' },
+          { text: '🪅 纪念活动', link: '/docs/events' },
+          { text: '💡 议题问答', link: '/docs/faq' },
         ],
       },
     ],
