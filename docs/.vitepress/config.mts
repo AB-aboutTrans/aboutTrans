@@ -80,7 +80,16 @@ export default defineConfig({
           assistantId: 'LPOC8VnwcNjG'
         },
         searchParameters: {
-          facetFilters: []
+          facetFilters: [],
+          attributesToSnippet: [
+                "hierarchy.lvl1:15",
+                "hierarchy.lvl2:15",
+                "hierarchy.lvl3:15",
+                "hierarchy.lvl4:15",
+                "hierarchy.lvl5:15",
+                "hierarchy.lvl6:15",
+                "content:15"
+            ]
         },
         locales: {
           root: {
