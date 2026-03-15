@@ -22,6 +22,10 @@
   text-decoration: none !important;
 }
 
+a:hover {
+  opacity: 1 !important;
+}
+
 .DocSearch-Action[title="Conversation history"],
 .DocSearch-Action[title="Start a new conversation"],
 .DocSearch-Action.DocSearch-StopStreaming,
