@@ -10,6 +10,18 @@
   --vp-button-brand-active-bg: var(--vp-c-brand-2);
 }
 
+/* .DocSearch-Sidepanel-Prompt--submit:not([aria-disabled="true"]):hover {
+  color: var(--vp-c-brand) !important;
+} */
+
+.vp-doc .footnote-ref a {
+  color: var(--vp-c-brand) !important;
+}
+
+.vp-doc a {
+  text-decoration: none !important;
+}
+
 .DocSearch-Action[title="Conversation history"],
 .DocSearch-Action[title="Start a new conversation"],
 .DocSearch-Action.DocSearch-StopStreaming,
@@ -76,10 +88,6 @@
 
 .DocSearch-Input {
   padding-block-start: unset !important;
-}
-
-.DocSearch-Sidepanel-Prompt--submit:not([aria-disabled="true"]):hover {
-  color: #e5006a !important;
 }
 
 .DocSearch-Search-Icon {
