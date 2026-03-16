@@ -13,7 +13,6 @@ export default defineConfig({
   title: 'aboutTrans',
   description: '关于跨性别，你想知道的都在这里～这是一个跨性别相关知识科普站，无论是跨儿伙伴还是友跨朋友们都可以在此获取到有用的信息！',
   cleanUrls: true,
-  lastUpdated: true,
   sitemap: {
     hostname: 'https://aboutrans.info',
   },
@@ -53,7 +52,7 @@ export default defineConfig({
     skipToContentLabel: '跳转到内容',
     outlineTitle: '当前页面内容',
     returnToTopLabel: '回到顶部',
-    lastUpdated: {
+    : {
       text: '当前页面最后更新于',
       formatOptions: {
         dateStyle: 'short',
