@@ -63,8 +63,8 @@ export default defineConfig({
       text: '对当前页面提出修改建议',
     },
     nav: [
-      { text: '主页', link: '/' },
-      { text: '关于我们', link: '/about' },
+      { text: '主页', link: 'index' },
+      { text: '关于我们', link: 'about' },
       { text: '在 X 上关注', link: 'https://x.com/AB_aboutTrans' },
     ],
     sidebar: [
