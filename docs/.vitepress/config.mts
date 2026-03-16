@@ -171,7 +171,7 @@ export default defineConfig({
       linkText: '返回首页',
     },
     footer: {
-      message: '本站内容基于 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh-hans">CC BY 4.0</a> 许可发布',
+      message: '本站内容基于 CC BY 4.0 许可发布',
       copyright: `版权所有 © 2023-${new Date().getFullYear()} AB aboutTrans`,
     },
     docFooter: {
