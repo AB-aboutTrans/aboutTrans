@@ -25,7 +25,7 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: 'aboutTrans - 关于跨性别，你想知道的都在这里' }],
+    ['meta', { property: 'og:title', content: 'aboutTrans' }],
     ['meta', { property: 'og:description', content: '关于跨性别，你想知道的都在这里～这是一个跨性别相关知识科普站，无论是跨儿伙伴还是友跨朋友们都可以在此获取到有用的信息！' }],
     ['meta', { property: 'og:image', content: 'https://aboutrans.info/social.png' }],
     ['meta', { property: 'og:url', content: 'https://aboutrans.info' }],
