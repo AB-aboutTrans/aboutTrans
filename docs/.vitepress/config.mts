@@ -52,6 +52,7 @@ export default defineConfig({
     skipToContentLabel: '跳转到内容',
     outlineTitle: '当前页面内容',
     returnToTopLabel: '回到顶部',
+    lastUpdated: {
       text: '当前页面最后更新于',
       formatOptions: {
         dateStyle: 'short',
