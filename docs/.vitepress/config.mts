@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, type HeadConfig } from 'vitepress'
 import footnote from 'markdown-it-footnote'
 import UnoCSS from 'unocss/vite'
 
@@ -28,11 +28,18 @@ export default defineConfig({
     ['meta', { property: 'og:title', content: 'aboutTrans' }],
     ['meta', { property: 'og:description', content: '关于跨性别，你想知道的都在这里～这是一个跨性别相关知识科普站，无论是跨儿伙伴还是友跨朋友们都可以在此获取到有用的信息！' }],
     ['meta', { property: 'og:image', content: 'https://aboutrans.info/social.png' }],
-    ['meta', { property: 'og:url', content: 'https://aboutrans.info' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'theme-color', content: '#e5006a' }],
-    ['link', { rel: 'canonical', href: 'https://aboutrans.info' }],
   ],
+  transformHead: ({ pageData }) => {
+    const head: HeadConfig[] = []
+    const url = `https://aboutrans.info/${pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2')}`
+
+    head.push(['link', { rel: 'canonical', href: url }])
+    head.push(['meta', { property: 'og:url', content: url }])
+
+    return head
+  },
   vite: {
     plugins: [
       UnoCSS(),
