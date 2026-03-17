@@ -34,7 +34,7 @@
 
 ## 非二元性别
 
-非二元性别（Non-binary，简写为 Enby），也称 X 性别（X-gender），指性别认同不符合传统的男女二元性别的个体。非二元性别者的性别认同因人而异，一些人可能认为自己是无性别（Agender）、双性别（Bigender）、流动性别（Genderfluid）或性别酷儿（Genderqueer）。
+非二元性别（Non-binary，简写为 Enby 或 NB），也称 X 性别（X-gender），指性别认同不符合传统的男女二元性别的个体。非二元性别者的性别认同因人而异，一些人可能认为自己是无性别（Agender）、双性别（Bigender）、流动性别（Genderfluid）或性别酷儿（Genderqueer），并非所有非二元性别者都自我认同为跨性别者。
 
 ## 女性倾向跨性别者
 
