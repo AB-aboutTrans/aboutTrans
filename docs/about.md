@@ -24,64 +24,64 @@ import { VPTeamMembers } from 'vitepress/theme'
 const members = [
   {
     avatar: 'https://github.com/ChisakaKanako.png',
-    name: '千坂神奈子',
-    title: '网站运营',
+    name: 'ChisakaKanako',
+    title: 'Maintainer',
   },
   {
-    avatar: 'https://github.com/lulu0119.png',
-    name: '路路',
-    title: '技术支持',
-  },
-  {
-    avatar: 'https://github.com/Sewens.png',
-    name: '半生',
-    title: '技术支持',
-  },
-  {
-    avatar: 'https://github.com/WenQianCHM.png',
-    name: '闻千',
-    title: '内容贡献',
+    avatar: 'https://github.com/epifirumu.png',
+    name: 'Epiphyllum',
+    title: 'Maintainer',
   },
   {
     avatar: 'https://github.com/Leetfs.png',
     name: 'Lee',
-    title: '技术支持',
+    title: 'Maintainer',
   },
   {
-    avatar: 'https://github.com/HazelPenn.png',
-    name: 'HazelPenn',
-    title: '内容贡献',
+    avatar: 'https://github.com/lulu0119.png',
+    name: 'Lulu',
+    title: 'Contributor',
   },
   {
-    avatar: 'https://github.com/epifirumu.png',
-    name: '昙花',
-    title: '内容贡献与技术支持',
-  },
-  {
-    avatar: 'https://github.com/nekomeowww.png',
-    name: 'Neko Ayaka',
-    title: '技术支持',
-  },
-  {
-    avatar: 'https://github.com/sheepbox8646.png',
-    name: '小箱子Acbox',
-    title: '技术支持',
-  },
-  {
-    avatar: 'https://github.com/AnnaBeiyan.png',
-    name: 'Anna',
-    title: '内容贡献',
+    avatar: 'https://github.com/Sewens.png',
+    name: 'Lawbda',
+    title: 'Contributor',
   },
   {
     avatar: 'https://github.com/Catherina0.png',
     name: 'Catherina Grace',
-    title: '内容贡献',
+    title: 'Contributor',
+  },
+  {
+    avatar: 'https://github.com/AnnaBeiyan.png',
+    name: 'Anna',
+    title: 'Contributor',
+  },
+  {
+    avatar: 'https://github.com/WenQianCHM.png',
+    name: 'WenQianCHM',
+    title: 'Contributor',
+  },
+  {
+    avatar: 'https://github.com/HazelPenn.png',
+    name: 'HazelPenn',
+    title: 'Contributor',
+  },
+  {
+    avatar: 'https://github.com/sheepbox8646.png',
+    name: 'Acbox',
+    title: 'Contributor',
+  },
+  {
+    avatar: 'https://github.com/nekomeowww.png',
+    name: 'Neko Ayaka',
+    title: 'Contributor',
   },
   {
     avatar: 'https://github.com/dongguacute.png',
-    name: '冬瓜',
-    title: '技术支持',
-  }
+    name: 'Cherry',
+    title: 'Contributor',
+  },
 ]
 </script>
 <VPTeamMembers size="small" :members="members" />
