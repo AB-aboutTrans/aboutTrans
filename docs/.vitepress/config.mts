@@ -158,9 +158,9 @@ export default defineConfig({
                 askAiScreen: {
                   disclaimerText: '结果由 AI 生成，请注意核查。',
                   relatedSourcesText: '相关来源',
-                  thinkingText: '思考中...',
-                  preToolCallText: '搜索中...',
-                  duringToolCallText: '搜索 ',
+                  thinkingText: '请稍候...',
+                  preToolCallText: '正在搜索',
+                  duringToolCallText: '搜索中...',
                   afterToolCallText: '已搜索',
                 },
                 footer: {
