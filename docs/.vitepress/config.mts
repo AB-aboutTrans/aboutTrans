@@ -11,7 +11,7 @@ function getCurrentYear(): number {
 
 export default defineConfig({
   title: 'aboutTrans',
-  description: '关于跨性别，你想知道的都在这里～这是一个跨性别相关知识科普站，无论是跨儿伙伴还是友跨朋友们都可以在此获取到有用的信息！',
+  description: '关于跨性别，你想知道的都在这里～这是一个专注于跨性别与多元性别知识科普的公益性网站，无论是社群伙伴还是盟友朋友们都可以在此获取到有用的信息！',
   cleanUrls: true,
   sitemap: {
     hostname: 'https://aboutrans.info',
@@ -26,7 +26,7 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/favicon.svg' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'aboutTrans' }],
-    ['meta', { property: 'og:description', content: '关于跨性别，你想知道的都在这里～这是一个跨性别相关知识科普站，无论是跨儿伙伴还是友跨朋友们都可以在此获取到有用的信息！' }],
+    ['meta', { property: 'og:description', content: '关于跨性别，你想知道的都在这里～这是一个专注于跨性别与多元性别知识科普的公益性网站，无论是社群伙伴还是盟友朋友们都可以在此获取到有用的信息！' }],
     ['meta', { property: 'og:image', content: 'https://aboutrans.info/social.png' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'theme-color', content: '#e5006a' }],
