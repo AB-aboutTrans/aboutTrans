@@ -1,4 +1,6 @@
 import { defineConfig, type HeadConfig } from 'vitepress'
+import { fileURLToPath } from 'node:url'
+import path from 'node:path'
 import footnote from 'markdown-it-footnote'
 import UnoCSS from 'unocss/vite'
 
@@ -8,6 +10,57 @@ function getCurrentYear(): number {
   const currentTime = new Date(utc + (8 * 3600000))
   return currentTime.getFullYear()
 }
+
+type ThemeDefaultOverrideAliasEntry =
+  | string
+  | {
+      source: string
+      target: string
+    }
+
+/**
+ * Build aliases for `docs/.vitepress/theme/overrides/theme-default/**`.
+ *
+ * Shorthand entry (`'components/Foo.vue'`) means:
+ * - source: `./Foo.vue`
+ * - target: `components/Foo.vue`
+ *
+ * Use explicit form (`{ source, target }`) when source specifier does not
+ * match `./<basename>`.
+ */
+function createThemeDefaultOverrideAliases(
+  entries: readonly ThemeDefaultOverrideAliasEntry[]
+) {
+  const usedSources = new Set<string>()
+
+  return entries.map((entry) => {
+    const source =
+      typeof entry === 'string'
+        ? `./${path.posix.basename(entry)}`
+        : entry.source
+    const target = typeof entry === 'string' ? entry : entry.target
+
+    if (usedSources.has(source)) {
+      throw new Error(
+        `[vitepress theme overrides] duplicated source alias "${source}". ` +
+          'Use explicit { source, target } entries to disambiguate.'
+      )
+    }
+
+    usedSources.add(source)
+
+    return {
+      find: source,
+      replacement: fileURLToPath(
+        new URL(`./theme/overrides/theme-default/${target}`, import.meta.url)
+      )
+    }
+  })
+}
+
+const themeDefaultOverrideAliases = createThemeDefaultOverrideAliases([
+  'components/VPDocFooterLastUpdated.vue'
+] as const)
 
 export default defineConfig({
   title: 'aboutTrans',
@@ -41,6 +94,9 @@ export default defineConfig({
     return head
   },
   vite: {
+    resolve: {
+      alias: [...themeDefaultOverrideAliases],
+    },
     plugins: [
       UnoCSS(),
     ],
@@ -62,8 +118,11 @@ export default defineConfig({
     lastUpdated: {
       text: '当前页面最后更新于',
       formatOptions: {
-        dateStyle: 'short',
-      }
+        forceLocale: true,
+        dateStyle: 'medium'
+      },
+      // @ts-expect-error docs-only option consumed by custom theme component VPDocFooterLastUpdated.vue
+      dateTimeSpacing: true
     },
     editLink: {
       pattern: 'https://github.com/AB-aboutTrans/aboutTrans/edit/main/docs/:path',
