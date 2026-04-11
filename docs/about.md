@@ -82,6 +82,11 @@ const members = [
     name: 'Cherry',
     title: 'Contributor',
   },
+  {
+    avatar: 'https://github.com/Hsuanching318.png',
+    name: 'Louise Hu',
+    title: 'Contributor',
+  },
 ]
 </script>
 <VPTeamMembers size="small" :members="members" />
