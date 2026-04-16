@@ -38,7 +38,7 @@
 
 ## 国际跨性别追悼日
 
-国际跨性别追悼日（International Transgender Day of Remembrance，简写为 ITDOR），也称跨性别追悼日（Transgender Day of Remembrance，简写为 TDOR），和跨性别死难者纪念日，日期为每年的 11 月 20 日。这一天旨在悼念因反跨性别仇恨暴力而丧生的受害者，并提高对跨性别群体所受暴力的认知度。人们通过纪念活动呼吁社会关注跨性别者面临的暴力问题，促进对跨性别群体的尊重与理解。
+国际跨性别追悼日（International Transgender Day of Remembrance），也称跨性别追悼日（Transgender Day of Remembrance），和跨性别死难者纪念日，日期为每年的 11 月 20 日。这一天旨在悼念因反跨性别仇恨暴力而丧生的受害者，并提高对跨性别群体所受暴力的认知度。人们通过纪念活动呼吁社会关注跨性别者面临的暴力问题，促进对跨性别群体的尊重与理解。
 
 ## 国内社群的倡议
 
