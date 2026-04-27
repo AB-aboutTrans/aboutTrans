@@ -39,6 +39,7 @@ a:hover {
 .DocSearch-NoResults-Prefill-List-Items p,
 .DocSearch-Sidepanel-Screen--introduction,
 .DocSearch-StreamingIndicator,
+.DocSearch-CodeSnippet-CopyButton,
 .vp-doc .header-anchor:before {
   display: none !important;
 }
