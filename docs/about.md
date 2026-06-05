@@ -28,7 +28,7 @@ const members = [
     title: 'Maintainer',
   },
   {
-    avatar: 'https://github.com/epifirumu.png',
+    avatar: 'https://github.com/EpiphyllumMoE.png',
     name: 'Epiphyllum',
     title: 'Maintainer',
   },
