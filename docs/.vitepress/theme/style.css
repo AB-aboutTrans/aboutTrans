@@ -131,3 +131,50 @@ a:hover {
     overflow: hidden !important;
   }
 }
+
+@media not all and (max-width: 768px) {
+  .VPHome .VPHomeHero.has-image .container {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .VPHome .VPHomeHero.has-image .image {
+    order: 1 !important;
+    margin: 0 0 32px !important;
+  }
+
+  .VPHome .VPHomeHero.has-image .main {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .VPHome .VPHomeHero .image-container {
+    position: relative !important;
+    transform: none !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .VPHome .VPHomeHero .image-src {
+    position: static !important;
+    transform: none !important;
+  }
+
+  .VPHome .VPHomeHero .heading {
+    display: block !important;
+  }
+
+  .VPHome .VPHomeHero .name::after {
+    content: " ";
+  }
+
+  .VPHome .VPHomeHero .tagline {
+    margin-inline: auto !important;
+  }
+
+  .VPHome .VPHomeHero .actions {
+    justify-content: center !important;
+  }
+}
