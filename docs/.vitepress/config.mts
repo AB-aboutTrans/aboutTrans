@@ -42,6 +42,7 @@ export default defineConfig({
   vite: {
     plugins: [
       UnoCSS(),
+      { name: 'breakpoints', transform: c => c.replace(/min-width: 768/g, 'min-width: 769').replace(/max-width: 767/g, 'max-width: 768') },
     ],
   },
   markdown: {
