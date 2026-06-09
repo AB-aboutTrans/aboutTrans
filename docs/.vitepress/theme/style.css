@@ -88,11 +88,25 @@ a:hover {
 }
 
 .DocSearch-AskAiScreen-Disclaimer {
-  margin: -5px 0 0 5px !important;
+  margin: -5px 0 0 0 !important;
 }
 
-.DocSearch-Input {
-  padding-block-start: unset !important;
+.DocSearch-Hit-source,
+.DocSearch-AskAiScreen-Disclaimer {
+  padding-inline-start: var(--docsearch-spacing) !important;
+}
+
+.DocSearch-Input,
+.DocSearch-Modal-heading.shimmer {
+  padding-block: 0 !important;
+  margin-block: 0 !important;
+  line-height: 31px !important; 
+  height: 31px !important; 
+}
+
+.DocSearch-Modal-heading.shimmer {
+  display: flex !important;
+  align-items: center !important;
 }
 
 .DocSearch-Search-Icon {
