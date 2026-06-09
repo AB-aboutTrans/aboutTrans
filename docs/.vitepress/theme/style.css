@@ -120,6 +120,11 @@ a:hover {
   background-color: rgba(37, 37, 41, 0.5) !important;
 }
 
+.DocSearch-Hit a,
+.DocSearch-AskAiScreen-Response {
+  border-radius: 8px !important;
+}
+
 .VPDocFooter a.pager-link,
 .VPLocalNavOutlineDropdown > div.items,
 .custom-block {
