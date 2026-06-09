@@ -120,14 +120,15 @@ a:hover {
   background-color: rgba(37, 37, 41, 0.5) !important;
 }
 
-/* .VPDocFooter a.pager-link,
+.VPDocFooter a.pager-link,
 .VPLocalNavOutlineDropdown > div.items,
 .custom-block {
-  border-radius: 12px;
-} */
+  border-radius: 12px !important;
+}
 
-@media (max-width: 768px) {
-  header > div > div.wrapper > div > div.content {
+@media (width > 768px) {
+  .DocSearch-Modal {
+    border-radius: 12px !important;
     overflow: hidden !important;
   }
 }
