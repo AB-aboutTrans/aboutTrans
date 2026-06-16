@@ -153,13 +153,14 @@ a:hover {
   .VPHome .VPHomeHero .image-container {
     position: relative !important;
     transform: none !important;
-    width: auto !important;
+    width: 512px !important;
     height: auto !important;
   }
 
   .VPHome .VPHomeHero .image-src {
     position: static !important;
     transform: none !important;
+    margin-inline: auto !important;
   }
 
   .VPHome .VPHomeHero .heading {
