@@ -94,7 +94,8 @@ export default defineConfig({
         apiKey: 'ac690e86bfae8e8965ca0eb54624758b',
         indexName: 'index_ab_vitepress_crawls',
         askAi: {
-          assistantId: 'LPOC8VnwcNjG'
+          assistantId: 'LPOC8VnwcNjG',
+          suggestedQuestions: true,
         },
         searchParameters: {
           facetFilters: [],
