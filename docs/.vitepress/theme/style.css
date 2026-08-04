@@ -1,7 +1,7 @@
 :root {
-  --vp-c-brand-0: #e5006a;
-  --vp-c-brand-1: #e5006a;
-  --vp-c-brand-2: #e5006a;
+  --vp-c-brand-0: color(display-p3 0.898039 0.000000 0.415686 / 1.000000);
+  --vp-c-brand-1: color(display-p3 0.898039 0.000000 0.415686 / 1.000000);
+  --vp-c-brand-2: color(display-p3 0.898039 0.000000 0.415686 / 1.000000);
   --vp-button-brand-border: var(--vp-c-brand-0);
   --vp-button-brand-bg: var(--vp-c-brand-0);
   --vp-button-brand-hover-border: var(--vp-c-brand-1);
