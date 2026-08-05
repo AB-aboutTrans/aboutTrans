@@ -14,11 +14,6 @@
   color: var(--vp-c-brand) !important;
 } */
 
-.DocSearch-LoadingIndicator svg,
-.DocSearch-Logo svg {
-  overflow: visible !important;
-}
-
 .vp-doc .footnote-ref a {
   color: var(--vp-c-brand) !important;
 }
@@ -83,8 +78,7 @@ a:hover {
   font-weight: 500 !important;
 }
 
-.DocSearch-AskAiScreen-Disclaimer,
-.footnotes {
+.DocSearch-AskAiScreen-Disclaimer {
   font-size: 14px !important;
 }
 
@@ -140,19 +134,23 @@ a:hover {
 }
 
 .DocSearch-Hit a,
+.DocSearch-Hit--AskAI,
 .DocSearch-AskAiScreen-Response {
   border-radius: 8px !important;
+  corner-shape: superellipse(1.5) !important;
 }
 
 .VPDocFooter a.pager-link,
 .VPLocalNavOutlineDropdown > div.items,
 .custom-block {
   border-radius: 12px !important;
+  corner-shape: superellipse(1.5) !important;
 }
 
 @media (width > 768px) {
   .DocSearch-Modal {
     border-radius: 12px !important;
+    corner-shape: superellipse(1.5) !important;
     overflow: hidden !important;
   }
 }
