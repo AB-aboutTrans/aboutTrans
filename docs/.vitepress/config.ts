@@ -130,7 +130,7 @@ export default defineConfig({
                 startScreen: {
                   recentSearchesTitle: '搜索历史',
                   noRecentSearchesText: '没有搜索历史',
-                  saveRecentSearchButtonTitle: '保存至搜索历史',
+                  saveRecentSearchButtonTitle: '收藏',
                   removeRecentSearchButtonTitle: '从搜索历史中移除',
                   favoriteSearchesTitle: '收藏',
                   removeFavoriteSearchButtonTitle: '从收藏中移除',
