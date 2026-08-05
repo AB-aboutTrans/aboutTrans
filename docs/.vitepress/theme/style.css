@@ -2,6 +2,7 @@
   --vp-c-brand-0: color(display-p3 0.898039 0.000000 0.415686 / 1.000000);
   --vp-c-brand-1: color(display-p3 0.898039 0.000000 0.415686 / 1.000000);
   --vp-c-brand-2: color(display-p3 0.898039 0.000000 0.415686 / 1.000000);
+
   --vp-button-brand-border: var(--vp-c-brand-0);
   --vp-button-brand-bg: var(--vp-c-brand-0);
   --vp-button-brand-hover-border: var(--vp-c-brand-1);
@@ -10,20 +11,57 @@
   --vp-button-brand-active-bg: var(--vp-c-brand-2);
 }
 
-/* .DocSearch-Sidepanel-Prompt--submit:not([aria-disabled="true"]):hover {
-  color: var(--vp-c-brand) !important;
-} */
-
-.vp-doc .footnote-ref a {
-  color: var(--vp-c-brand) !important;
+*,
+*::before,
+*::after {
+  corner-shape: superellipse(1.2) !important;
 }
 
-.vp-doc a {
+:where(
+  img,
+  svg,
+  .avatar,
+  .VPSwitch,
+  .VPSwitch *,
+  .VPSwitch::before,
+  .VPSwitch::after
+) {
+  corner-shape: revert !important;
+}
+
+a {
   text-decoration: none !important;
 }
 
-a:hover {
+a:hover,
+a:active {
   opacity: 1 !important;
+}
+
+.footnote-ref a {
+  color: var(--vp-c-brand) !important;
+}
+
+.VPContent > .VPDoc {
+  padding-top: 48px !important;
+}
+
+.VPDocFooter a.pager-link,
+.VPLocalNavOutlineDropdown > div.items,
+.custom-block {
+  border-radius: 12px !important;
+}
+
+.DocSearch-Button,
+.link,
+.VPFeature,
+.VPSwitch {
+  border-color: transparent !important;
+}
+
+.pager-link,
+.search-bar:focus-within {
+  border-color: var(--vp-c-divider) !important;
 }
 
 .DocSearch-Action[title="Conversation history"],
@@ -40,11 +78,11 @@ a:hover {
 .DocSearch-Sidepanel-Screen--introduction,
 .DocSearch-StreamingIndicator,
 .DocSearch-CodeSnippet-CopyButton,
-.vp-doc .header-anchor:before {
+.header-anchor {
   display: none !important;
 }
 
-.dark .DocSearch-Hit-source,
+.DocSearch-Hit-source,
 .DocSearch-Action.DocSearch-AskAi-Return,
 .DocSearch-Action.DocSearch-Close,
 .DocSearch-Action.DocSearch-Sidepanel-Action-close,
@@ -54,19 +92,6 @@ a:hover {
   background-color: transparent !important;
 }
 
-.DocSearch-Button,
-.link,
-.VPFeature,
-.VPSwitch {
-  border-color: transparent !important;
-}
-
-.pager-link,
-.search-bar:focus-within {
-  border-color: var(--vp-c-divider) !important;
-}
-
-.DocSearch-AskAiScreen-Disclaimer,
 .DocSearch-Clear,
 .DocSearch-Input,
 .DocSearch-Modal-heading.shimmer,
@@ -78,8 +103,41 @@ a:hover {
   font-weight: 500 !important;
 }
 
-.DocSearch-AskAiScreen-Disclaimer {
-  font-size: 14px !important;
+.DocSearch-Input,
+.DocSearch-Modal-heading.shimmer {
+  height: 31px !important;
+  margin-block: 0 !important;
+  padding-block: 0 !important;
+  line-height: 31px !important;
+  font-size: 1rem !important;
+}
+
+.DocSearch-Hit {
+  padding-block-end: 8px !important;
+}
+
+.DocSearch-Hit-source {
+  padding-inline-start: var(--docsearch-spacing) !important;
+}
+
+.DocSearch-Hit a,
+.DocSearch-Hit--AskAI,
+.DocSearch-AskAiScreen-Response {
+  border-radius: 8px !important;
+}
+
+.DocSearch-Hit-action-button:hover,
+.DocSearch-Hit-action-button:active {
+  background-color: transparent !important;
+}
+
+.DocSearch-Hit-action:hover svg path {
+  fill: currentColor !important;
+}
+
+.DocSearch-AskAiScreen-ExchangesList {
+  gap: 0 !important;
+  margin: 4px 0 !important;
 }
 
 .DocSearch-AskAiScreen-Query {
@@ -87,42 +145,21 @@ a:hover {
 }
 
 .DocSearch-AskAiScreen-Disclaimer {
-  margin: -5px 0 0 0 !important;
+  margin: 0 -4px !important;
+  padding-block: 8px 4px !important;
+  padding-inline: var(--docsearch-spacing) 4px !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 32px !important;
 }
 
-.DocSearch-Hit-source,
-.DocSearch-AskAiScreen-Disclaimer {
-  padding-inline-start: var(--docsearch-spacing) !important;
+.DocSearch-Back-Icon {
+  color: var(--docsearch-icon-color) !important;
 }
 
-.DocSearch-Input,
-.DocSearch-Modal-heading.shimmer {
-  padding-block: 0 !important;
-  margin-block: 0 !important;
-  line-height: 31px !important; 
-  height: 31px !important; 
-}
-
-.DocSearch-Modal-heading.shimmer {
-  display: flex !important;
-  align-items: center !important;
-}
-
-.DocSearch-Search-Icon {
-  --icon: url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%3E%3Cg%20fill%3D%27none%27%20stroke%3D%27black%27%20stroke%2Dlinecap%3D%27round%27%20stroke%2Dlinejoin%3D%27round%27%20stroke%2Dwidth%3D%272%27%3E%3Cpath%20d%3D%27m21%2021l%2D4%2E34%2D4%2E34%27%2F%3E%3Ccircle%20cx%3D%2711%27%20cy%3D%2711%27%20r%3D%278%27%20stroke%2Dwidth%3D%272%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E) !important;
-}
-
-.DocSearch-Search-Icon circle,
-.DocSearch-Search-Icon path {
-  stroke-width: 2 !important;
-}
-
-.VPContent > .VPDoc {
-  padding-top: 48px !important;
-}
-
-.VPHomeHero .image-src {
-  height: unset !important;
+.DocSearch-Back-Icon:hover,
+.DocSearch-Back-Icon:active {
+  color: var(--vp-c-brand) !important;
 }
 
 .dark .DocSearch-Dropdown,
@@ -133,24 +170,9 @@ a:hover {
   background-color: rgba(37, 37, 41, 0.5) !important;
 }
 
-.DocSearch-Hit a,
-.DocSearch-Hit--AskAI,
-.DocSearch-AskAiScreen-Response {
-  border-radius: 8px !important;
-  corner-shape: superellipse(1.5) !important;
-}
-
-.VPDocFooter a.pager-link,
-.VPLocalNavOutlineDropdown > div.items,
-.custom-block {
-  border-radius: 12px !important;
-  corner-shape: superellipse(1.5) !important;
-}
-
 @media (width > 768px) {
   .DocSearch-Modal {
-    border-radius: 12px !important;
-    corner-shape: superellipse(1.5) !important;
     overflow: hidden !important;
+    border-radius: 12px !important;
   }
 }
