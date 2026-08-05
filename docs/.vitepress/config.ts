@@ -1,5 +1,4 @@
 import { defineConfig, type HeadConfig } from 'vitepress'
-import footnote from 'markdown-it-footnote'
 import UnoCSS from 'unocss/vite'
 
 function getCurrentYear(): number {
@@ -42,14 +41,9 @@ export default defineConfig({
   vite: {
     plugins: [
       UnoCSS(),
-      { name: 'breakpoints', transform: c => c.replace(/min-width: 768/g, 'min-width: 769').replace(/max-width: 767/g, 'max-width: 768') },
     ],
   },
-  markdown: {
-    config(md) {
-      md.use(footnote)
-    },
-  },
+
   themeConfig: {
     logo: '/favicon.svg',
     sidebarMenuLabel: '目录',
@@ -57,8 +51,10 @@ export default defineConfig({
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
     skipToContentLabel: '跳转到内容',
-    outlineTitle: '当前页面内容',
     returnToTopLabel: '回到顶部',
+    outline: {
+      label: '当前页面内容'
+    },
     lastUpdated: {
       text: '最后更新于',
       formatOptions: {

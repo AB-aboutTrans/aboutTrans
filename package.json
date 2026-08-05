@@ -1,15 +1,15 @@
 {
   "name": "aboutTrans",
+  "type": "module",
   "devDependencies": {
     "@iconify-json/octicon": "^1.2.5",
     "@nolebase/vitepress-plugin-enhanced-mark": "^2.18.2",
-    "@types/markdown-it-footnote": "^3.0.4",
     "@types/node": "^25.5.0",
     "@unocss/preset-attributify": "^66.1.0-beta.11",
     "@unocss/preset-icons": "^66.1.0-beta.11",
     "@unocss/preset-mini": "^66.4.2",
     "unocss": "^66.1.0-beta.11",
-    "vitepress": "^2.0.0-alpha.16"
+    "vitepress": "^2.0.0-alpha.19"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
@@ -18,7 +18,6 @@
     "docs:cfbuild": "git fetch --unshallow && vitepress build docs"
   },
   "dependencies": {
-    "@vueuse/core": "^13.1.0",
-    "markdown-it-footnote": "^4.0.0"
+    "@vueuse/core": "^13.1.0"
   }
 }
