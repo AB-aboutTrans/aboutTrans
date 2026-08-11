@@ -1,5 +1,6 @@
 import { defineConfig, type HeadConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
+import Icons from 'unplugin-icons/vite'
 
 export default defineConfig({
   title: 'aboutTrans',
@@ -34,6 +35,7 @@ export default defineConfig({
   vite: {
     plugins: [
       UnoCSS(),
+      Icons(),
     ],
   },
 
