@@ -65,7 +65,7 @@
 [^2]: [你好，跨性别朋友｜栢林专项基金设立](http://www.zhenrogy.org/news_view.asp?aid=3173)
 [^3]: [新书发布《走出性别困境》](https://mp.weixin.qq.com/s/yARcdOzSeuQ5V82ec3S-QA)
 [^4]: [中华医学会跨性别医疗专题｜学术新进展](https://mp.weixin.qq.com/s/dK1hnOMbjA4W_lj31SHa5Q)
-[^5]: [学术前沿｜生殖器整形美容与性医学大会"性别工程"中外研究进展](https://mp.weixin.qq.com/s/NDqELGeLeDT7LvCNyPiK3g)
+[^5]: [学术前沿｜生殖器整形美容与性医学大会“性别工程”中外研究进展](https://mp.weixin.qq.com/s/NDqELGeLeDT7LvCNyPiK3g)
 [^6]: [关注跨性别者多元需求——九院整复外科首次组织召开跨性别 MDT 会诊](https://mp.weixin.qq.com/s/Pa3SJvdt1wT9RkWZQVuyZw)
 [^7]: [复旦儿科开设国内首个跨性别儿童与青少年多学科门诊](https://ch.shmu.edu.cn/paper/news/content/id/258/nid/11/pid/80)
 [^8]: [一位妇科医生开了跨性别医疗门诊](https://mp.weixin.qq.com/s/6KapLJHFeeq5ExY_v_IG5A)
