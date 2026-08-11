@@ -9,6 +9,7 @@
     "@unocss/preset-icons": "^66.7.5",
     "@unocss/preset-mini": "^66.7.5",
     "unocss": "^66.7.5",
+    "unplugin-icons": "^23.0.1",
     "vitepress": "^2.0.0-alpha.19"
   },
   "scripts": {
