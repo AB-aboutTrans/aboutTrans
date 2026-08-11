@@ -28,6 +28,8 @@
 import { useClipboard } from '@vueuse/core'
 import { ref, watch, onMounted } from 'vue'
 import { useRoute } from 'vitepress'
+import IconShare from '~icons/octicon/share-16'
+import IconCheckbox from '~icons/octicon/checkbox-16'
 
 const route = useRoute()
 const shareLink = ref('')
@@ -59,16 +61,16 @@ function copyShareLink() {
       shareSuccess ? '!text-green-400' : '',
       shareLink ? 'hover:sm:text-$vp-c-brand' : '!cursor-wait',
     ]" :disabled="(!isMounted || !shareLink || shareSuccess)" @click="copyShareLink()">
-      <Transition mode="out-in" enter-active-class="transition-all duration-250 ease-out"
-        leave-active-class="transition-all duration-250 ease-out"
+      <Transition mode="out-in" enter-active-class="share-btn-enter-active"
+        leave-active-class="share-btn-leave-active"
         enter-from-class="transform translate-y-30px opacity-0" leave-to-class="transform translate-y--30px opacity-0"
         enter-to-class="opacity-100" leave-from-class="opacity-100">
-        <span v-if="shareSuccess" flex items-center space-x-1>
-          <span class="i-octicon:checkbox-16" />
+        <span v-if="shareSuccess" class="share-btn-content" flex items-center space-x-1>
+          <IconCheckbox class="checkbox-icon" aria-hidden="true" />
           <span>复制成功</span>
         </span>
-        <span v-else flex items-center space-x-1>
-          <span class="i-octicon:share-16" />
+        <span v-else class="share-btn-content" flex items-center space-x-1>
+          <IconShare class="share-icon" aria-hidden="true" />
           <span>分享此页</span>
         </span>
       </Transition>
@@ -79,9 +81,25 @@ function copyShareLink() {
 </template>
 
 <style>
-span.i-octicon\:share-16,
-span.i-octicon\:checkbox-16 {
-  mask-size: contain;
+.unocss-scope .share-btn-enter-active {
+  transition: transform 250ms ease-out, opacity 250ms ease-out;
+}
+
+.unocss-scope .share-btn-leave-active {
+  transition: transform 250ms ease-out, opacity 250ms ease-out;
+}
+
+.unocss-scope .share-btn-content {
+  /* 动画期间及结束后保持独立合成层，避免 transform 归零时层回收导致的抖动 */
+  will-change: transform;
+}
+
+.unocss-scope .share-icon,
+.unocss-scope .checkbox-icon {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  flex-shrink: 0;
   margin-inline-end: 4px;
 }
 </style>
