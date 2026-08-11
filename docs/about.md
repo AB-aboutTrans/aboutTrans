@@ -24,11 +24,11 @@ aboutTrans 是一个社群共建的项目，项目名称来源于“关于跨性
 我们欢迎任何对跨性别与多元性别相关知识科普感兴趣的人加入我们，与我们共同建设 aboutTrans，如果你对本站内容有任何修改建议，也欢迎积极联系我们，如果你希望在 GitHub 上提交 Issue 或 Pull Request，我们也一并欢迎～
 
 > [!NOTE] 参与方式
-> 
+>
 > [通过邮件联系我们](mailto:contact@aboutrans.info)
-> 
+>
 > [加入我们的项目交流群](https://qm.qq.com/q/ExEqmGZ16g)
-> 
+>
 > [访问我们的 GitHub 仓库](https://github.com/AB-aboutTrans/aboutTrans)
 
 [^1]: [走出性别困境：“跨性别”与“性别焦虑”的医疗援助](https://search.worldcat.org/zh-cn/title/1457264217)

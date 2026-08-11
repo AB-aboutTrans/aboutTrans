@@ -101,8 +101,8 @@ export default defineConfig({
           root: {
             placeholder: '搜索内容或向 AI 提问',
             translations: {
-              button: { 
-                buttonText: '搜索内容', 
+              button: {
+                buttonText: '搜索内容',
                 buttonAriaLabel: '搜索内容',
               },
               modal: {
@@ -140,7 +140,7 @@ export default defineConfig({
                   reportMissingResultsText: '你认为该查询应该有结果？',
                   reportMissingResultsLinkText: '点击反馈',
                 },
-                resultsScreen: { 
+                resultsScreen: {
                   askAiPlaceholder: '向 AI 提问',
                   noResultsAskAiPlaceholder: '没有在文档中找到？试试向 AI 提问吧！',
                 },

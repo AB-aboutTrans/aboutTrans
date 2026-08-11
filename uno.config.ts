@@ -5,11 +5,11 @@ export default defineConfig({
   preflights: [],
   variants: [
     (matcher: string) => {
-      if (!matcher) return matcher;
+      if (!matcher) return matcher
       return {
         matcher,
         selector: (s: string) => `.unocss-scope ${s}`,
-      };
+      }
     },
   ],
   presets: [
