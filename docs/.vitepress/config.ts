@@ -1,13 +1,6 @@
 import { defineConfig, type HeadConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
 
-function getCurrentYear(): number {
-  const now = new Date()
-  const utc = now.getTime() + (now.getTimezoneOffset() * 60000)
-  const currentTime = new Date(utc + (8 * 3600000))
-  return currentTime.getFullYear()
-}
-
 export default defineConfig({
   title: 'aboutTrans',
   description: '关于跨性别，你想知道的都在这里～这是一个专注于跨性别与多元性别知识科普的公益性网站，无论是社群伙伴还是盟友朋友们都可以在此获取有用的信息！',
@@ -185,7 +178,7 @@ export default defineConfig({
     },
     footer: {
       message: '本站内容基于 CC BY 4.0 许可发布',
-      copyright: `版权所有 © 2023-${new Date().getFullYear()} AB aboutTrans`,
+      copyright: `版权所有 © 2023-<auto-right>${new Date().getFullYear()}</auto-right> AB aboutTrans`,
     },
     docFooter: {
       prev: '上一页',

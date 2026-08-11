@@ -18,6 +18,7 @@
     "docs:cfbuild": "git fetch --unshallow && vitepress build docs"
   },
   "dependencies": {
-    "@vueuse/core": "^13.1.0"
+    "@vueuse/core": "^13.1.0",
+    "auto-right": "^1.0.1"
   }
 }
