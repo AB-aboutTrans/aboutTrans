@@ -4,7 +4,7 @@
 
 aboutTrans 是一个由社群共建的跨性别与多元性别知识平台，项目名称来源于“关于跨性别”的英译。我们致力于为公众提供以跨性别为主，并涵盖多元性别议题的相关知识，以帮助更多人了解和支持这一群体！
 
-项目站点请访问 [aboutrans.info](https://aboutrans.info)
+项目站点请访问 [aboutrans.info](https://aboutrans.info)。
 
 ## 参与共建
 
