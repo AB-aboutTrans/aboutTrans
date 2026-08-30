@@ -77,7 +77,6 @@ function copyShareLink() {
     </button>
     <div class="bg-$vp-c-divider-light" mx2 block h-24px w-1px md:hidden />
   </div>
-
 </template>
 
 <style>
@@ -90,7 +89,6 @@ function copyShareLink() {
 }
 
 .unocss-scope .share-btn-content {
-  /* 动画期间及结束后保持独立合成层，避免 transform 归零时层回收导致的抖动 */
   will-change: transform;
 }
 

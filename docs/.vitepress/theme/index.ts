@@ -5,6 +5,7 @@ import 'virtual:uno.css'
 import { h } from 'vue'
 import Share from './components/share.vue'
 import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
+
 if (typeof window !== 'undefined') {
   import('auto-right')
 }
@@ -19,7 +20,7 @@ const ExtendedTheme: Theme = {
   enhanceApp(ctx) {
     const { app } = ctx
     app.component('Share', Share)
-  }
+  },
 }
 
 export default ExtendedTheme
