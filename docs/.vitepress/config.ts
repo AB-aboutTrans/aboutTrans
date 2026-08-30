@@ -48,13 +48,13 @@ export default defineConfig({
     skipToContentLabel: '跳转到内容',
     returnToTopLabel: '回到顶部',
     outline: {
-      label: '当前页面内容'
+      label: '当前页面内容',
     },
     lastUpdated: {
       text: '最后更新于',
       formatOptions: {
         dateStyle: 'short',
-      }
+      },
     },
     editLink: {
       pattern: 'https://github.com/AB-aboutTrans/aboutTrans/edit/main/docs/:path',
@@ -91,14 +91,14 @@ export default defineConfig({
         searchParameters: {
           facetFilters: [],
           attributesToSnippet: [
-                "hierarchy.lvl1:15",
-                "hierarchy.lvl2:15",
-                "hierarchy.lvl3:15",
-                "hierarchy.lvl4:15",
-                "hierarchy.lvl5:15",
-                "hierarchy.lvl6:15",
-                "content:15"
-            ]
+            'hierarchy.lvl1:15',
+            'hierarchy.lvl2:15',
+            'hierarchy.lvl3:15',
+            'hierarchy.lvl4:15',
+            'hierarchy.lvl5:15',
+            'hierarchy.lvl6:15',
+            'content:15',
+          ],
         },
         locales: {
           root: {
@@ -166,8 +166,8 @@ export default defineConfig({
                   backToSearchText: '返回搜索',
                   closeKeyAriaLabel: 'Esc 键',
                   poweredByText: '搜索提供',
-                }
-              }
+                },
+              },
             }
           }
         }
