@@ -59,6 +59,14 @@ a:active {
   border-color: transparent !important;
 }
 
+.VPSwitchAppearance {
+  width: 1.375rem !important;
+}
+
+.VPSwitchAppearance .check {
+  transform: none !important;
+}
+
 .pager-link,
 .search-bar:focus-within {
   border-color: var(--vp-c-divider) !important;
