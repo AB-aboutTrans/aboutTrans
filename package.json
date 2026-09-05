@@ -10,7 +10,7 @@
     "@unocss/preset-mini": "^66.7.5",
     "unocss": "^66.7.5",
     "unplugin-icons": "^23.0.1",
-    "vitepress": "^2.0.0-alpha.19"
+    "vitepress": "^2.0.0-alpha.20"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
