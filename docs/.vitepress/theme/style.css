@@ -9,6 +9,8 @@
   --vp-button-brand-hover-bg: var(--vp-c-brand-1);
   --vp-button-brand-active-border: var(--vp-c-brand-2);
   --vp-button-brand-active-bg: var(--vp-c-brand-2);
+  --vp-nav-bg-color: color-mix(in srgb, var(--vp-c-bg) 85%, transparent);
+  --vp-nav-backdrop-filter: saturate(180%) blur(16px);
 }
 
 *,
