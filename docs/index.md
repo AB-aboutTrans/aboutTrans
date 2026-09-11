@@ -11,7 +11,7 @@ features:
   - icon: 📑
     link: /docs/terms
     title: 跨性别相关概念术语
-    details: 汇总并详解跨性别与多元性别群体相关的名词及术语，涵盖身份、医疗及易混淆等各类概念。
+    details: 汇总并详解跨性别与多元性别群体相关名词及术语，涵盖身份、医疗及易混淆等各类概念。
     linkText: 了解更多
   - icon: 💊
     link: /docs/medical
