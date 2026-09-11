@@ -41,6 +41,12 @@ a:active {
   opacity: 1 !important;
 }
 
+@media (min-width: 60rem) {
+  .VPNavBar:not(.home):not(.has-sidebar) .title {
+    min-width: 0 !important;
+  }
+}
+
 .footnote-ref a {
   color: var(--vp-c-brand) !important;
 }
