@@ -1,5 +1,5 @@
 ---
-title: 主页
+titleTemplate: false
 layout: home
 hero:
   name: 关于跨性别
