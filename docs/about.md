@@ -1,7 +1,6 @@
 ---
 sidebar: false
 aside: false
-outline: false
 next: false
 editLink: false
 lastUpdated: false
