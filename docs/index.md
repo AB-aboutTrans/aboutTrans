@@ -7,6 +7,7 @@ hero:
   tagline: 由社群共建的跨性别与多元性别知识平台
   image:
     src: /hero.svg
+    alt: aboutTrans
 features:
   - icon: 📑
     link: /docs/terms

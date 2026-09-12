@@ -4,6 +4,7 @@ import Icons from 'unplugin-icons/vite'
 
 export default defineConfig({
   title: 'aboutTrans',
+  titleTemplate: ':title aboutTrans',
   description: '关于跨性别，你想知道的都在这里～这是一个专注于跨性别与多元性别知识科普的公益性站点，无论是社群伙伴还是盟友朋友，都可以在此获取有用的信息。',
   cleanUrls: true,
   sitemap: {
@@ -12,23 +13,30 @@ export default defineConfig({
   locales: {
     root: {
       label: '中文',
-      lang: 'zh',
+      lang: 'zh-CN',
     },
   },
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: 'aboutTrans' }],
-    ['meta', { property: 'og:description', content: '关于跨性别，你想知道的都在这里～这是一个专注于跨性别与多元性别知识科普的公益性站点，无论是社群伙伴还是盟友朋友，都可以在此获取有用的信息。' }],
     ['meta', { property: 'og:image', content: 'https://aboutrans.info/social.png' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
   ],
-  transformHead: ({ pageData }) => {
+  transformHead: ({ pageData, title, description }) => {
     const head: HeadConfig[] = []
     const url = `https://aboutrans.info/${pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2')}`
+    const image = 'https://aboutrans.info/social.png'
 
     head.push(['link', { rel: 'canonical', href: url }])
     head.push(['meta', { property: 'og:url', content: url }])
+    head.push(['meta', { property: 'og:title', content: title }])
+    head.push(['meta', { property: 'og:description', content: description }])
+    head.push(['meta', { property: 'og:image:alt', content: 'aboutTrans 跨性别与多元性别' }])
+    head.push(['meta', { property: 'og:site_name', content: 'aboutTrans' }])
+    head.push(['meta', { property: 'og:locale', content: 'zh_CN' }])
+    head.push(['meta', { name: 'twitter:title', content: title }])
+    head.push(['meta', { name: 'twitter:description', content: description }])
+    head.push(['meta', { name: 'twitter:image', content: image }])
 
     return head
   },
