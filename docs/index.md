@@ -1,5 +1,6 @@
 ---
 titleTemplate: false
+description: 关于跨性别，你想知道的都在这里～这是一个专注于跨性别与多元性别知识科普的公益性站点，无论是社群伙伴还是盟友朋友，都可以在此获取有用的信息。
 layout: home
 hero:
   name: 关于跨性别
