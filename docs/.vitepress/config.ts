@@ -96,16 +96,7 @@ export default defineConfig({
           agentStudio: true,
         },
         searchParameters: {
-          facetFilters: [],
-          attributesToSnippet: [
-            'hierarchy.lvl1:15',
-            'hierarchy.lvl2:15',
-            'hierarchy.lvl3:15',
-            'hierarchy.lvl4:15',
-            'hierarchy.lvl5:15',
-            'hierarchy.lvl6:15',
-            'content:15',
-          ],
+          facetFilters: ['lang:zh-CN'],
         },
         locales: {
           root: {
