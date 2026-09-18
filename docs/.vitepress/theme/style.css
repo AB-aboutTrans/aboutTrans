@@ -172,14 +172,6 @@ a:active {
   color: var(--vp-c-brand) !important;
 }
 
-.dark .DocSearch-Dropdown,
-.dark .DocSearch-Form,
-.dark .DocSearch-Sidepanel-Content,
-.dark .profile,
-.dark .VPHome .VPFeature {
-  background-color: rgba(37, 37, 41, 0.5) !important;
-}
-
 @media (width > 768px) {
   .DocSearch-Modal {
     overflow: hidden !important;
