@@ -65,7 +65,7 @@ export default defineConfig({
     },
     editLink: {
       pattern: 'https://github.com/AB-aboutTrans/aboutTrans/edit/main/docs/:path',
-      text: '对文档提出修改建议',
+      text: '提出修改建议',
     },
     nav: [
       { text: '主页', link: 'index' },
@@ -91,20 +91,16 @@ export default defineConfig({
         appId: '116OHOGKSO',
         apiKey: 'ac690e86bfae8e8965ca0eb54624758b',
         indexName: 'index_ab_vitepress_crawls',
+        maxResultsPerGroup: 10,
         askAi: {
           assistantId: 'd605bb57-d72b-413b-8a8d-96b0de052392',
           agentStudio: true,
         },
         searchParameters: {
-          facetFilters: [],
+          facetFilters: ['lang:zh-CN'],
           attributesToSnippet: [
-            'hierarchy.lvl1:15',
-            'hierarchy.lvl2:15',
-            'hierarchy.lvl3:15',
-            'hierarchy.lvl4:15',
-            'hierarchy.lvl5:15',
-            'hierarchy.lvl6:15',
-            'content:15',
+            'hierarchy.lvl2:30',
+            'content:30',
           ],
         },
         locales: {
@@ -117,28 +113,26 @@ export default defineConfig({
               },
               modal: {
                 searchBox: {
-                  clearButtonTitle: '清除查询条件',
-                  clearButtonAriaLabel: '清除查询条件',
+                  clearButtonTitle: '清除',
+                  clearButtonAriaLabel: '清除',
                   closeButtonText: '关闭',
                   closeButtonAriaLabel: '关闭',
                   placeholderText: '搜索内容或向 AI 提问',
                   placeholderTextAskAi: '向 AI 提问',
                   placeholderTextAskAiStreaming: '回答中...',
                   enterKeyHint: '搜索内容',
-                  enterKeyHintAskAi: '向 AI 提问',
                   searchInputLabel: '搜索内容',
-                  backToKeywordSearchButtonText: '返回关键词搜索',
-                  backToKeywordSearchButtonAriaLabel: '返回关键词搜索',
+                  backToKeywordSearchButtonText: '返回搜索',
+                  backToKeywordSearchButtonAriaLabel: '返回搜索',
                 },
                 startScreen: {
                   recentSearchesTitle: '搜索历史',
-                  noRecentSearchesText: '没有搜索历史',
                   saveRecentSearchButtonTitle: '收藏',
                   removeRecentSearchButtonTitle: '从搜索历史中移除',
                   favoriteSearchesTitle: '收藏',
                   removeFavoriteSearchButtonTitle: '从收藏中移除',
-                  recentConversationsTitle: '最近的对话',
-                  removeRecentConversationButtonTitle: '从历史记录中删除对话',
+                  recentConversationsTitle: '最近',
+                  removeRecentConversationButtonTitle: '删除对话',
                 },
                 errorScreen: {
                   titleText: '无法获取结果',
@@ -146,21 +140,16 @@ export default defineConfig({
                 },
                 noResultsScreen: {
                   noResultsText: '没有找到相关结果',
-                  suggestedQueryText: '你可以尝试查询',
-                  reportMissingResultsText: '你认为该查询应该有结果？',
-                  reportMissingResultsLinkText: '点击反馈',
                 },
                 resultsScreen: {
                   askAiPlaceholder: '向 AI 提问',
-                  noResultsAskAiPlaceholder: '没有在文档中找到？试试向 AI 提问吧！',
+                  noResultsAskAiPlaceholder: '没有在文档中找到？试试向 AI 提问',
                 },
                 askAiScreen: {
                   disclaimerText: '结果由 AI 生成，请注意核查。',
-                  relatedSourcesText: '相关来源',
                   thinkingText: '请稍候...',
                   preToolCallText: '正在搜索',
                   duringToolCallText: '搜索中...',
-                  afterToolCallText: '已搜索',
                 },
                 footer: {
                   selectText: '选择',
