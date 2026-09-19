@@ -184,6 +184,11 @@ a:active {
   top: -1px;
 }
 
+.DocSearch-Hit-title {
+  position: relative;
+  top: 1px;
+}
+
 @media (width > 768px) {
   .DocSearch-Modal {
     overflow: hidden !important;
