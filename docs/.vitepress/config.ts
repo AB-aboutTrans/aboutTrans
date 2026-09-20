@@ -16,7 +16,8 @@ export default defineConfig({
     },
   },
   head: [
-    ['link', { rel: 'icon', href: '/favicon.svg' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:image', content: 'https://aboutrans.info/social.png' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
