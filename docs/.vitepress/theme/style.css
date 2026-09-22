@@ -42,10 +42,6 @@ a:active {
   opacity: 1 !important;
 }
 
-.footnote-ref a {
-  color: var(--vp-c-brand) !important;
-}
-
 .VPContent > .VPDoc {
   padding-top: 48px !important;
 }
@@ -56,7 +52,6 @@ a:active {
   border-radius: 12px !important;
 }
 
-.DocSearch-Button,
 .link,
 .VPFeature,
 .VPSwitch {
@@ -77,8 +72,7 @@ a:active {
   transform: none !important;
 }
 
-.pager-link,
-.search-bar:focus-within {
+.pager-link {
   border-color: var(--vp-c-divider) !important;
 }
 
@@ -86,7 +80,6 @@ a:active {
 .DocSearch-AskAiScreen-Answer-Footer,
 .DocSearch-AskAiScreen-MessageContent-Tool.Tool--Result,
 .DocSearch-AskAiScreen-RelatedSources,
-.DocSearch-Button-Keys,
 .DocSearch-Divider,
 .DocSearch-Help,
 .DocSearch-Menu-trigger.DocSearch-Action,
@@ -97,11 +90,7 @@ a:active {
 }
 
 .DocSearch-Action.DocSearch-AskAi-Return,
-.DocSearch-Action.DocSearch-Close,
-.DocSearch-Action.DocSearch-Sidepanel-Action-close,
-.DocSearch-Action.DocSearch-Sidepanel-Action-expand,
-.DocSearch-Sidepanel-Prompt--submit,
-.VPNavBarAskAiButton {
+.DocSearch-Action.DocSearch-Close {
   background-color: transparent !important;
 }
 
@@ -112,8 +101,8 @@ a:active {
   font-weight: 400 !important;
 }
 
-.DocSearch-Button-Placeholder {
-  font-weight: 500 !important;
+.VPNavBarSearchButton .text {
+  font-weight: 450 !important;
 }
 
 .DocSearch-Input,
@@ -144,7 +133,7 @@ a:active {
   background-color: transparent !important;
 }
 
-.DocSearch-Hit-action:hover svg path {
+.DocSearch-Hit-action-button:hover svg path {
   fill: currentColor !important;
 }
 
@@ -175,13 +164,17 @@ a:active {
   color: var(--vp-c-brand) !important;
 }
 
-.DocSearch-Screen-Icon svg {
-  stroke: var(--vp-c-brand) !important;
+.DocSearch-NoResults {
+  display: none !important;
 }
 
 .DocSearch-Commands {
   position: relative;
   top: -1px;
+}
+
+.DocSearch-Hit-content-wrapper {
+  overflow-y: hidden !important;
 }
 
 .DocSearch-Hit-title {
