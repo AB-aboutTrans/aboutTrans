@@ -139,9 +139,6 @@ export default defineConfig({
                   titleText: '无法获取结果',
                   helpText: '请检查网络连接',
                 },
-                noResultsScreen: {
-                  noResultsText: '没有找到相关结果',
-                },
                 resultsScreen: {
                   askAiPlaceholder: '向 AI 提问',
                   noResultsAskAiPlaceholder: '没有在文档中找到？试试向 AI 提问',
