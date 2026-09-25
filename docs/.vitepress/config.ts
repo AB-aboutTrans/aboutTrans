@@ -2,12 +2,35 @@ import { defineConfig, type HeadConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
 import Icons from 'unplugin-icons/vite'
 
+const SITE_URL = 'https://aboutrans.info'
+const SITE_NAME = 'aboutTrans'
+const SOCIAL_IMAGE = `${SITE_URL}/social.png`
+const SOCIAL_IMAGE_WIDTH = 1280
+const SOCIAL_IMAGE_HEIGHT = 640
+const SOCIAL_IMAGE_ALT = 'aboutTrans 跨性别与多元性别'
+const SEARCH_IMAGE = `${SITE_URL}/search.png`
+const SEARCH_IMAGE_WIDTH = 1200
+const SEARCH_IMAGE_HEIGHT = 1200
+
+const SEARCH_IMAGE_OBJECT = {
+  '@type': 'ImageObject',
+  url: SEARCH_IMAGE,
+  width: SEARCH_IMAGE_WIDTH,
+  height: SEARCH_IMAGE_HEIGHT,
+}
+const SOCIAL_IMAGE_OBJECT = {
+  '@type': 'ImageObject',
+  url: SOCIAL_IMAGE,
+  width: SOCIAL_IMAGE_WIDTH,
+  height: SOCIAL_IMAGE_HEIGHT,
+}
+
 export default defineConfig({
-  title: 'aboutTrans',
-  titleTemplate: ':title aboutTrans',
+  title: SITE_NAME,
+  titleTemplate: `:title ${SITE_NAME}`,
   cleanUrls: true,
   sitemap: {
-    hostname: 'https://aboutrans.info',
+    hostname: SITE_URL,
   },
   locales: {
     root: {
@@ -18,25 +41,48 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['meta', { name: 'robots', content: 'index,follow,max-image-preview:large' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:image', content: 'https://aboutrans.info/social.png' }],
+    ['meta', { property: 'og:site_name', content: SITE_NAME }],
+    ['meta', { property: 'og:locale', content: 'zh_CN' }],
+    ['meta', { property: 'og:image', content: SOCIAL_IMAGE }],
+    ['meta', { property: 'og:image:width', content: String(SOCIAL_IMAGE_WIDTH) }],
+    ['meta', { property: 'og:image:height', content: String(SOCIAL_IMAGE_HEIGHT) }],
+    ['meta', { property: 'og:image:type', content: 'image/png' }],
+    ['meta', { property: 'og:image:alt', content: SOCIAL_IMAGE_ALT }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:image', content: SOCIAL_IMAGE }],
+    ['meta', { name: 'twitter:image:width', content: String(SOCIAL_IMAGE_WIDTH) }],
+    ['meta', { name: 'twitter:image:height', content: String(SOCIAL_IMAGE_HEIGHT) }],
+    ['meta', { name: 'twitter:image:alt', content: SOCIAL_IMAGE_ALT }],
   ],
   transformHead: ({ pageData, title, description }) => {
     const head: HeadConfig[] = []
-    const url = `https://aboutrans.info/${pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2')}`
-    const image = 'https://aboutrans.info/social.png'
+    const url = `${SITE_URL}/${pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2')}`
 
     head.push(['link', { rel: 'canonical', href: url }])
     head.push(['meta', { property: 'og:url', content: url }])
     head.push(['meta', { property: 'og:title', content: title }])
     head.push(['meta', { property: 'og:description', content: description }])
-    head.push(['meta', { property: 'og:image:alt', content: 'aboutTrans 跨性别与多元性别' }])
-    head.push(['meta', { property: 'og:site_name', content: 'aboutTrans' }])
-    head.push(['meta', { property: 'og:locale', content: 'zh_CN' }])
     head.push(['meta', { name: 'twitter:title', content: title }])
     head.push(['meta', { name: 'twitter:description', content: description }])
-    head.push(['meta', { name: 'twitter:image', content: image }])
+    const jsonLd = {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      '@id': `${url}#webpage`,
+      url,
+      name: title,
+      description,
+      inLanguage: 'zh-CN',
+      primaryImageOfPage: SEARCH_IMAGE_OBJECT,
+      image: [SEARCH_IMAGE_OBJECT, SOCIAL_IMAGE_OBJECT],
+      isPartOf: {
+        '@type': 'WebSite',
+        name: SITE_NAME,
+        url: SITE_URL,
+      },
+    }
+    head.push(['script', { type: 'application/ld+json' }, JSON.stringify(jsonLd)])
 
     return head
   },
