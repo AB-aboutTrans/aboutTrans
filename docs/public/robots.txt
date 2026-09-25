@@ -3,4 +3,10 @@ Allow: /
 
 Content-Signal: search=yes,ai-input=yes,ai-train=no,use=reference
 
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: archive.org_bot
+Disallow: /
+
 Sitemap: https://aboutrans.info/sitemap.xml
