@@ -1,6 +1,7 @@
 ---
 title: 关于我们
 description: 介绍 aboutTrans 的项目理念、内容须知、免责声明及参与项目共建的方式。
+footer: false
 sidebar: false
 aside: false
 outline: false
