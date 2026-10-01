@@ -29,7 +29,7 @@ import { useClipboard } from '@vueuse/core'
 import { ref, watch, onMounted } from 'vue'
 import { useRoute } from 'vitepress'
 import IconShare from '~icons/octicon/share-16'
-import IconCheckbox from '~icons/octicon/checkbox-16'
+import IconCheck from '~icons/octicon/check-16'
 
 const route = useRoute()
 const shareLink = ref('')
@@ -66,7 +66,7 @@ function copyShareLink() {
         enter-from-class="transform translate-y-30px opacity-0" leave-to-class="transform translate-y--30px opacity-0"
         enter-to-class="opacity-100" leave-from-class="opacity-100">
         <span v-if="shareSuccess" class="share-btn-content" flex items-center space-x-1>
-          <IconCheckbox class="checkbox-icon" aria-hidden="true" />
+          <IconCheck class="check-icon" aria-hidden="true" />
           <span>复制成功</span>
         </span>
         <span v-else class="share-btn-content" flex items-center space-x-1>
@@ -93,7 +93,7 @@ function copyShareLink() {
 }
 
 .unocss-scope .share-icon,
-.unocss-scope .checkbox-icon {
+.unocss-scope .check-icon {
   display: inline-block;
   width: 1.2em;
   height: 1.2em;
