@@ -13,19 +13,3 @@ aboutTrans 是由社群共建的跨性别与多元性别知识平台。我们致
 ## 项目许可
 
 本项目代码采用 [MIT](https://github.com/AB-aboutTrans/aboutTrans/blob/main/LICENSE) 许可；除特别说明外，项目内容采用 [CC BY 4.0](https://github.com/AB-aboutTrans/aboutTrans/blob/main/LICENSE-CC-BY-4.0) 许可。转载或改编文档内容时，请务必按照相应许可的要求保留署名，并注明内容来源。
-
-## 本地预览
-
-> 如果你希望在本地查看修改后的文档，需要先安装 Git、Node.js 与 npm。
-
-```bash
-# 克隆项目仓库
-git clone https://github.com/AB-aboutTrans/aboutTrans.git
-cd aboutTrans
-
-# 安装项目依赖
-npm install
-
-# 启动本地预览
-npm run docs:dev
-```
