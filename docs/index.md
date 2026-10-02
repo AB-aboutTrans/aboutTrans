@@ -28,7 +28,7 @@ features:
   - icon: 🎗️
     link: /docs/support
     title: 社会支持
-    details: 了解跨性别与多元性别相关社会支持，涵盖医疗机构服务、社群组织行动、新闻媒体报道，呈现多领域行动与公共讨论。
+    details: 了解跨性别与多元性别相关社会支持，涵盖医疗机构服务、社群组织行动、新闻媒体报道，呈现来自各领域的支持行动。
     linkText: 了解更多
   - icon: 🌈
     link: /docs/events
