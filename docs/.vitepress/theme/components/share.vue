@@ -25,17 +25,18 @@
   SOFTWARE.
 -->
 <script lang="ts" setup>
+/// <reference path="../../env.d.ts" />
+
 import { useClipboard } from '@vueuse/core'
 import { ref, watch, onMounted } from 'vue'
 import { useRoute } from 'vitepress'
-import IconShare from '~icons/octicon/share-16'
-import IconCheck from '~icons/octicon/check-16'
+import IconShare from '~icons/lucide/share'
+import IconCheck from '~icons/lucide/check'
 
 const route = useRoute()
 const shareLink = ref('')
 const isMounted = ref(false)
 
-// Ensure component only runs on client-side
 onMounted(() => {
   isMounted.value = true
   updateShareLink()
@@ -65,11 +66,11 @@ function copyShareLink() {
         leave-active-class="share-btn-leave-active"
         enter-from-class="transform translate-y-30px opacity-0" leave-to-class="transform translate-y--30px opacity-0"
         enter-to-class="opacity-100" leave-from-class="opacity-100">
-        <span v-if="shareSuccess" class="share-btn-content" flex items-center space-x-1>
+        <span v-if="shareSuccess" class="share-btn-content" flex items-center>
           <IconCheck class="check-icon" aria-hidden="true" />
           <span>复制成功</span>
         </span>
-        <span v-else class="share-btn-content" flex items-center space-x-1>
+        <span v-else class="share-btn-content" flex items-center>
           <IconShare class="share-icon" aria-hidden="true" />
           <span>分享此页</span>
         </span>
@@ -95,9 +96,14 @@ function copyShareLink() {
 .unocss-scope .share-icon,
 .unocss-scope .check-icon {
   display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
+  width: 16px;
+  height: 16px;
   flex-shrink: 0;
   margin-inline-end: 4px;
+}
+
+.unocss-scope .share-icon path,
+.unocss-scope .check-icon path {
+  stroke-width: 2.5;
 }
 </style>

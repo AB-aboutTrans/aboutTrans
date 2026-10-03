@@ -1,6 +1,7 @@
 import { defineConfig, type HeadConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
 import Icons from 'unplugin-icons/vite'
+import { fileURLToPath } from 'node:url'
 
 const SITE_URL = 'https://aboutrans.info'
 const SITE_NAME = 'aboutTrans'
@@ -87,6 +88,11 @@ export default defineConfig({
     return head
   },
   vite: {
+    resolve: {
+      alias: {
+        './VPNavBarHamburger.vue': fileURLToPath(new URL('./theme/components/VPNavBarHamburger.vue', import.meta.url)),
+      },
+    },
     plugins: [
       UnoCSS(),
       Icons(),

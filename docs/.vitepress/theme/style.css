@@ -64,12 +64,6 @@ a:active {
   border: 0 !important;
 }
 
-.VPNavBarHamburger .top,
-.VPNavBarHamburger .middle,
-.VPNavBarHamburger .bottom {
-  transition: none !important;
-}
-
 .VPSwitchAppearance {
   width: 1.375rem !important;
 }
@@ -186,6 +180,68 @@ a:active {
 .DocSearch-Hit-title {
   position: relative;
   top: 1px;
+}
+
+/* https://github.com/vuejs/vitepress/pull/5480 */
+@media not all and (min-width: 48rem) {
+  :root:root {
+    --docsearch-searchbox-height: calc(var(--vp-nav-height) + 1px) !important;
+    --docsearch-searchbox-initial-height: calc(var(--vp-nav-height) + 1px) !important;
+  }
+
+  .DocSearch-Form {
+    padding-block: 0 !important;
+    padding-inline: 1.5rem 0.5rem !important;
+  }
+
+  .DocSearch-Form .DocSearch-Actions {
+    padding: 0 !important;
+  }
+
+  .DocSearch-Form .DocSearch-Close,
+  .DocSearch-Sidepanel-Action-close {
+    margin-inline: 0.75rem !important;
+  }
+
+  .DocSearch-Form .DocSearch-Close svg,
+  .DocSearch-Sidepanel-Action-close svg {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+  }
+
+  .DocSearch-Sidepanel-Header {
+    height: calc(var(--vp-nav-height) + 1px) !important;
+    min-height: calc(var(--vp-nav-height) + 1px) !important;
+    padding-block: 0 !important;
+  }
+
+  .DocSearch-Sidepanel-Header--left {
+    inset-inline-start: 1.5rem !important;
+  }
+
+  .DocSearch-Sidepanel-Header--right {
+    inset-inline-end: 0.5rem !important;
+  }
+
+  .DocSearch-Input,
+  .DocSearch-Modal-heading,
+  .DocSearch-Modal-heading.shimmer {
+    height: 1.5rem !important;
+    padding-block: 0 !important;
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+  }
+
+  .DocSearch-Sidepanel-Title {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+  }
+
+  .DocSearch-MagnifierLabel svg,
+  .DocSearch-LoadingIndicator svg {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+  }
 }
 
 @media (width > 768px) {
