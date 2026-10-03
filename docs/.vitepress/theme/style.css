@@ -70,6 +70,7 @@ a:active {
 
 .VPSwitchAppearance .check {
   transform: none !important;
+  box-shadow: none !important;
 }
 
 .pager-link {
