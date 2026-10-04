@@ -46,6 +46,11 @@ a:active {
   padding-top: 48px !important;
 }
 
+.VPLocalNav .menu,
+.VPLocalNavOutlineDropdown > button {
+  color: var(--vp-c-text-2) !important;
+}
+
 .VPDocFooter a.pager-link,
 .VPLocalNavOutlineDropdown > div.items,
 .custom-block {
@@ -71,6 +76,18 @@ a:active {
 .VPSwitchAppearance .check {
   transform: none !important;
   box-shadow: none !important;
+}
+
+.DocSearch-Modal,
+.DocSearch-Menu-content,
+.VPLocalNavOutlineDropdown > .items,
+.VPSkipLink,
+.VPSidebar {
+  box-shadow: none !important;
+}
+
+.DocSearch-Container {
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 .pager-link {
