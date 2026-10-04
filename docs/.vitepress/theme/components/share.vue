@@ -95,7 +95,6 @@ async function copyShareLink() {
         </span>
       </Transition>
     </button>
-    <div class="bg-$vp-c-divider-light" mx2 block h-24px w-1px md:hidden />
   </div>
 </template>
 
