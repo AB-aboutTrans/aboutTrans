@@ -18,7 +18,7 @@ features:
       wrap: true
     link: /docs/terms
     title: 概念术语
-    details: 汇总跨性别与多元性别相关概念术语，涵盖性别认同术语、医疗照护术语、社群文化称谓，详解相关术语的含义与区别。
+    details: 汇总跨性别与多元性别相关概念术语，涵盖性别认同与表达、医疗照护以及社群文化称谓，解释相关概念的含义与区别。
     linkText: 了解更多
   - icon:
       src: /medical.png
@@ -28,7 +28,7 @@ features:
       wrap: true
     link: /docs/medical
     title: 医疗照护
-    details: 介绍跨性别与多元性别者的医疗照护，涵盖青春期照护、内分泌与手术、心理健康照护，解释医疗项目与长期健康照护。
+    details: 介绍跨性别与多元性别者的医疗照护，涵盖内分泌治疗、手术、嗓音治疗与心理支持，说明各类治疗的效果与健康影响。
     linkText: 了解更多
   - icon:
       src: /policy.png
@@ -38,7 +38,7 @@ features:
       wrap: true
     link: /docs/policy
     title: 政策法规
-    details: 梳理跨性别与多元性别相关政策法规，涵盖证件性别变更、学籍性别变更、学历信息差异，介绍其制度依据与适用范围。
+    details: 梳理跨性别与多元性别相关政策法规，涵盖证件与学籍信息变更、学历与身份信息差异，解释相关制度依据与适用范围。
     linkText: 了解更多
   - icon:
       src: /support.png
@@ -48,7 +48,7 @@ features:
       wrap: true
     link: /docs/support
     title: 社会支持
-    details: 了解跨性别与多元性别相关社会支持，涵盖医疗机构服务、社群组织行动、新闻媒体报道，呈现来自各领域的支持行动。
+    details: 了解跨性别与多元性别相关社会支持，涵盖医疗机构行动、社群组织实践与新闻媒体报道，说明相关行动的背景与目的。
     linkText: 了解更多
   - icon:
       src: /events.png
@@ -58,7 +58,7 @@ features:
       wrap: true
     link: /docs/events
     title: 纪念活动
-    details: 介绍性少数群体相关的各类纪念活动，涵盖性别多元议题、性取向多样性、浪漫倾向议题，了解其设立目的与社群意义。
+    details: 关注跨性别与多元性别相关纪念活动，涵盖性别认同、性取向以及浪漫倾向议题，说明活动日期、设立目的与社群意义。
     linkText: 了解更多
   - icon:
       src: /faq.png
@@ -68,6 +68,6 @@ features:
       wrap: true
     link: /docs/faq
     title: 议题问答
-    details: 关注跨性别与多元性别者的常见疑问，涵盖身份认同问题、医疗需求疑问、亲友支持议题，结合社群视角与研究来解答。
+    details: 解答跨性别与多元性别者的常见疑问，涵盖身份认同、医疗需求与亲友支持等议题，结合社群视角与相关研究作出解释。
     linkText: 了解更多
 ---
