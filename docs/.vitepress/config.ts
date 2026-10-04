@@ -145,6 +145,8 @@ export default defineConfig({
         apiKey: 'ac690e86bfae8e8965ca0eb54624758b',
         indexName: 'index_ab_vitepress_crawls',
         maxResultsPerGroup: 10,
+        recentSearchesLimit: 10,
+        recentSearchesWithFavoritesLimit: 10,
         askAi: {
           assistantId: 'd605bb57-d72b-413b-8a8d-96b0de052392',
           agentStudio: true,

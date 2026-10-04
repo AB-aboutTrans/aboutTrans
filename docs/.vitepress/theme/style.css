@@ -141,6 +141,26 @@ a:active {
   padding-block-end: 8px !important;
 }
 
+.DocSearch-Hit-source {
+  padding-block: 8px !important;
+}
+
+.DocSearch-Hit:first-of-type {
+  margin-block-start: 0 !important;
+}
+
+.DocSearch-Hit:last-of-type {
+  padding-block-end: 0 !important;
+}
+
+.DocSearch-Hits {
+  margin-block-end: 0 !important;
+}
+
+.DocSearch-Dropdown:has(.DocSearch-Hits) {
+  padding-block-end: 1rem !important;
+}
+
 .DocSearch-Hit a,
 .DocSearch-Hit--AskAI,
 .DocSearch-AskAiScreen-Response {
@@ -148,11 +168,14 @@ a:active {
 }
 
 .DocSearch-Hit-action-button:hover,
-.DocSearch-Hit-action-button:active {
+.DocSearch-Hit-action-button:active,
+.DocSearch-Hit-action-button:focus {
   background-color: transparent !important;
 }
 
-.DocSearch-Hit-action-button:hover svg path {
+.DocSearch-Hit-action-button:hover svg path,
+.DocSearch-Hit-action-button:active svg path,
+.DocSearch-Hit-action-button:focus svg path {
   fill: currentColor !important;
 }
 
@@ -198,6 +221,10 @@ a:active {
 
 .DocSearch-NoResults {
   display: none !important;
+}
+
+.DocSearch-Dropdown-Container > .DocSearch-AskAi-Section {
+  padding-block-start: 18px !important;
 }
 
 .DocSearch-Commands {
@@ -344,4 +371,11 @@ a:active {
     overflow: hidden !important;
     border-radius: 12px !important;
   }
+}
+
+:root :focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+  background-color: color-mix(in display-p3, var(--vp-c-brand-1) 15%, transparent) !important;
 }
