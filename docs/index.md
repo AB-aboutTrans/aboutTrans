@@ -10,32 +10,62 @@ hero:
     src: /hero.svg
     alt: aboutTrans
 features:
-  - icon: 📑
+  - icon:
+      src: /terms.png
+      alt: 概念术语
+      width: 32
+      height: 32
+      wrap: true
     link: /docs/terms
     title: 概念术语
     details: 汇总跨性别与多元性别相关概念术语，涵盖性别认同术语、医疗照护术语、社群文化称谓，详解相关术语的含义与区别。
     linkText: 了解更多
-  - icon: 💊
+  - icon:
+      src: /medical.png
+      alt: 医疗照护
+      width: 32
+      height: 32
+      wrap: true
     link: /docs/medical
     title: 医疗照护
     details: 介绍跨性别与多元性别者的医疗照护，涵盖青春期照护、内分泌与手术、心理健康照护，解释医疗项目与长期健康照护。
     linkText: 了解更多
-  - icon: 📚
+  - icon:
+      src: /policy.png
+      alt: 政策法规
+      width: 32
+      height: 32
+      wrap: true
     link: /docs/policy
     title: 政策法规
     details: 梳理跨性别与多元性别相关政策法规，涵盖证件性别变更、学籍性别变更、学历信息差异，介绍其制度依据与适用范围。
     linkText: 了解更多
-  - icon: 🎗️
+  - icon:
+      src: /support.png
+      alt: 社会支持
+      width: 32
+      height: 32
+      wrap: true
     link: /docs/support
     title: 社会支持
     details: 了解跨性别与多元性别相关社会支持，涵盖医疗机构服务、社群组织行动、新闻媒体报道，呈现来自各领域的支持行动。
     linkText: 了解更多
-  - icon: 🌈
+  - icon:
+      src: /events.png
+      alt: 纪念活动
+      width: 32
+      height: 32
+      wrap: true
     link: /docs/events
     title: 纪念活动
     details: 介绍性少数群体相关的各类纪念活动，涵盖性别多元议题、性取向多样性、浪漫倾向议题，了解其设立目的与社群意义。
     linkText: 了解更多
-  - icon: 💡
+  - icon:
+      src: /faq.png
+      alt: 议题问答
+      width: 32
+      height: 32
+      wrap: true
     link: /docs/faq
     title: 议题问答
     details: 关注跨性别与多元性别者的常见疑问，涵盖身份认同问题、医疗需求疑问、亲友支持议题，结合社群视角与研究来解答。
