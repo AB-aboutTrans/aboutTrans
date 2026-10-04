@@ -90,6 +90,11 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
+        // https://github.com/vuejs/vitepress/pull/5463
+        './VPLocalNavOutlineDropdown.vue': fileURLToPath(new URL('./theme/components/VPLocalNavOutlineDropdown.vue', import.meta.url)),
+        // Both imports must share the same header cache (PR #5474).
+        '../composables/outline': fileURLToPath(new URL('./theme/composables/outline.ts', import.meta.url)),
+        './outline.js': fileURLToPath(new URL('./theme/composables/outline.ts', import.meta.url)),
         './VPNavBarHamburger.vue': fileURLToPath(new URL('./theme/components/VPNavBarHamburger.vue', import.meta.url)),
       },
     },
