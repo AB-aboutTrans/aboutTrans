@@ -173,6 +173,8 @@ export default defineConfig({
                   placeholderText: '搜索内容或向 AI 提问',
                   placeholderTextAskAi: '向 AI 提问',
                   placeholderTextAskAiStreaming: '回答中...',
+                  newConversationPlaceholder: '提一个问题',
+                  threadDepthErrorPlaceholder: '已达到会话限制',
                   enterKeyHint: '搜索内容',
                   searchInputLabel: '搜索内容',
                   backToKeywordSearchButtonText: '返回搜索',
@@ -200,6 +202,10 @@ export default defineConfig({
                   thinkingText: '请稍候...',
                   preToolCallText: '正在搜索',
                   duringToolCallText: '搜索中...',
+                },
+                newConversation: {
+                  newConversationTitle: '你想了解什么？',
+                  newConversationDescription: 'AI 会从本站文档中查找相关内容，\n帮助你了解跨性别与多元性别相关知识。',
                 },
                 footer: {
                   selectText: '选择',
