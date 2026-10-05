@@ -2,13 +2,13 @@
   <img src="docs/public/social.png" alt="aboutTrans" height="200">
 </p>
 
-aboutTrans 是由社群共建的跨性别与多元性别知识平台。我们致力于为公众提供以跨性别为主，涵盖多元性别议题相关知识，以帮助更多人了解和支持这一群体！
+aboutTrans 是由社群共建的跨性别与多元性别知识平台。我们致力于向公众介绍以跨性别为主、涵盖多元性别议题的知识，帮助更多人了解并支持跨性别与多元性别群体。
 
 项目站点请访问 [aboutrans.info](https://aboutrans.info)。
 
 ## 参与共建
 
-我们欢迎你 [通过邮件联系我们](mailto:contact@aboutrans.info) 或 [加入我们的项目交流群](https://qm.qq.com/q/ExEqmGZ16g)，也欢迎你通过 GitHub 提交 Issue 或 Pull Request。
+欢迎 [通过邮件联系我们](mailto:contact@aboutrans.info) 或 [加入我们的项目交流群](https://qm.qq.com/q/ExEqmGZ16g)，也可以通过 GitHub 提交 Issue 或 Pull Request 参与共建。
 
 ## 项目许可
 
