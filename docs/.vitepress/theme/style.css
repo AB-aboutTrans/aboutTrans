@@ -11,6 +11,7 @@
   --vp-button-brand-active-bg: var(--vp-c-brand-2);
   --vp-nav-bg-color: color-mix(in srgb, var(--vp-c-bg) 85%, transparent);
   --vp-nav-backdrop-filter: saturate(180%) blur(12px);
+  --vp-backdrop-bg-color: rgba(0, 0, 0, 0.5);
 }
 
 *,
@@ -159,6 +160,7 @@ a:active {
 
 .DocSearch-Dropdown:has(.DocSearch-Hits) {
   padding-block-end: 1rem !important;
+  scroll-padding-block-end: 1rem;
 }
 
 .DocSearch-Hit a,
@@ -168,14 +170,12 @@ a:active {
 }
 
 .DocSearch-Hit-action-button:hover,
-.DocSearch-Hit-action-button:active,
-.DocSearch-Hit-action-button:focus {
+.DocSearch-Hit-action-button:active {
   background-color: transparent !important;
 }
 
 .DocSearch-Hit-action-button:hover svg path,
-.DocSearch-Hit-action-button:active svg path,
-.DocSearch-Hit-action-button:focus svg path {
+.DocSearch-Hit-action-button:active svg path {
   fill: currentColor !important;
 }
 
@@ -355,7 +355,8 @@ a:active {
     padding-inline: calc(1.75rem - var(--docsearch-spacing)) !important;
   }
 
-  .DocSearch-Hit-source {
+  .DocSearch-Hit-source,
+  .DocSearch-AskAiScreen-Disclaimer {
     padding-inline-start: 8px !important;
   }
 
@@ -366,16 +367,9 @@ a:active {
   }
 }
 
-@media (width >= 768px) {
+@media (min-width: 48rem) {
   .DocSearch-Modal {
     overflow: hidden !important;
     border-radius: 12px !important;
   }
-}
-
-:root :focus-visible {
-  outline: none !important;
-  box-shadow: none !important;
-  border-color: transparent !important;
-  background-color: color-mix(in display-p3, var(--vp-c-brand-1) 15%, transparent) !important;
 }
