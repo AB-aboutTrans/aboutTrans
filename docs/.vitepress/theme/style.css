@@ -47,6 +47,12 @@ a:active {
   padding-top: 48px !important;
 }
 
+@media not all and (min-width: 60rem) {
+  .VPNavBar.home:not(.screen-open)::before {
+    backdrop-filter: none !important;
+  }
+}
+
 .VPLocalNav .menu,
 .VPLocalNavOutlineDropdown > button {
   color: var(--vp-c-text-2) !important;
@@ -146,7 +152,8 @@ a:active {
   padding-block: 8px !important;
 }
 
-.DocSearch-Hit:first-of-type {
+.DocSearch-Hits .DocSearch-Hit:first-of-type,
+.DocSearch-AskAi-Section .DocSearch-Hit:first-of-type {
   margin-block-start: 0 !important;
 }
 
@@ -158,9 +165,13 @@ a:active {
   margin-block-end: 0 !important;
 }
 
+.DocSearch-HitsFooter:empty {
+  display: none !important;
+}
+
 .DocSearch-Dropdown:has(.DocSearch-Hits) {
   padding-block-end: 1rem !important;
-  scroll-padding-block-end: 1rem;
+  scroll-padding-block-end: 1rem !important;
 }
 
 .DocSearch-Hit a,
@@ -189,7 +200,7 @@ a:active {
 }
 
 .DocSearch-NewConversationScreen-Description {
-  white-space: pre-line;
+  white-space: pre-line !important;
 }
 
 .DocSearch-AskAiScreen-Error--ThreadDepth {
@@ -224,12 +235,13 @@ a:active {
 }
 
 .DocSearch-Dropdown-Container > .DocSearch-AskAi-Section {
-  padding-block-start: 18px !important;
+  padding-block-start: 1rem !important;
+  padding-block-end: 0 !important;
 }
 
 .DocSearch-Commands {
-  position: relative;
-  top: -1px;
+  position: relative !important;
+  top: -1px !important;
 }
 
 .DocSearch-Hit-content-wrapper {
@@ -237,8 +249,8 @@ a:active {
 }
 
 .DocSearch-Hit-title {
-  position: relative;
-  top: 1px;
+  position: relative !important;
+  top: 1px !important;
 }
 
 .DocSearch-Footer {
