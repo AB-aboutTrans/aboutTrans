@@ -254,7 +254,7 @@ function buildTree(
     if (node.level > max || node.level < min) return
     resolvedHeaders.push({ element: node.element, link: node.link })
 
-    if (parent) parent.children!.push(node)
+    if (parent && !('shouldIgnore' in parent)) parent.children!.push(node)
     else result.push(node)
 
     stack.push(node)

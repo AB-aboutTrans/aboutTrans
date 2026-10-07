@@ -1,6 +1,7 @@
 import { defineConfig, type HeadConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
 import Icons from 'unplugin-icons/vite'
+import pangu from 'markdown-it-pangu'
 import { fileURLToPath } from 'node:url'
 
 const SITE_URL = 'https://aboutrans.info'
@@ -86,6 +87,11 @@ export default defineConfig({
     head.push(['script', { type: 'application/ld+json' }, JSON.stringify(jsonLd)])
 
     return head
+  },
+  markdown: {
+    config(md) {
+      md.use(pangu)
+    },
   },
   vite: {
     resolve: {
