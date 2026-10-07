@@ -1,6 +1,7 @@
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
+import './noto-sans-sc.css'
 import 'virtual:uno.css'
 import { h } from 'vue'
 import Share from './components/share.vue'

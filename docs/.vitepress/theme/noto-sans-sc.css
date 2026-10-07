@@ -1,0 +1,14 @@
+/* Noto Sans SC variable font, SIL OFL 1.1. Full source font; CJK unicode ranges keep Latin text using Inter. */
+
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/noto-sans-sc.woff2') format('woff2');
+  unicode-range: U+2E80-A4CF, U+F900-FAFF, U+FE10-FE1F, U+FE30-FE6F, U+FF00-FFEF, U+20000-323AF;
+}
+
+[lang]:where(:lang(zh)) {
+  --vp-font-family-base: 'Inter Core', 'PingFang SC', 'Noto Sans SC' !important;
+}
