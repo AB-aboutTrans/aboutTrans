@@ -11,7 +11,7 @@ description: 汇总跨性别与多元性别相关概念术语，涵盖性别认�
 
 ## 指派性别
 
-指派性别（Sex/Gender assignment），也称出生被指派性别，指个体在出生时根据其第一性征确定的性别。根据出生时被指派的性别，分为出生指派男性（Assigned Male at Birth，简写为 AMAB）和出生指派女性（Assigned Female at Birth，简写为 AFAB）。出生证明等文件中的性别标记通常用于记录这一信息。指派性别不一定能代表一个人的性别认同。在中文语境下，这一词汇曾被错误地理解为“生理性别”。
+指派性别（Sex/Gender assignment 或 Assigned sex/gender），也称被指派性别，指个体被归类的性别，通常在出生时依据第一性征确定。例如，出生时被指派为男性或女性，分别称为出生指派男性（Assigned Male at Birth，简写为 AMAB）和出生指派女性（Assigned Female at Birth，简写为 AFAB）。出生证明等文件中的性别标记通常用于记录这一信息。指派性别不一定能代表一个人的性别认同。在中文语境下，这一词汇曾被错误地理解为“生理性别”。
 
 ## 性别认同
 
