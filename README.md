@@ -8,7 +8,7 @@ aboutTrans 是由社群共建的跨性别与多元性别知识平台。我们致
 
 ## 参与共建
 
-欢迎 [通过邮件联系我们](mailto:contact@aboutrans.info) 或 [加入我们的项目交流群](https://qm.qq.com/q/ExEqmGZ16g)，也可以通过 GitHub 提交 Issue 或 Pull Request 参与共建。
+欢迎 [通过邮件联系我们](mailto:contact@aboutrans.info) 或 [加入我们的项目交流群](https://qm.qq.com/q/ExEqmGZ16g)。你也可以在 GitHub 提交 Issue 或 Pull Request，参与共建。
 
 ## 项目许可
 
