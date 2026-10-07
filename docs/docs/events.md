@@ -75,4 +75,4 @@ description: 关注跨性别与多元性别相关纪念活动，涵盖性别认�
 
 ## 国际跨性别追悼日
 
-国际跨性别追悼日（International Transgender Day of Remembrance），也称跨性别追悼日（Transgender Day of Remembrance）、跨性别死难者纪念日，日期为每年 11 月 20 日。这一天旨在悼念因反跨性别仇恨暴力而丧生的人，提高公众对跨性别群体所受暴力的关注，并呼吁重视其安全处境。
+国际跨性别追悼日（International Transgender Day of Remembrance），也称跨性别追悼日（Transgender Day of Remembrance）、跨性别死难者纪念日，日期为每年 11 月 20 日。这一天旨在悼念因反跨性别仇恨暴力而丧生的人，提高公众对跨性别群体所受暴力的关注程度，并呼吁重视其安全处境。
