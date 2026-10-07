@@ -63,19 +63,19 @@ description: 汇总跨性别与多元性别相关概念术语，涵盖性别认�
 
 ## 顺性别女性
 
-顺性别女性（Cisgender female 或 Cisgender woman，简写为 Cis female 或 Cis woman），也称顺女，指出生指派性别为女性且性别认同为女性的女性。
+顺性别女性（Cisgender female 或 Cisgender woman，简写为 Cis female 或 Cis woman），也称顺女，指性别认同为女性、出生指派性别为女性的个体。
 
 ## 跨性别女性
 
-跨性别女性（Transgender female 或 Transgender woman，简写为 Trans female 或 Trans woman），也称跨女，指出生指派性别为男性且性别认同为女性的女性。
+跨性别女性（Transgender female 或 Transgender woman，简写为 Trans female 或 Trans woman），也称跨女，指性别认同为女性、出生指派性别为男性的个体。
 
 ## 顺性别男性
 
-顺性别男性（Cisgender male 或 Cisgender man，简写为 Cis male 或 Cis man），也称顺男，指出生指派性别为男性且性别认同为男性的男性。
+顺性别男性（Cisgender male 或 Cisgender man，简写为 Cis male 或 Cis man），也称顺男，指性别认同为男性、出生指派性别为男性的个体。
 
 ## 跨性别男性
 
-跨性别男性（Transgender male 或 Transgender man，简写为 Trans male 或 Trans man），也称跨男，指出生指派性别为女性且性别认同为男性的男性。
+跨性别男性（Transgender male 或 Transgender man，简写为 Trans male 或 Trans man），也称跨男，指性别认同为男性、出生指派性别为女性的个体。
 
 ## 非二元性别
 
@@ -123,7 +123,7 @@ description: 汇总跨性别与多元性别相关概念术语，涵盖性别认�
 
 ## 出柜
 
-出柜（Coming out），指性少数人群将自己的性取向或性别认同告知他人。这一行为可以让他人了解自身身份，获得理解与支持，并减少因误解而受到的无意伤害。如果性少数者在未出柜的情况下被他人透露或被迫告知自己的性取向或性别认同，则称为“炸柜”或“爆柜”。
+出柜（Coming out），指性少数人群将自己的性取向或性别认同告知他人。性少数者可以通过这一行为让他人了解自己的身份，获得理解与支持，并减少因误解而受到的无意伤害。如果性少数者在未出柜的情况下被他人透露或被迫告知自己的性取向或性别认同，则称为“炸柜”或“爆柜”。
 
 ## 过关
 
@@ -151,7 +151,7 @@ description: 汇总跨性别与多元性别相关概念术语，涵盖性别认�
 
 ## 性发育障碍
 
-性发育障碍（Disorders of sex development，简写为 DSD），也称性发育差异（Differences in sex development），指先天性的染色体、性腺或身体性征发育差异。这些差异被发现的时间因人而异，包括出生时、青春期或之后。临床研究发现，部分性发育障碍者会经历性别焦虑，相关情况因具体类型而异。
+性发育障碍（Disorders of sex development，简写为 DSD），也称性发育差异（Differences in sex development），指先天性的染色体、性腺或身体性征发育差异。这些差异可能在出生时、青春期或之后被发现，具体时间因人而异。临床研究发现，部分性发育障碍者会经历性别焦虑，相关情况因具体类型而异。
 
 ## 神经多样性
 
@@ -191,11 +191,11 @@ description: 汇总跨性别与多元性别相关概念术语，涵盖性别认�
 
 ## 面部女性化手术
 
-面部女性化手术（Facial feminization surgery，简写为 FFS），是一组面部手术的统称，旨在使面部特征更符合一般女性的外貌特征。它通常适用于女性倾向跨性别者。
+面部女性化手术（Facial feminization surgery，简写为 FFS），是一组面部手术的统称，目的是使面部特征更符合一般女性的外貌特征。它通常适用于女性倾向跨性别者。
 
 ## 面部男性化手术
 
-面部男性化手术（Facial masculinization surgery，简写为 FMS），是一组面部手术的统称，旨在使面部特征更符合一般男性的外貌特征。它通常适用于男性倾向跨性别者。
+面部男性化手术（Facial masculinization surgery，简写为 FMS），是一组面部手术的统称，目的是使面部特征更符合一般男性的外貌特征。它通常适用于男性倾向跨性别者。
 
 ## 嗓音训练
 
@@ -203,11 +203,11 @@ description: 汇总跨性别与多元性别相关概念术语，涵盖性别认�
 
 ## 嗓音女性化手术
 
-嗓音女性化手术（Voice feminization surgery，简写为 VFS），是一项通过手术改变嗓音的方式，旨在使声音更接近一般女性的音高和音质。它通常适用于女性倾向跨性别者，术后通常仍需结合嗓音训练，进一步调整发声方式。
+嗓音女性化手术（Voice feminization surgery，简写为 VFS），是一种通过手术改变嗓音的方式，目的是使声音更接近一般女性的音高和音质。它通常适用于女性倾向跨性别者，术后通常仍需结合嗓音训练，进一步调整发声方式。
 
 ## 扭转治疗
 
-扭转治疗（Conversion therapy），指试图通过精神干预、厌恶疗法或其他手段改变个体的性取向、浪漫倾向、性别认同或性别表达的伪科学方法。扭转治疗无效，并可能增加抑郁、焦虑、创伤后应激和自杀风险等心理健康风险。主流医学界已明确反对这一做法，并将其视为一种侵犯人权的行为。
+扭转治疗（Conversion therapy），指试图通过精神干预、厌恶疗法或其他手段改变个体的性取向、浪漫倾向、性别认同或性别表达的伪科学方法。扭转治疗无效，并可能增加抑郁、焦虑、创伤后应激及自杀的风险。主流医学界已明确反对这一做法，并将其视为一种侵犯人权的行为。
 
 ## 顺直
 
