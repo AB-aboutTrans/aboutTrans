@@ -220,7 +220,7 @@ a:active {
 
 .DocSearch-AskAiScreen-ExchangesList {
   gap: 0 !important;
-  margin: 4px 0 !important;
+  margin: 4px 0 8px !important;
 }
 
 .DocSearch-AskAiScreen-Query {
