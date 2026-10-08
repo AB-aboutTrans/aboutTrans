@@ -96,9 +96,7 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        // https://github.com/vuejs/vitepress/pull/5463
         './VPLocalNavOutlineDropdown.vue': fileURLToPath(new URL('./theme/components/VPLocalNavOutlineDropdown.vue', import.meta.url)),
-        // Both imports must share the same header cache (PR #5474).
         '../composables/outline': fileURLToPath(new URL('./theme/composables/outline.ts', import.meta.url)),
         './outline.js': fileURLToPath(new URL('./theme/composables/outline.ts', import.meta.url)),
         './VPNavBarHamburger.vue': fileURLToPath(new URL('./theme/components/VPNavBarHamburger.vue', import.meta.url)),
@@ -163,7 +161,6 @@ export default defineConfig({
           agentStudio: true,
         },
         searchParameters: {
-          facetFilters: ['lang:zh-CN'],
           attributesToSnippet: [
             'hierarchy.lvl2:30',
             'content:30',
@@ -171,7 +168,6 @@ export default defineConfig({
         },
         locales: {
           root: {
-            placeholder: '搜索内容或向 AI 提问',
             translations: {
               button: {
                 buttonText: '搜索内容',
@@ -184,11 +180,10 @@ export default defineConfig({
                   closeButtonText: '关闭',
                   closeButtonAriaLabel: '关闭',
                   placeholderText: '搜索内容或向 AI 提问',
-                  placeholderTextAskAi: '向 AI 提问',
+                  placeholderTextAskAi: '继续向 AI 提问',
                   placeholderTextAskAiStreaming: '回答中...',
                   newConversationPlaceholder: '提一个问题',
                   threadDepthErrorPlaceholder: '已达到会话限制',
-                  enterKeyHint: '搜索内容',
                   searchInputLabel: '搜索内容',
                   backToKeywordSearchButtonText: '返回搜索',
                   backToKeywordSearchButtonAriaLabel: '返回搜索',
@@ -208,7 +203,7 @@ export default defineConfig({
                 },
                 resultsScreen: {
                   askAiPlaceholder: '向 AI 提问',
-                  noResultsAskAiPlaceholder: '没有在文档中找到？试试向 AI 提问',
+                  noResultsAskAiPlaceholder: '没有结果？试试向 AI 提问',
                 },
                 askAiScreen: {
                   disclaimerText: '结果由 AI 生成，请注意核查。',
