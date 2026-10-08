@@ -52,6 +52,14 @@ a,
   text-decoration: none !important;
 }
 
+.vp-doc mark {
+  --vp-nolebase-mark-bg-color: #fff1ad !important;
+}
+
+.dark .vp-doc mark {
+  --vp-nolebase-mark-bg-color: #6c4e00 !important;
+}
+
 a:hover,
 a:active {
   opacity: 1 !important;
