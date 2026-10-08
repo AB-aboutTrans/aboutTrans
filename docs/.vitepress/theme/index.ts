@@ -27,10 +27,6 @@ const ExtendedTheme: Theme = {
       'nav-bar-content-after': () => h(Share),
     })
   },
-  enhanceApp(ctx) {
-    const { app } = ctx
-    app.component('Share', Share)
-  },
 }
 
 export default ExtendedTheme

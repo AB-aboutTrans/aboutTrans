@@ -1,4 +1,3 @@
-// Local override for https://github.com/vuejs/vitepress/pull/5474
 import { useMediaQuery } from '@vueuse/core'
 import type { DefaultTheme } from 'vitepress/theme'
 import { onMounted, onUnmounted, onUpdated, type TemplateRef } from 'vue'
@@ -7,8 +6,11 @@ import { throttleAndDebounce } from 'vitepress/dist/client/theme-default/support
 
 const ignoreRE = /\b(?:VPBadge|header-anchor|footnote-ref|ignore-header)\b/
 
-// cached list of anchor elements from resolveHeaders
-const resolvedHeaders: { element: HTMLHeadElement; link: string }[] = []
+type HeadingOutlineItem = Omit<DefaultTheme.OutlineItem, 'element'> & {
+  element: HTMLHeadingElement
+}
+
+const resolvedHeaders: { element: HTMLHeadingElement; link: string }[] = []
 
 export function resolveTitle(theme: DefaultTheme.Config): string {
   return (
@@ -31,7 +33,7 @@ export function getHeaders(
     .map((el) => {
       const level = Number(el.tagName[1])
       return {
-        element: el as HTMLHeadElement,
+        element: el as HTMLHeadingElement,
         title: serializeHeader(el),
         link: '#' + el.id,
         level
@@ -55,7 +57,7 @@ function serializeHeader(h: Element): string {
 }
 
 export function resolveHeaders(
-  headers: DefaultTheme.OutlineItem[],
+  headers: HeadingOutlineItem[],
   range?: DefaultTheme.Config['outline']
 ): DefaultTheme.OutlineItem[] {
   if (range === false) {
@@ -95,7 +97,6 @@ export function useActiveAnchor(
   })
 
   onUpdated(() => {
-    // sidebar update means a route change
     activateLink(location.hash)
   })
 
@@ -130,7 +131,6 @@ export function useActiveAnchor(
     const scrollY = window.scrollY
     const innerHeight = window.innerHeight
 
-    // resolvedHeaders may be repositioned, hidden or fix positioned
     const headers = resolvedHeaders
       .map(({ element, link }) => ({
         link,
@@ -141,13 +141,11 @@ export function useActiveAnchor(
       .filter(({ top }) => !Number.isNaN(top))
       .sort((a, b) => a.top - b.top)
 
-    // no headers available for active link
     if (!headers.length) {
       activateLink(null)
       return
     }
 
-    // page top
     if (scrollY < 1) {
       activateLink(null)
       return
@@ -159,7 +157,6 @@ export function useActiveAnchor(
       Math.max(0, (scrollY - (maxScroll - innerHeight)) / innerHeight)
     )
 
-    // find the last header above the active line
     let activeLink: string | null = null
     for (const { link, top, scrollMarginTop } of headers) {
       const baseOffset = scrollMarginTop + 4
@@ -174,12 +171,18 @@ export function useActiveAnchor(
   }
 
   function activateLink(hash: string | null) {
-    const activeLink =
-      hash != null
-        ? (container.value?.querySelector<HTMLAnchorElement>(
-            `a[href$="${decodeURIComponent(hash)}"]`
-          ) ?? null)
-        : null
+    let activeLink: HTMLAnchorElement | null = null
+    if (hash != null) {
+      let decodedHash: string
+      try {
+        decodedHash = decodeURIComponent(hash)
+      } catch {
+        decodedHash = hash
+      }
+      activeLink =
+        Array.from(container.value?.querySelectorAll<HTMLAnchorElement>('a[href]') ?? [])
+          .find((link) => link.getAttribute('href')?.endsWith(decodedHash)) ?? null
+    }
 
     if (activeLink === prevActiveLink) return
 
@@ -189,8 +192,6 @@ export function useActiveAnchor(
     if (activeLink) {
       activeLink.classList.add('active')
       if (marker.value) {
-        // the links' offsetParent (.root) sits below the outline title while
-        // the marker is offset from .content, so re-align their origins
         marker.value.style.top =
           activeLink.offsetTop +
           ((activeLink.offsetParent as HTMLElement)?.offsetTop ?? 0) +
@@ -210,10 +211,6 @@ function getAbsoluteTop(element: HTMLElement): number {
   let offsetTop = 0
   while (element !== document.body) {
     if (element === null) {
-      // child element is:
-      // - not attached to the DOM (display: none)
-      // - set to fixed position (not scrollable)
-      // - body or html element (null offsetParent)
       return NaN
     }
     offsetTop += element.offsetTop
@@ -223,7 +220,7 @@ function getAbsoluteTop(element: HTMLElement): number {
 }
 
 function buildTree(
-  data: DefaultTheme.OutlineItem[],
+  data: HeadingOutlineItem[],
   min: number,
   max: number
 ): DefaultTheme.OutlineItem[] {

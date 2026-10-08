@@ -123,7 +123,6 @@ a:active {
 .DocSearch-Divider,
 .DocSearch-Help,
 .DocSearch-Menu-trigger.DocSearch-Action,
-.DocSearch-NoResults-Prefill-List-Items p,
 .DocSearch-CodeSnippet-CopyButton,
 .header-anchor {
   display: none !important;
@@ -237,7 +236,7 @@ a:active {
 
 .DocSearch-Back-Icon:hover,
 .DocSearch-Back-Icon:active {
-  color: var(--vp-c-brand) !important;
+  color: var(--vp-c-brand-1) !important;
 }
 
 .DocSearch-NoResults {
@@ -290,6 +289,38 @@ a:active {
   width: calc(100% - 2 * (1rem - var(--docsearch-spacing))) !important;
 }
 
+.DocSearch-Form {
+  padding-inline: 1.5rem 0.625rem !important;
+}
+
+.DocSearch-Form .DocSearch-Actions {
+  padding: 0 !important;
+}
+
+.DocSearch-Form .DocSearch-Close {
+  margin-inline: 0.75rem !important;
+}
+
+.DocSearch-Form .DocSearch-Close svg,
+.DocSearch-MagnifierLabel svg,
+.DocSearch-LoadingIndicator svg {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+}
+
+.DocSearch-Hit a,
+.DocSearch-Hit--AskAI {
+  padding-inline-start: 0.5rem !important;
+}
+
+.DocSearch-Hit-Container {
+  padding-inline-end: 7px !important;
+}
+
+.DocSearch-Hit-action {
+  justify-content: center !important;
+}
+
 @media not all and (min-width: 48rem) {
   :root:root {
     --docsearch-searchbox-height: calc(var(--vp-nav-height) + 1px) !important;
@@ -298,19 +329,12 @@ a:active {
 
   .DocSearch-Form {
     padding-block: 0 !important;
-    padding-inline: 1.5rem 0.625rem !important;
   }
 
-  .DocSearch-Form .DocSearch-Actions {
-    padding: 0 !important;
-  }
-
-  .DocSearch-Form .DocSearch-Close,
   .DocSearch-Sidepanel-Action-close {
     margin-inline: 0.75rem !important;
   }
 
-  .DocSearch-Form .DocSearch-Close svg,
   .DocSearch-Sidepanel-Action-close svg {
     width: 1.25rem !important;
     height: 1.25rem !important;
@@ -338,73 +362,26 @@ a:active {
     padding-inline: calc(1.5rem - var(--docsearch-spacing)) !important;
   }
 
-  .DocSearch-Hit a,
-  .DocSearch-Hit--AskAI {
-    padding-inline-start: 0.5rem !important;
-  }
-
-  .DocSearch-Hit-Container {
-    padding-inline-end: 7px !important;
-  }
-
-  .DocSearch-Hit-action {
-    justify-content: center !important;
-  }
-
   .DocSearch-Input,
-  .DocSearch-Modal-heading,
-  .DocSearch-Modal-heading.shimmer {
+  .DocSearch-Modal-heading {
     height: 1.5rem !important;
+    line-height: 1.5rem !important;
+  }
+
+  .DocSearch-Modal-heading:not(.shimmer) {
     padding-block: 0 !important;
     font-size: 1rem !important;
-    line-height: 1.5rem !important;
   }
 
   .DocSearch-Sidepanel-Title {
     font-size: 1rem !important;
     line-height: 1.5rem !important;
   }
-
-  .DocSearch-MagnifierLabel svg,
-  .DocSearch-LoadingIndicator svg {
-    width: 1.25rem !important;
-    height: 1.25rem !important;
-  }
 }
 
 @media (min-width: 48rem) {
   .DocSearch-Hit-AskAIButton-icon {
     margin-inline-end: 8px !important;
-  }
-
-  .DocSearch-Form {
-    padding-inline: 24px 10px !important;
-  }
-
-  .DocSearch-Form .DocSearch-Close {
-    margin-inline: 12px !important;
-  }
-
-  .DocSearch-Form .DocSearch-Actions {
-    padding: 0 !important;
-  }
-
-  .DocSearch-Form .DocSearch-Close svg {
-    width: 20px !important;
-    height: 20px !important;
-  }
-
-  .DocSearch-Hit a,
-  .DocSearch-Hit--AskAI {
-    padding-inline-start: 8px !important;
-  }
-
-  .DocSearch-Hit-Container {
-    padding-inline-end: 7px !important;
-  }
-
-  .DocSearch-Hit-action {
-    justify-content: center !important;
   }
 
   .DocSearch-NewConversationScreen {
@@ -416,14 +393,6 @@ a:active {
     padding-inline-start: 8px !important;
   }
 
-  .DocSearch-MagnifierLabel svg,
-  .DocSearch-LoadingIndicator svg {
-    width: 1.25rem !important;
-    height: 1.25rem !important;
-  }
-}
-
-@media (min-width: 48rem) {
   .DocSearch-Modal {
     overflow: hidden !important;
     border-radius: 12px !important;

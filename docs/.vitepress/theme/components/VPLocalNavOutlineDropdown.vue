@@ -1,4 +1,3 @@
-<!-- Local override for https://github.com/vuejs/vitepress/pull/5463 -->
 <script setup lang="ts">
 import { onKeyStroke } from '@vueuse/core'
 import { onContentUpdated } from 'vitepress'
@@ -22,7 +21,6 @@ const main = useTemplateRef('main')
 const items = useTemplateRef('items')
 const itemsId = useId()
 
-// lock body scroll while the dropdown is open to prevent scroll chaining
 const isLocked = useBodyScrollLock()
 
 function closeOnClickOutside(e: Event) {
@@ -31,13 +29,12 @@ function closeOnClickOutside(e: Event) {
   }
 }
 
-watch(open, (value) => {
+watch(open, (value, _, onCleanup) => {
   isLocked.value = value
   if (value) {
     document.addEventListener('click', closeOnClickOutside)
-    return
+    onCleanup(() => document.removeEventListener('click', closeOnClickOutside))
   }
-  document.removeEventListener('click', closeOnClickOutside)
 })
 
 onKeyStroke('Escape', () => {
@@ -55,7 +52,6 @@ function toggle() {
 
 function onItemClick(e: Event) {
   if ((e.target as HTMLElement).classList.contains('outline-link')) {
-    // disable animation on hash navigation when page jumps
     if (items.value) {
       items.value.style.transition = 'none'
     }
