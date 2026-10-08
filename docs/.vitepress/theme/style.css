@@ -385,3 +385,52 @@ a:active {
     border-radius: 12px !important;
   }
 }
+
+@media (min-width: 60rem) {
+  .VPHome .VPHomeHero .container {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .VPHome .VPHomeHero .image {
+    order: 1 !important;
+    flex-grow: 0 !important;
+    width: 100% !important;
+    min-height: auto !important;
+    margin: 0 0 2rem !important;
+  }
+
+  .VPHome .VPHomeHero .main {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .VPHome .VPHomeHero .image-container {
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+  }
+
+  .VPHome .VPHomeHero .image-src {
+    position: static !important;
+    height: auto !important;
+    transform: none !important;
+    margin-inline: auto !important;
+  }
+
+  .VPHome .VPHomeHero .heading {
+    align-items: center !important;
+  }
+
+  .VPHome .VPHomeHero .name,
+  .VPHome .VPHomeHero .text,
+  .VPHome .VPHomeHero .tagline {
+    margin-inline: auto !important;
+  }
+
+  .VPHome .VPHomeHero .actions {
+    justify-content: center !important;
+  }
+}

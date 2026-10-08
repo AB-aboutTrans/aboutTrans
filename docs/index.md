@@ -5,7 +5,6 @@ layout: home
 hero:
   name: 跨性别与多元性别
   text: 你想知道的都在这里
-  tagline: 由社群共建的跨性别与多元性别知识平台
   image:
     src: /hero.svg
     alt: aboutTrans
