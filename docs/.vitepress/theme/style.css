@@ -282,6 +282,7 @@ a:active {
 }
 
 .DocSearch-Footer {
+  background: var(--docsearch-modal-background) !important;
   padding-inline: 1rem !important;
 }
 
