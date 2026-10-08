@@ -58,6 +58,16 @@ a:active {
   color: var(--vp-c-text-2) !important;
 }
 
+.VPNavBarHamburger {
+  padding-inline-end: 4px !important;
+}
+
+@media (min-width: 48rem) {
+  .VPNavBar .unocss-scope > button {
+    padding-inline-end: 0 !important;
+  }
+}
+
 .VPLocalNavOutlineDropdown > button {
   display: flex !important;
   align-items: center !important;
@@ -257,6 +267,10 @@ a:active {
   padding-inline: 1rem !important;
 }
 
+.DocSearch-Logo svg {
+  transform: translateY(-0.5px) !important;
+}
+
 .DocSearch-Form .DocSearch-AskAi-Return {
   min-width: 1.25rem !important;
   padding: 0 !important;
@@ -284,7 +298,7 @@ a:active {
 
   .DocSearch-Form {
     padding-block: 0 !important;
-    padding-inline: 1.5rem 0.5rem !important;
+    padding-inline: 1.5rem 0.625rem !important;
   }
 
   .DocSearch-Form .DocSearch-Actions {
@@ -330,7 +344,11 @@ a:active {
   }
 
   .DocSearch-Hit-Container {
-    padding-inline-end: 5px !important;
+    padding-inline-end: 7px !important;
+  }
+
+  .DocSearch-Hit-action {
+    justify-content: center !important;
   }
 
   .DocSearch-Input,
@@ -360,7 +378,33 @@ a:active {
   }
 
   .DocSearch-Form {
-    padding-inline: 28px 25px !important;
+    padding-inline: 24px 10px !important;
+  }
+
+  .DocSearch-Form .DocSearch-Close {
+    margin-inline: 12px !important;
+  }
+
+  .DocSearch-Form .DocSearch-Actions {
+    padding: 0 !important;
+  }
+
+  .DocSearch-Form .DocSearch-Close svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .DocSearch-Hit a,
+  .DocSearch-Hit--AskAI {
+    padding-inline-start: 8px !important;
+  }
+
+  .DocSearch-Hit-Container {
+    padding-inline-end: 7px !important;
+  }
+
+  .DocSearch-Hit-action {
+    justify-content: center !important;
   }
 
   .DocSearch-NewConversationScreen {

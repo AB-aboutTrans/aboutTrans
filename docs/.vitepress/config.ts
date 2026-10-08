@@ -184,7 +184,7 @@ export default defineConfig({
                   closeButtonText: '关闭',
                   closeButtonAriaLabel: '关闭',
                   placeholderText: '搜索内容或向 AI 提问',
-                  placeholderTextAskAi: '向 AI 提问',
+                  placeholderTextAskAi: '继续向 AI 提问',
                   placeholderTextAskAiStreaming: '回答中...',
                   newConversationPlaceholder: '提一个问题',
                   threadDepthErrorPlaceholder: '已达到会话限制',
