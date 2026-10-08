@@ -14,6 +14,19 @@
   --vp-backdrop-bg-color: rgba(0, 0, 0, 0.5);
 }
 
+:root {
+  --vp-c-bg: #ffffff !important;
+  --vp-c-bg-alt: #fafafa !important;
+  --vp-c-text-1: #2C2D2E !important;
+}
+
+.dark {
+  --vp-c-bg: #101010 !important;
+  --vp-c-bg-alt: #181818 !important;
+  --vp-c-bg-soft: #181818 !important;
+  --vp-c-text-1: #E7E8EA !important;
+}
+
 *,
 *::before,
 *::after {
@@ -61,6 +74,11 @@ a:active {
 .VPLocalNavOutlineDropdown > button {
   display: flex !important;
   align-items: center !important;
+}
+
+.VPLocalNavOutlineDropdown .header,
+.VPLocalNavOutlineDropdown .outline {
+  background-color: var(--vp-c-bg-alt) !important;
 }
 
 .VPDocFooter a.pager-link,
