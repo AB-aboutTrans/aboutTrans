@@ -248,9 +248,9 @@ a:active {
   overflow-y: hidden !important;
 }
 
-.DocSearch-Hit-title {
-  position: relative !important;
-  top: 1px !important;
+.DocSearch-Hit-title,
+.DocSearch-Hit-path {
+  line-height: 1.2 !important;
 }
 
 .DocSearch-Footer {
