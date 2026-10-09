@@ -2,12 +2,12 @@
   "name": "aboutTrans",
   "type": "module",
   "devDependencies": {
-    "@iconify-json/octicon": "^1.2.5",
+    "@iconify-json/lucide": "^1.2.138",
     "@nolebase/vitepress-plugin-enhanced-mark": "^2.18.2",
     "@types/node": "^25.5.0",
     "@unocss/preset-attributify": "^66.7.5",
-    "@unocss/preset-icons": "^66.7.5",
     "@unocss/preset-mini": "^66.7.5",
+    "markdown-it-pangu": "^1.0.2",
     "unocss": "^66.7.5",
     "unplugin-icons": "^23.0.1",
     "vitepress": "^2.0.0-alpha.20"

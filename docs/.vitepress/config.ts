@@ -1,6 +1,8 @@
 import { defineConfig, type HeadConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
 import Icons from 'unplugin-icons/vite'
+import pangu from 'markdown-it-pangu'
+import { fileURLToPath } from 'node:url'
 
 const SITE_URL = 'https://aboutrans.info'
 const SITE_NAME = 'aboutTrans'
@@ -56,7 +58,11 @@ export default defineConfig({
     ['meta', { name: 'twitter:image:height', content: String(SOCIAL_IMAGE_HEIGHT) }],
     ['meta', { name: 'twitter:image:alt', content: SOCIAL_IMAGE_ALT }],
   ],
-  transformHead: ({ pageData, title, description }) => {
+  transformHead: ({ page, pageData, title, description }) => {
+    if (page === '404.md') {
+      return [['meta', { name: 'robots', content: 'noindex' }]]
+    }
+
     const head: HeadConfig[] = []
     const url = `${SITE_URL}/${pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2')}`
 
@@ -86,7 +92,20 @@ export default defineConfig({
 
     return head
   },
+  markdown: {
+    config(md) {
+      md.use(pangu)
+    },
+  },
   vite: {
+    resolve: {
+      alias: {
+        './VPLocalNavOutlineDropdown.vue': fileURLToPath(new URL('./theme/components/VPLocalNavOutlineDropdown.vue', import.meta.url)),
+        '../composables/outline': fileURLToPath(new URL('./theme/composables/outline.ts', import.meta.url)),
+        './outline.js': fileURLToPath(new URL('./theme/composables/outline.ts', import.meta.url)),
+        './VPNavBarHamburger.vue': fileURLToPath(new URL('./theme/components/VPNavBarHamburger.vue', import.meta.url)),
+      },
+    },
     plugins: [
       UnoCSS(),
       Icons(),
@@ -94,7 +113,7 @@ export default defineConfig({
   },
 
   themeConfig: {
-    logo: '/favicon.svg',
+    logo: { src: '/favicon.svg', alt: 'aboutTrans' },
     sidebarMenuLabel: '目录',
     darkModeSwitchLabel: '外观',
     lightModeSwitchTitle: '切换到浅色模式',
@@ -139,12 +158,13 @@ export default defineConfig({
         apiKey: 'ac690e86bfae8e8965ca0eb54624758b',
         indexName: 'index_ab_vitepress_crawls',
         maxResultsPerGroup: 10,
+        recentSearchesLimit: 10,
+        recentSearchesWithFavoritesLimit: 10,
         askAi: {
           assistantId: 'd605bb57-d72b-413b-8a8d-96b0de052392',
           agentStudio: true,
         },
         searchParameters: {
-          facetFilters: ['lang:zh-CN'],
           attributesToSnippet: [
             'hierarchy.lvl2:30',
             'content:30',
@@ -152,7 +172,6 @@ export default defineConfig({
         },
         locales: {
           root: {
-            placeholder: '搜索内容或向 AI 提问',
             translations: {
               button: {
                 buttonText: '搜索内容',
@@ -165,9 +184,10 @@ export default defineConfig({
                   closeButtonText: '关闭',
                   closeButtonAriaLabel: '关闭',
                   placeholderText: '搜索内容或向 AI 提问',
-                  placeholderTextAskAi: '向 AI 提问',
+                  placeholderTextAskAi: '继续向 AI 提问',
                   placeholderTextAskAiStreaming: '回答中...',
-                  enterKeyHint: '搜索内容',
+                  newConversationPlaceholder: '提一个问题',
+                  threadDepthErrorPlaceholder: '已达到会话限制',
                   searchInputLabel: '搜索内容',
                   backToKeywordSearchButtonText: '返回搜索',
                   backToKeywordSearchButtonAriaLabel: '返回搜索',
@@ -187,13 +207,17 @@ export default defineConfig({
                 },
                 resultsScreen: {
                   askAiPlaceholder: '向 AI 提问',
-                  noResultsAskAiPlaceholder: '没有在文档中找到？试试向 AI 提问',
+                  noResultsAskAiPlaceholder: '没有结果？试试向 AI 提问',
                 },
                 askAiScreen: {
                   disclaimerText: '结果由 AI 生成，请注意核查。',
                   thinkingText: '请稍候...',
                   preToolCallText: '正在搜索',
                   duringToolCallText: '搜索中...',
+                },
+                newConversation: {
+                  newConversationTitle: '你想了解什么？',
+                  newConversationDescription: 'AI 会从本站文档中查找相关内容，\n帮助你了解跨性别与多元性别相关知识。',
                 },
                 footer: {
                   selectText: '选择',

@@ -25,17 +25,20 @@
   SOFTWARE.
 -->
 <script lang="ts" setup>
-import { useClipboard } from '@vueuse/core'
+/// <reference path="../../env.d.ts" />
+
+import { useTimeoutFn } from '@vueuse/core'
 import { ref, watch, onMounted } from 'vue'
 import { useRoute } from 'vitepress'
-import IconShare from '~icons/octicon/share-16'
-import IconCheckbox from '~icons/octicon/checkbox-16'
+import IconShare from '~icons/lucide/share'
+import IconCheck from '~icons/lucide/check'
+import IconX from '~icons/lucide/x'
 
 const route = useRoute()
 const shareLink = ref('')
+const shareState = ref<'idle' | 'success' | 'failure'>('idle')
 const isMounted = ref(false)
 
-// Ensure component only runs on client-side
 onMounted(() => {
   isMounted.value = true
   updateShareLink()
@@ -45,37 +48,53 @@ function updateShareLink() {
   if (typeof window === 'undefined' || !isMounted.value)
     return
   shareLink.value = window.location.href
+  shareState.value = 'idle'
 }
 
 watch(() => route.path, updateShareLink, { immediate: true })
 
-const { copy, copied: shareSuccess } = useClipboard()
-function copyShareLink() {
-  copy(shareLink.value)
+const { start: resetShareState } = useTimeoutFn(() => {
+  if (shareState.value === 'success' || shareState.value === 'failure')
+    shareState.value = 'idle'
+}, 1500, { immediate: false })
+
+async function copyShareLink() {
+  try {
+    await navigator.clipboard.writeText(shareLink.value)
+    shareState.value = 'success'
+    resetShareState()
+  } catch {
+    shareState.value = 'failure'
+    resetShareState()
+  }
 }
 </script>
 
 <template>
   <div class="unocss-scope" style="display: flex; align-items: center; justify-content: center;">
     <button h-full ws-nowrap px3 text-sm font-semibold text="$vp-c-text-1" :class="[
-      shareSuccess ? '!text-green-400' : '',
+      shareState === 'success' ? '!text-green-400' : '',
+      shareState === 'failure' ? '!text-red-500' : '',
       shareLink ? 'hover:sm:text-$vp-c-brand' : '!cursor-wait',
-    ]" :disabled="(!isMounted || !shareLink || shareSuccess)" @click="copyShareLink()">
+    ]" :disabled="(!isMounted || !shareLink || shareState !== 'idle')" @click="copyShareLink()">
       <Transition mode="out-in" enter-active-class="share-btn-enter-active"
         leave-active-class="share-btn-leave-active"
         enter-from-class="transform translate-y-30px opacity-0" leave-to-class="transform translate-y--30px opacity-0"
         enter-to-class="opacity-100" leave-from-class="opacity-100">
-        <span v-if="shareSuccess" class="share-btn-content" flex items-center space-x-1>
-          <IconCheckbox class="checkbox-icon" aria-hidden="true" />
+        <span v-if="shareState === 'success'" class="share-btn-content" flex items-center>
+          <IconCheck class="check-icon" aria-hidden="true" />
           <span>复制成功</span>
         </span>
-        <span v-else class="share-btn-content" flex items-center space-x-1>
+        <span v-else-if="shareState === 'failure'" class="share-btn-content" flex items-center>
+          <IconX class="failure-icon" aria-hidden="true" />
+          <span>复制失败</span>
+        </span>
+        <span v-else class="share-btn-content" flex items-center>
           <IconShare class="share-icon" aria-hidden="true" />
           <span>分享此页</span>
         </span>
       </Transition>
     </button>
-    <div class="bg-$vp-c-divider-light" mx2 block h-24px w-1px md:hidden />
   </div>
 </template>
 
@@ -93,11 +112,18 @@ function copyShareLink() {
 }
 
 .unocss-scope .share-icon,
-.unocss-scope .checkbox-icon {
+.unocss-scope .check-icon,
+.unocss-scope .failure-icon {
   display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
+  width: 16px;
+  height: 16px;
   flex-shrink: 0;
   margin-inline-end: 4px;
+}
+
+.unocss-scope .share-icon path,
+.unocss-scope .check-icon path,
+.unocss-scope .failure-icon path {
+  stroke-width: 2.5;
 }
 </style>
