@@ -27,6 +27,10 @@
   --vp-c-text-1: #e7e8ea !important;
 }
 
+::selection {
+  background-color: color-mix(in srgb, var(--vp-c-brand-1) 25%, transparent) !important;
+}
+
 *,
 *::before,
 *::after {
