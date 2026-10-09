@@ -52,6 +52,87 @@ a,
   text-decoration: none !important;
 }
 
+.vp-doc h1,
+.vp-doc h2 {
+  letter-spacing: normal !important;
+}
+
+.vp-doc h1 {
+  font-size: 2rem !important;
+  line-height: 1.25 !important;
+}
+
+.vp-doc .custom-block {
+  font-size: 1rem !important;
+  line-height: 1.75 !important;
+}
+
+.vp-doc .custom-block p {
+  line-height: inherit !important;
+}
+
+.vp-doc .custom-block-title {
+  font-size: 1.125rem !important;
+}
+
+.VPFeature .title {
+  font-size: 1.125rem !important;
+}
+
+.VPFeature .details {
+  font-size: 1rem !important;
+  line-height: 1.75 !important;
+}
+
+.vp-doc .footnotes {
+  font-size: 1rem !important;
+}
+
+.VPSidebarItem .text {
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+}
+
+.VPNavScreenAppearance .text {
+  font-size: 0.875rem !important;
+  line-height: 1.5rem !important;
+}
+
+.VPDocOutlineItem .outline-link,
+.VPDocAsideOutline .outline-title {
+  font-size: 1rem !important;
+  line-height: 2 !important;
+}
+
+.VPDocFooter .pager-link .title {
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+}
+
+.VPDocFooter .pager-link .desc {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+}
+
+.VPDocFooter .edit-link-button,
+.VPLastUpdated {
+  font-size: 1rem !important;
+}
+
+.VPDocFooter .edit-link-button {
+  line-height: 2 !important;
+}
+
+.VPLastUpdated {
+  line-height: 1.5 !important;
+}
+
+@media (min-width: 40rem) {
+  .VPLastUpdated {
+    line-height: 2 !important;
+  }
+}
+
 .vp-doc mark {
   --vp-nolebase-mark-bg-color: #fff1ad !important;
 }
@@ -78,6 +159,7 @@ a:active {
 .VPLocalNav .menu,
 .VPLocalNavOutlineDropdown > button {
   color: var(--vp-c-text-2) !important;
+  font-size: 0.875rem !important;
 }
 
 .VPNavBarHamburger {
@@ -186,6 +268,7 @@ a:active {
 
 .DocSearch-Hit-source {
   padding-block: 8px !important;
+  font-size: 1rem !important;
 }
 
 .DocSearch-Hits .DocSearch-Hit:first-of-type,
@@ -232,7 +315,18 @@ a:active {
 }
 
 .DocSearch-AskAiScreen-Query {
-  line-height: 28px !important;
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+}
+
+.DocSearch-AskAiScreen-Response .DocSearch-Markdown-Content {
+  font-size: 1rem !important;
+  line-height: 1.75 !important;
+}
+
+.DocSearch-AskAiScreen-Response .DocSearch-Markdown-Content li {
+  line-height: inherit !important;
+  margin-block: 8px !important;
 }
 
 .DocSearch-NewConversationScreen-Description {
@@ -252,7 +346,7 @@ a:active {
   margin: 0 -4px !important;
   padding-block: 8px 4px !important;
   padding-inline: var(--docsearch-spacing) 4px !important;
-  font-size: 14px !important;
+  font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 32px !important;
 }
@@ -287,6 +381,14 @@ a:active {
 .DocSearch-Hit-title,
 .DocSearch-Hit-path {
   line-height: 1.2 !important;
+}
+
+.DocSearch-Hit-title {
+  font-size: 1rem !important;
+}
+
+.DocSearch-Hit-path {
+  font-size: 0.875rem !important;
 }
 
 .DocSearch-Footer {
