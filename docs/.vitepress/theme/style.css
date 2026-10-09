@@ -181,6 +181,11 @@ a:active {
   border-color: transparent !important;
 }
 
+.VPHome .VPFeature,
+.VPNavScreenAppearance {
+  background-color: color-mix(in srgb, var(--vp-c-bg-soft) 80%, transparent) !important;
+}
+
 .NotFound .action .link {
   display: inline !important;
   padding: 0 !important;
@@ -204,8 +209,13 @@ a:active {
   box-shadow: none !important;
 }
 
+.VPBackdrop {
+  -webkit-backdrop-filter: blur(4px) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
 .DocSearch-Container {
-  background: rgba(0, 0, 0, 0.5) !important;
+  background: var(--vp-backdrop-bg-color) !important;
 }
 
 .pager-link {
