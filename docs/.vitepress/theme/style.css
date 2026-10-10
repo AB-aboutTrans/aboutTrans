@@ -10,7 +10,7 @@
   --vp-button-brand-active-border: var(--vp-c-brand-2);
   --vp-button-brand-active-bg: var(--vp-c-brand-2);
   --vp-nav-bg-color: color-mix(in srgb, var(--vp-c-bg) 80%, transparent);
-  --vp-nav-backdrop-filter: saturate(180%) blur(16px);
+  --vp-nav-backdrop-filter: blur(16px);
   --vp-backdrop-bg-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -141,6 +141,11 @@ a:active {
   .VPNavBar.home:not(.screen-open)::before {
     backdrop-filter: none !important;
   }
+}
+
+.VPNavScreen.fade-enter-active,
+.VPNavScreen.fade-leave-active {
+  transition: none !important;
 }
 
 .VPLocalNav .menu,
