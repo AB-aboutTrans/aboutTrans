@@ -9,9 +9,26 @@
   --vp-button-brand-hover-bg: var(--vp-c-brand-1);
   --vp-button-brand-active-border: var(--vp-c-brand-2);
   --vp-button-brand-active-bg: var(--vp-c-brand-2);
-  --vp-nav-bg-color: color-mix(in srgb, var(--vp-c-bg) 85%, transparent);
-  --vp-nav-backdrop-filter: saturate(180%) blur(12px);
+  --vp-nav-bg-color: color-mix(in srgb, var(--vp-c-bg) 80%, transparent);
+  --vp-nav-backdrop-filter: blur(16px);
   --vp-backdrop-bg-color: rgba(0, 0, 0, 0.5);
+}
+
+:root {
+  --vp-c-bg: #ffffff !important;
+  --vp-c-bg-alt: #fafafa !important;
+  --vp-c-text-1: #2c2d2e !important;
+}
+
+.dark {
+  --vp-c-bg: #101010 !important;
+  --vp-c-bg-alt: #181818 !important;
+  --vp-c-bg-soft: #181818 !important;
+  --vp-c-text-1: #e7e8ea !important;
+}
+
+::selection {
+  background-color: color-mix(in srgb, var(--vp-c-brand-1) 25%, transparent) !important;
 }
 
 *,
@@ -39,6 +56,78 @@ a,
   text-decoration: none !important;
 }
 
+.vp-doc h1,
+.vp-doc h2 {
+  letter-spacing: normal !important;
+}
+
+.vp-doc h1 {
+  font-size: 2rem !important;
+  line-height: 1.25 !important;
+}
+
+.vp-doc .custom-block,
+.VPFeature .details,
+.DocSearch-AskAiScreen-Response .DocSearch-Markdown-Content {
+  font-size: 1rem !important;
+  line-height: 1.75 !important;
+}
+
+.vp-doc .custom-block p {
+  line-height: inherit !important;
+}
+
+.vp-doc .custom-block-title,
+.VPFeature .title {
+  font-size: 1.125rem !important;
+}
+
+.vp-doc .footnotes {
+  font-size: 1rem !important;
+}
+
+.VPSidebarItem .text,
+.VPDocFooter .pager-link .title {
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+}
+
+.VPNavScreenAppearance .text {
+  font-size: 0.875rem !important;
+  line-height: 1.5rem !important;
+}
+
+.VPDocOutlineItem .outline-link,
+.VPDocAsideOutline .outline-title,
+.VPDocFooter .edit-link-button {
+  font-size: 1rem !important;
+  line-height: 2 !important;
+}
+
+.VPDocFooter .pager-link .desc {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+}
+
+.VPLastUpdated {
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+}
+
+@media (min-width: 40rem) {
+  .VPLastUpdated {
+    line-height: 2 !important;
+  }
+}
+
+.vp-doc mark {
+  --vp-nolebase-mark-bg-color: #fff1ad !important;
+}
+
+.dark .vp-doc mark {
+  --vp-nolebase-mark-bg-color: #6c4e00 !important;
+}
+
 a:hover,
 a:active {
   opacity: 1 !important;
@@ -54,9 +143,15 @@ a:active {
   }
 }
 
+.VPNavScreen.fade-enter-active,
+.VPNavScreen.fade-leave-active {
+  transition: none !important;
+}
+
 .VPLocalNav .menu,
 .VPLocalNavOutlineDropdown > button {
   color: var(--vp-c-text-2) !important;
+  font-size: 0.875rem !important;
 }
 
 .VPNavBarHamburger {
@@ -74,6 +169,11 @@ a:active {
   align-items: center !important;
 }
 
+.VPLocalNavOutlineDropdown .header,
+.VPLocalNavOutlineDropdown .outline {
+  background-color: var(--vp-c-bg-alt) !important;
+}
+
 .VPDocFooter a.pager-link,
 .VPLocalNavOutlineDropdown > div.items,
 .custom-block {
@@ -84,6 +184,11 @@ a:active {
 .VPFeature,
 .VPSwitch {
   border-color: transparent !important;
+}
+
+.VPHome .VPFeature,
+.VPNavScreenAppearance {
+  background-color: color-mix(in srgb, var(--vp-c-bg-soft) 80%, transparent) !important;
 }
 
 .NotFound .action .link {
@@ -109,8 +214,13 @@ a:active {
   box-shadow: none !important;
 }
 
+.VPBackdrop {
+  -webkit-backdrop-filter: blur(4px) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
 .DocSearch-Container {
-  background: rgba(0, 0, 0, 0.5) !important;
+  background: var(--vp-backdrop-bg-color) !important;
 }
 
 .pager-link {
@@ -125,6 +235,8 @@ a:active {
 .DocSearch-Help,
 .DocSearch-Menu-trigger.DocSearch-Action,
 .DocSearch-CodeSnippet-CopyButton,
+.DocSearch-HitsFooter:empty,
+.DocSearch-NoResults,
 .header-anchor {
   display: none !important;
 }
@@ -156,10 +268,13 @@ a:active {
 
 .DocSearch-Hit {
   padding-block-end: 8px !important;
+  margin-inline: calc(1rem - var(--docsearch-spacing)) !important;
 }
 
 .DocSearch-Hit-source {
   padding-block: 8px !important;
+  padding-inline-start: var(--docsearch-spacing) !important;
+  font-size: 1rem !important;
 }
 
 .DocSearch-Hits .DocSearch-Hit:first-of-type,
@@ -173,10 +288,6 @@ a:active {
 
 .DocSearch-Hits {
   margin-block-end: 0 !important;
-}
-
-.DocSearch-HitsFooter:empty {
-  display: none !important;
 }
 
 .DocSearch-Dropdown:has(.DocSearch-Hits) {
@@ -206,7 +317,13 @@ a:active {
 }
 
 .DocSearch-AskAiScreen-Query {
-  line-height: 28px !important;
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+}
+
+.DocSearch-AskAiScreen-Response .DocSearch-Markdown-Content li {
+  line-height: inherit !important;
+  margin-block: 8px !important;
 }
 
 .DocSearch-NewConversationScreen-Description {
@@ -226,7 +343,7 @@ a:active {
   margin: 0 -4px !important;
   padding-block: 8px 4px !important;
   padding-inline: var(--docsearch-spacing) 4px !important;
-  font-size: 14px !important;
+  font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 32px !important;
 }
@@ -238,10 +355,6 @@ a:active {
 .DocSearch-Back-Icon:hover,
 .DocSearch-Back-Icon:active {
   color: var(--vp-c-brand-1) !important;
-}
-
-.DocSearch-NoResults {
-  display: none !important;
 }
 
 .DocSearch-Dropdown-Container > .DocSearch-AskAi-Section {
@@ -263,7 +376,16 @@ a:active {
   line-height: 1.2 !important;
 }
 
+.DocSearch-Hit-title {
+  font-size: 1rem !important;
+}
+
+.DocSearch-Hit-path {
+  font-size: 0.875rem !important;
+}
+
 .DocSearch-Footer {
+  background: var(--docsearch-modal-background) !important;
   padding-inline: 1rem !important;
 }
 
@@ -274,14 +396,6 @@ a:active {
 .DocSearch-Form .DocSearch-AskAi-Return {
   min-width: 1.25rem !important;
   padding: 0 !important;
-}
-
-.DocSearch-Hit {
-  margin-inline: calc(1rem - var(--docsearch-spacing)) !important;
-}
-
-.DocSearch-Hit-source {
-  padding-inline-start: var(--docsearch-spacing) !important;
 }
 
 .DocSearch-Dropdown .DocSearch-AskAiScreen-Body,
@@ -397,5 +511,54 @@ a:active {
   .DocSearch-Modal {
     overflow: hidden !important;
     border-radius: 12px !important;
+  }
+}
+
+@media (min-width: 60rem) {
+  .VPHome .VPHomeHero .container {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .VPHome .VPHomeHero .image {
+    order: 1 !important;
+    flex-grow: 0 !important;
+    width: 100% !important;
+    min-height: auto !important;
+    margin: 0 0 2rem !important;
+  }
+
+  .VPHome .VPHomeHero .main {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .VPHome .VPHomeHero .image-container {
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+  }
+
+  .VPHome .VPHomeHero .image-src {
+    position: static !important;
+    height: auto !important;
+    transform: none !important;
+    margin-inline: auto !important;
+  }
+
+  .VPHome .VPHomeHero .heading {
+    align-items: center !important;
+  }
+
+  .VPHome .VPHomeHero .name,
+  .VPHome .VPHomeHero .text,
+  .VPHome .VPHomeHero .tagline {
+    margin-inline: auto !important;
+  }
+
+  .VPHome .VPHomeHero .actions {
+    justify-content: center !important;
   }
 }
