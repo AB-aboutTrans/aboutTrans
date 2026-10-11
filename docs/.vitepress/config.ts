@@ -58,7 +58,11 @@ export default defineConfig({
     ['meta', { name: 'twitter:image:height', content: String(SOCIAL_IMAGE_HEIGHT) }],
     ['meta', { name: 'twitter:image:alt', content: SOCIAL_IMAGE_ALT }],
   ],
-  transformHead: ({ pageData, title, description }) => {
+  transformHead: ({ page, pageData, title, description }) => {
+    if (page === '404.md') {
+      return [['meta', { name: 'robots', content: 'noindex' }]]
+    }
+
     const head: HeadConfig[] = []
     const url = `${SITE_URL}/${pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2')}`
 
@@ -109,7 +113,7 @@ export default defineConfig({
   },
 
   themeConfig: {
-    logo: '/favicon.svg',
+    logo: { src: '/favicon.svg', alt: 'aboutTrans' },
     sidebarMenuLabel: '目录',
     darkModeSwitchLabel: '外观',
     lightModeSwitchTitle: '切换到浅色模式',
