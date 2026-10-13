@@ -41,8 +41,8 @@ export default defineConfig({
     },
   },
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
-    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', sizes: 'any', href: '/favicon.svg' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '48x48', href: '/favicon.png' }],
     ['meta', { name: 'robots', content: 'index,follow,max-image-preview:large' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: SITE_NAME }],
