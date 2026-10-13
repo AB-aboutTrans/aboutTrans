@@ -61,6 +61,10 @@ a,
   letter-spacing: normal !important;
 }
 
+.VPContent.is-home + .VPFooter {
+  border-top: none !important;
+}
+
 .vp-doc h1 {
   font-size: 2rem !important;
   line-height: 1.25 !important;
