@@ -2,14 +2,13 @@
   "name": "aboutTrans",
   "type": "module",
   "devDependencies": {
-    "@iconify-json/lucide": "^1.2.138",
+    "@iconify-json/lucide": "^1.2.143",
     "@nolebase/vitepress-plugin-enhanced-mark": "^2.18.2",
-    "@types/node": "^25.5.0",
-    "@unocss/preset-attributify": "^66.7.5",
-    "@unocss/preset-mini": "^66.7.5",
-    "markdown-it-pangu": "^1.0.2",
-    "unocss": "^66.7.5",
-    "unplugin-icons": "^23.0.1",
+    "@types/node": "^26.6.5",
+    "@unocss/preset-attributify": "^66.11.0",
+    "@unocss/preset-mini": "^66.11.0",
+    "unocss": "^66.11.0",
+    "unplugin-icons": "^24.0.0",
     "vitepress": "^2.0.0-alpha.20"
   },
   "scripts": {
@@ -19,7 +18,7 @@
     "docs:cfbuild": "git fetch --unshallow && vitepress build docs"
   },
   "dependencies": {
-    "@vueuse/core": "^13.1.0",
+    "@vueuse/core": "^15.0.0",
     "auto-right": "^1.0.1"
   }
 }

@@ -10,14 +10,3 @@ declare module '*.vue' {
   const component: DefineComponent
   export default component
 }
-
-declare module 'markdown-it-pangu' {
-  import type { PluginWithOptions } from 'markdown-it'
-
-  interface PanguOptions {
-    additionalRules?: string[]
-  }
-
-  const pangu: PluginWithOptions<PanguOptions>
-  export = pangu
-}
