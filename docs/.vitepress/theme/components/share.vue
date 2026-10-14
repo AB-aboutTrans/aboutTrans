@@ -30,9 +30,7 @@
 import { useTimeoutFn } from '@vueuse/core'
 import { ref, watch, onMounted } from 'vue'
 import { useRoute } from 'vitepress'
-import IconShare from '~icons/lucide/share'
-import IconCheck from '~icons/lucide/check'
-import IconX from '~icons/lucide/x'
+import { Share, Check, X } from '@lucide/vue'
 
 const route = useRoute()
 const shareLink = ref('')
@@ -82,15 +80,15 @@ async function copyShareLink() {
         enter-from-class="transform translate-y-30px opacity-0" leave-to-class="transform translate-y--30px opacity-0"
         enter-to-class="opacity-100" leave-from-class="opacity-100">
         <span v-if="shareState === 'success'" class="share-btn-content" flex items-center>
-          <IconCheck class="check-icon" aria-hidden="true" />
+          <Check class="check-icon" aria-hidden="true" />
           <span>复制成功</span>
         </span>
         <span v-else-if="shareState === 'failure'" class="share-btn-content" flex items-center>
-          <IconX class="failure-icon" aria-hidden="true" />
+          <X class="failure-icon" aria-hidden="true" />
           <span>复制失败</span>
         </span>
         <span v-else class="share-btn-content" flex items-center>
-          <IconShare class="share-icon" aria-hidden="true" />
+          <Share class="share-icon" aria-hidden="true" />
           <span>分享此页</span>
         </span>
       </Transition>

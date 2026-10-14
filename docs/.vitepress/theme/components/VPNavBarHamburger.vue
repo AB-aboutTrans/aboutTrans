@@ -4,8 +4,7 @@
 import { useTemplateRef, watchEffect } from 'vue'
 import { useData } from 'vitepress'
 import { useNav } from 'vitepress/dist/client/theme-default/composables/nav.js'
-import IconMenu from '~icons/lucide/menu'
-import IconX from '~icons/lucide/x'
+import { Menu, X } from '@lucide/vue'
 
 defineProps<{ active: boolean }>()
 defineEmits<{ click: [] }>()
@@ -29,8 +28,8 @@ watchEffect(() => {
     :aria-expanded="active"
     @click="$emit('click')"
   >
-    <IconX v-if="active" class="menu-icon" aria-hidden="true" />
-    <IconMenu v-else class="menu-icon" aria-hidden="true" />
+    <X v-if="active" class="menu-icon" aria-hidden="true" />
+    <Menu v-else class="menu-icon" aria-hidden="true" />
   </button>
 </template>
 
