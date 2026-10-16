@@ -39,7 +39,7 @@ description: 汇总跨性别与多元性别相关概念术语，涵盖性别认�
 
 ## 跨性别女性
 
-跨性别女性（Transgender female 或 Transgender woman，简写为 Trans female 或 Trans woman），也称跨女，指性别认同为女性、出生指派性别为男性的个体。
+跨性别女性（Transgender woman 或 Transgender female，简写为 Trans woman 或 Trans female），也称跨女，指性别认同为女性、出生指派性别为男性的个体。
 
 ## 顺性别男性
 
@@ -47,7 +47,7 @@ description: 汇总跨性别与多元性别相关概念术语，涵盖性别认�
 
 ## 跨性别男性
 
-跨性别男性（Transgender male 或 Transgender man，简写为 Trans male 或 Trans man），也称跨男，指性别认同为男性、出生指派性别为女性的个体。
+跨性别男性（Transgender man 或 Transgender male，简写为 Trans man 或 Trans male），也称跨男，指性别认同为男性、出生指派性别为女性的个体。
 
 ## 非二元性别
 
