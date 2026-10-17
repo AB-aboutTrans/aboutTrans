@@ -1,6 +1,7 @@
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
+import './noto-sans-sc.css'
 import 'virtual:uno.css'
 import { h } from 'vue'
 import Share from './components/share.vue'
@@ -8,6 +9,15 @@ import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
 
 if (typeof window !== 'undefined') {
   import('auto-right')
+
+  const preventSearchTab = (event: KeyboardEvent) => {
+    if (event.key === 'Tab' && event.target instanceof Element && event.target.closest('.DocSearch-Container')) {
+      event.preventDefault()
+      event.stopImmediatePropagation()
+    }
+  }
+  document.addEventListener('keydown', preventSearchTab, true)
+  import.meta.hot?.dispose(() => document.removeEventListener('keydown', preventSearchTab, true))
 }
 
 const ExtendedTheme: Theme = {
@@ -16,10 +26,6 @@ const ExtendedTheme: Theme = {
     return h(DefaultTheme.Layout, null, {
       'nav-bar-content-after': () => h(Share),
     })
-  },
-  enhanceApp(ctx) {
-    const { app } = ctx
-    app.component('Share', Share)
   },
 }
 
