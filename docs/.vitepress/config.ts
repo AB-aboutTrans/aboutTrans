@@ -105,6 +105,7 @@ export default defineConfig({
 
   themeConfig: {
     logo: { src: '/favicon.svg', alt: 'aboutTrans' },
+    siteTitle: false,
     sidebarMenuLabel: '目录',
     darkModeSwitchLabel: '外观',
     lightModeSwitchTitle: '切换到浅色模式',

@@ -137,6 +137,14 @@ a:active {
   padding-top: 48px !important;
 }
 
+.VPNavBarTitle > .title {
+  width: fit-content;
+}
+
+.VPNavBarTitle .logo {
+  margin-right: 0;
+}
+
 @media not all and (min-width: 60rem) {
   .VPNavBar.home:not(.screen-open)::before {
     backdrop-filter: none !important;
