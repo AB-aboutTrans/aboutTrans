@@ -236,8 +236,7 @@ export default defineConfig({
       linkText: '返回首页',
     },
     footer: {
-      message: '本站内容基于 CC BY 4.0 许可发布',
-      copyright: `版权所有 © 2023-<auto-right>${new Date().getFullYear()}</auto-right> AB aboutTrans`,
+      copyright: `© <auto-right>${new Date().getFullYear()}</auto-right> AB aboutTrans`,
     },
     docFooter: {
       prev: '上一页',
