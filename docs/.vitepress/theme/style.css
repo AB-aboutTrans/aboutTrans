@@ -194,7 +194,8 @@ a:active {
 
 .link,
 .VPFeature,
-.VPSwitch {
+.VPSwitch,
+.VPLocalNavOutlineDropdown > .items {
   border-color: transparent !important;
 }
 
