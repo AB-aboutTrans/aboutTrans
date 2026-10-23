@@ -57,7 +57,7 @@ a,
   letter-spacing: normal !important;
 }
 
-.VPContent.is-home + .VPFooter {
+.VPFooter {
   border-top: none !important;
 }
 
