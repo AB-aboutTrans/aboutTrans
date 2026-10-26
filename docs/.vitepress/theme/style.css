@@ -15,7 +15,6 @@
 }
 
 :root {
-  --vp-c-bg: #ffffff !important;
   --vp-c-bg-alt: #fafafa !important;
   --vp-c-text-1: #2c2d2e !important;
 }
@@ -273,8 +272,6 @@ a:active {
 .DocSearch-Input,
 .DocSearch-Modal-heading.shimmer {
   height: 31px !important;
-  margin-block: 0 !important;
-  padding-block: 0 !important;
   line-height: 31px !important;
   font-size: 1rem !important;
 }
@@ -540,7 +537,6 @@ a:active {
   }
 
   .VPHome .VPHomeHero .image-container {
-    width: 100% !important;
     height: auto !important;
     transform: none !important;
   }

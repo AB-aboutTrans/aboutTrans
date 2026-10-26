@@ -7,7 +7,7 @@
     "@unocss/preset-attributify": "^66.11.0",
     "@unocss/preset-mini": "^66.11.0",
     "unocss": "^66.11.0",
-    "vitepress": "^2.0.0-alpha.20"
+    "vitepress": "^2.0.0-alpha.21"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
