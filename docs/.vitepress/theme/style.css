@@ -1,7 +1,7 @@
 :root {
-  --vp-c-brand-0: color(display-p3 0.8980 0.0000 0.4157);
-  --vp-c-brand-1: color(display-p3 0.8980 0.0000 0.4157);
-  --vp-c-brand-2: color(display-p3 0.8980 0.0000 0.4157);
+  --vp-c-brand-0: #FA006A;
+  --vp-c-brand-1: #FA006A;
+  --vp-c-brand-2: #FA006A;
 
   --vp-button-brand-border: var(--vp-c-brand-0);
   --vp-button-brand-bg: var(--vp-c-brand-0);
@@ -15,15 +15,15 @@
 }
 
 :root {
-  --vp-c-bg-alt: #fafafa !important;
-  --vp-c-text-1: #2c2d2e !important;
+  --vp-c-bg-alt: #FAFAFA !important;
+  --vp-c-text-1: #2C2D2E !important;
 }
 
 .dark {
   --vp-c-bg: #101010 !important;
   --vp-c-bg-alt: #181818 !important;
   --vp-c-bg-soft: #181818 !important;
-  --vp-c-text-1: #e7e8ea !important;
+  --vp-c-text-1: #E7E8EA !important;
 }
 
 *,
@@ -120,11 +120,11 @@ a,
 }
 
 .vp-doc mark {
-  --vp-nolebase-mark-bg-color: #fff1ad !important;
+  --vp-nolebase-mark-bg-color: #FFF1AD !important;
 }
 
 .dark .vp-doc mark {
-  --vp-nolebase-mark-bg-color: #6c4e00 !important;
+  --vp-nolebase-mark-bg-color: #6C4E00 !important;
 }
 
 a:hover,
