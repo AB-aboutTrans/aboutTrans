@@ -12,11 +12,11 @@
   --vp-nav-bg-color: color-mix(in srgb, var(--vp-c-bg) 80%, transparent);
   --vp-nav-backdrop-filter: blur(16px);
   --vp-backdrop-bg-color: rgba(0, 0, 0, 0.5);
-}
 
-:root {
   --vp-c-bg-alt: #FAFAFA !important;
   --vp-c-text-1: #2C2D2E !important;
+
+  color-scheme: light dark;
 }
 
 .dark {
@@ -86,7 +86,8 @@ a,
 }
 
 .VPSidebarItem .text,
-.VPDocFooter .pager-link .title {
+.VPDocFooter .pager-link .title,
+.VPLastUpdated {
   font-size: 1rem !important;
   line-height: 1.5 !important;
 }
@@ -106,11 +107,6 @@ a,
 .VPDocFooter .pager-link .desc {
   font-size: 0.875rem !important;
   line-height: 1.25rem !important;
-}
-
-.VPLastUpdated {
-  font-size: 1rem !important;
-  line-height: 1.5 !important;
 }
 
 @media (min-width: 40rem) {
