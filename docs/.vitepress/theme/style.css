@@ -15,7 +15,9 @@
 
   --vp-c-bg-alt: #FAFAFA !important;
   --vp-c-text-1: #2C2D2E !important;
+}
 
+body {
   color-scheme: light dark;
 }
 
