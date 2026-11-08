@@ -196,6 +196,21 @@ a:active {
   border-color: transparent !important;
 }
 
+.VPLocalNavOutlineDropdown .items-scroll {
+  border-radius: 11px;
+}
+
+.VPLocalNavOutlineDropdown .flyout-enter-active,
+.VPLocalNavOutlineDropdown .flyout-leave-active {
+  transition-duration: 0.25s !important;
+  transition-timing-function: ease !important;
+}
+
+.VPLocalNavOutlineDropdown .flyout-enter-from,
+.VPLocalNavOutlineDropdown .flyout-leave-to {
+  transform: translateY(-0.5rem) !important;
+}
+
 .VPHome .VPFeature,
 .VPNavScreenAppearance {
   background-color: color-mix(in srgb, var(--vp-c-bg-soft) 80%, transparent) !important;
