@@ -1,5 +1,6 @@
 import { defineConfig, type HeadConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
+import llmstxt from 'vitepress-plugin-llms'
 import { fileURLToPath } from 'node:url'
 
 const SITE_URL = 'https://aboutrans.info'
@@ -101,6 +102,7 @@ export default defineConfig({
     },
     plugins: [
       UnoCSS(),
+      llmstxt(),
     ],
   },
 
