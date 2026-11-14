@@ -1,24 +1,24 @@
 :root {
-  --vp-c-brand-0: #FA006A;
-  --vp-c-brand-1: #FA006A;
-  --vp-c-brand-2: #FA006A;
+  --vp-c-brand-0: #FA006A !important;
+  --vp-c-brand-1: #FA006A !important;
+  --vp-c-brand-2: #FA006A !important;
 
-  --vp-button-brand-border: var(--vp-c-brand-0);
-  --vp-button-brand-bg: var(--vp-c-brand-0);
-  --vp-button-brand-hover-border: var(--vp-c-brand-1);
-  --vp-button-brand-hover-bg: var(--vp-c-brand-1);
-  --vp-button-brand-active-border: var(--vp-c-brand-2);
-  --vp-button-brand-active-bg: var(--vp-c-brand-2);
-  --vp-nav-bg-color: color-mix(in srgb, var(--vp-c-bg) 80%, transparent);
-  --vp-nav-backdrop-filter: blur(16px);
-  --vp-backdrop-bg-color: rgba(0, 0, 0, 0.5);
+  --vp-button-brand-border: var(--vp-c-brand-0) !important;
+  --vp-button-brand-bg: var(--vp-c-brand-0) !important;
+  --vp-button-brand-hover-border: var(--vp-c-brand-1) !important;
+  --vp-button-brand-hover-bg: var(--vp-c-brand-1) !important;
+  --vp-button-brand-active-border: var(--vp-c-brand-2) !important;
+  --vp-button-brand-active-bg: var(--vp-c-brand-2) !important;
+  --vp-nav-bg-color: color-mix(in srgb, var(--vp-c-bg) 80%, transparent) !important;
+  --vp-nav-backdrop-filter: blur(16px) !important;
+  --vp-backdrop-bg-color: rgba(0, 0, 0, 0.5) !important;
 
   --vp-c-bg-alt: #FAFAFA !important;
   --vp-c-text-1: #2C2D2E !important;
 }
 
 body {
-  color-scheme: light dark;
+  color-scheme: light dark !important;
 }
 
 .dark {
@@ -99,7 +99,6 @@ a,
   line-height: 1.5rem !important;
 }
 
-.VPDocOutlineItem .outline-link,
 .VPDocAsideOutline .outline-title,
 .VPDocFooter .edit-link-button {
   font-size: 1rem !important;
@@ -135,11 +134,11 @@ a:active {
 }
 
 .VPNavBarTitle > .title {
-  width: fit-content;
+  width: fit-content !important;
 }
 
 .VPNavBarTitle .logo {
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 
 @media not all and (min-width: 60rem) {
@@ -168,6 +167,10 @@ a:active {
 }
 
 @media (min-width: 48rem) {
+  .VPNavBarSearchButton {
+    background-color: var(--vp-c-bg-soft) !important;
+  }
+
   .VPNavBar .unocss-scope > button {
     padding-inline-end: 0 !important;
   }
@@ -197,7 +200,28 @@ a:active {
 }
 
 .VPLocalNavOutlineDropdown .items-scroll {
-  border-radius: 11px;
+  border-radius: 11px !important;
+}
+
+.VPDocOutlineItem .outline-link {
+  padding-block: 4px !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+}
+
+.VPDocOutlineItem > li + li {
+  margin-block-start: 4px !important;
+}
+
+.VPDocAsideOutline .outline-marker {
+  display: none !important;
+}
+
+.VPDocOutlineItem .outline-link.active,
+.VPDocOutlineItem .outline-link:hover {
+  color: var(--vp-c-brand-1) !important;
 }
 
 .VPLocalNavOutlineDropdown .flyout-enter-active,
