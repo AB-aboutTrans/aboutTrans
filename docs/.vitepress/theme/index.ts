@@ -10,14 +10,14 @@ import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
 if (typeof window !== 'undefined') {
   import('auto-right')
 
-  const preventSearchTab = (event: KeyboardEvent) => {
-    if (event.key === 'Tab' && event.target instanceof Element && event.target.closest('.DocSearch-Container')) {
+  const preventTab = (event: KeyboardEvent) => {
+    if (event.key === 'Tab') {
       event.preventDefault()
       event.stopImmediatePropagation()
     }
   }
-  document.addEventListener('keydown', preventSearchTab, true)
-  import.meta.hot?.dispose(() => document.removeEventListener('keydown', preventSearchTab, true))
+  document.addEventListener('keydown', preventTab, true)
+  import.meta.hot?.dispose(() => document.removeEventListener('keydown', preventTab, true))
 }
 
 const ExtendedTheme: Theme = {
