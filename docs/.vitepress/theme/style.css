@@ -41,10 +41,10 @@ body {
   .VPBadge,
   .VPSkipLink,
   .VPSwitch,
-  .VPSwitch *,
-  .VPSwitch::before,
-  .VPSwitch::after
-) {
+  .VPSwitch *
+),
+:where(.VPSwitch)::before,
+:where(.VPSwitch)::after {
   corner-shape: revert !important;
 }
 
@@ -281,6 +281,7 @@ a:active {
 .DocSearch-AskAiScreen-MessageContent-Tool.Tool--Result,
 .DocSearch-AskAiScreen-RelatedSources,
 .DocSearch-Divider,
+.DocSearch-ErrorScreen,
 .DocSearch-Help,
 .DocSearch-Menu-trigger.DocSearch-Action,
 .DocSearch-CodeSnippet-CopyButton,
@@ -353,9 +354,108 @@ a:active {
   background-color: transparent !important;
 }
 
-.DocSearch-Hit-action-button:hover svg path,
-.DocSearch-Hit-action-button:active svg path {
-  fill: currentColor !important;
+.DocSearch-Modal .DocSearch-Search-Icon {
+  --lucide-icon: url("data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 24 24' fill%3D'none' stroke%3D'black' stroke-width%3D'2' stroke-linecap%3D'round' stroke-linejoin%3D'round'%3E%3Cpath d%3D'm21 21-4.34-4.34'%2F%3E%3Ccircle cx%3D'11' cy%3D'11' r%3D'8'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.DocSearch-Modal .DocSearch-Close > svg,
+.DocSearch-Modal .DocSearch-Hit-action-button > svg:has(> path[d^="M10 10l5.09"]) {
+  --lucide-icon: url("data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 24 24' fill%3D'none' stroke%3D'black' stroke-width%3D'2' stroke-linecap%3D'round' stroke-linejoin%3D'round'%3E%3Cpath d%3D'M18 6 6 18'%2F%3E%3Cpath d%3D'm6 6 12 12'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.DocSearch-Modal #docsearch-recentSearches-list .DocSearch-Hit-icon > svg {
+  --lucide-icon: url("data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 24 24' fill%3D'none' stroke%3D'black' stroke-width%3D'2' stroke-linecap%3D'round' stroke-linejoin%3D'round'%3E%3Cpath d%3D'M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8'%2F%3E%3Cpath d%3D'M3 3v5h5'%2F%3E%3Cpath d%3D'M12 7v5l4 2'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.DocSearch-Modal #docsearch-favoriteSearches-list .DocSearch-Hit-icon > svg,
+.DocSearch-Modal .DocSearch-Hit-action-button > svg:has(> path[d^="M10 14.2"]) {
+  --lucide-icon: url("data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 24 24' fill%3D'none' stroke%3D'black' stroke-width%3D'2' stroke-linecap%3D'round' stroke-linejoin%3D'round'%3E%3Cpath d%3D'M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.DocSearch-Modal #docsearch-favoriteSearches-list .DocSearch-Hit-icon > svg {
+  display: block !important;
+  width: 18px !important;
+  height: 18px !important;
+  margin: 1px !important;
+}
+
+.DocSearch-Modal .DocSearch-Hit-action-button:is(:hover, :active) > svg:has(> path[d^="M10 14.2"]) {
+  --lucide-icon: url("data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 24 24' fill%3D'black' stroke%3D'black' stroke-width%3D'2' stroke-linecap%3D'round' stroke-linejoin%3D'round'%3E%3Cpath d%3D'M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.DocSearch-Modal .DocSearch-Hit-icon-sparkles {
+  --lucide-icon: url("data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 24 24' fill%3D'none' stroke%3D'black' stroke-width%3D'1.8' stroke-linecap%3D'round' stroke-linejoin%3D'round'%3E%3Cpath d%3D'M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z'%2F%3E%3Cpath d%3D'M20 2v4'%2F%3E%3Cpath d%3D'M22 4h-4'%2F%3E%3Ccircle cx%3D'4' cy%3D'20' r%3D'2'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.DocSearch-Modal .DocSearch-Hit-icon > svg:has(> path[d^="M15 2H6"]) {
+  --lucide-icon: url("data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 24 24' fill%3D'none' stroke%3D'black' stroke-width%3D'2' stroke-linecap%3D'round' stroke-linejoin%3D'round'%3E%3Cpath d%3D'M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z'%2F%3E%3Cpath d%3D'M14 2v5a1 1 0 0 0 1 1h5'%2F%3E%3Cpath d%3D'M10 9H8'%2F%3E%3Cpath d%3D'M16 13H8'%2F%3E%3Cpath d%3D'M16 17H8'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.DocSearch-Modal .DocSearch-Hit-icon > svg:has(> line) {
+  --lucide-icon: url("data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 24 24' fill%3D'none' stroke%3D'black' stroke-width%3D'2' stroke-linecap%3D'round' stroke-linejoin%3D'round'%3E%3Cline x1%3D'4' x2%3D'20' y1%3D'9' y2%3D'9'%2F%3E%3Cline x1%3D'4' x2%3D'20' y1%3D'15' y2%3D'15'%2F%3E%3Cline x1%3D'10' x2%3D'8' y1%3D'3' y2%3D'21'%2F%3E%3Cline x1%3D'16' x2%3D'14' y1%3D'3' y2%3D'21'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.DocSearch-Modal .DocSearch-Hit-icon > svg:has(> path[d^="M17 5H3"]) {
+  --lucide-icon: url("data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 24 24' fill%3D'none' stroke%3D'black' stroke-width%3D'2' stroke-linecap%3D'round' stroke-linejoin%3D'round'%3E%3Cpath d%3D'M3 5h18'%2F%3E%3Cpath d%3D'M3 12h18'%2F%3E%3Cpath d%3D'M3 19h18'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.DocSearch-Modal .DocSearch-Hit-Select-Icon,
+.DocSearch-Modal .DocSearch-Commands > li:nth-child(2) > kbd > svg {
+  --lucide-icon: url("data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 24 24' fill%3D'none' stroke%3D'black' stroke-width%3D'2' stroke-linecap%3D'round' stroke-linejoin%3D'round'%3E%3Cpath d%3D'M20 4v7a4 4 0 0 1-4 4H4'%2F%3E%3Cpath d%3D'm9 10-5 5 5 5'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.DocSearch-Modal .DocSearch-Back-Icon {
+  --lucide-icon: url("data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 24 24' fill%3D'none' stroke%3D'black' stroke-width%3D'2' stroke-linecap%3D'round' stroke-linejoin%3D'round'%3E%3Cpath d%3D'm12 19-7-7 7-7'%2F%3E%3Cpath d%3D'M19 12H5'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.DocSearch-Modal .DocSearch-Commands > li:first-child > kbd:first-child > svg {
+  --lucide-icon: url("data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 24 24' fill%3D'none' stroke%3D'black' stroke-width%3D'2' stroke-linecap%3D'round' stroke-linejoin%3D'round'%3E%3Cpath d%3D'M12 5v14'%2F%3E%3Cpath d%3D'm19 12-7 7-7-7'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.DocSearch-Modal .DocSearch-Commands > li:first-child > kbd:nth-child(2) > svg {
+  --lucide-icon: url("data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 24 24' fill%3D'none' stroke%3D'black' stroke-width%3D'2' stroke-linecap%3D'round' stroke-linejoin%3D'round'%3E%3Cpath d%3D'm5 12 7-7 7 7'%2F%3E%3Cpath d%3D'M12 19V5'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.DocSearch-Modal .DocSearch-LoadingIndicator > svg,
+.DocSearch-Modal .DocSearch-AskAiScreen-SmallerLoadingIcon {
+  --lucide-icon: url("data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 24 24' fill%3D'none' stroke%3D'black' stroke-width%3D'2' stroke-linecap%3D'round' stroke-linejoin%3D'round'%3E%3Ccircle cx%3D'12' cy%3D'12' r%3D'9' opacity%3D'.15'%2F%3E%3Cg opacity%3D'.42'%3E%3Cpath d%3D'M21 12a9 9 0 1 1-6.219-8.56'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") !important;
+}
+
+.DocSearch-Modal :is(
+    .DocSearch-Search-Icon,
+    .DocSearch-Close > svg,
+    .DocSearch-Hit-action-button > svg:has(> path[d^="M10 10l5.09"]),
+    #docsearch-recentSearches-list .DocSearch-Hit-icon > svg,
+    #docsearch-favoriteSearches-list .DocSearch-Hit-icon > svg,
+    .DocSearch-Hit-action-button > svg:has(> path[d^="M10 14.2"]),
+    .DocSearch-Hit-icon-sparkles,
+    .DocSearch-Hit-icon > svg:has(> path[d^="M15 2H6"]),
+    .DocSearch-Hit-icon > svg:has(> line),
+    .DocSearch-Hit-icon > svg:has(> path[d^="M17 5H3"]),
+    .DocSearch-Hit-Select-Icon,
+    .DocSearch-Back-Icon,
+    .DocSearch-Commands > li:first-child > kbd:first-child > svg,
+    .DocSearch-Commands > li:first-child > kbd:nth-child(2) > svg,
+    .DocSearch-Commands > li:nth-child(2) > kbd > svg,
+    .DocSearch-LoadingIndicator > svg,
+    .DocSearch-AskAiScreen-SmallerLoadingIcon
+) {
+  background-color: currentColor !important;
+  mask: var(--lucide-icon) center / contain no-repeat !important;
+
+  > * {
+    visibility: hidden !important;
+  }
+}
+
+.DocSearch-Modal :is(.DocSearch-LoadingIndicator > svg, .DocSearch-AskAiScreen-SmallerLoadingIcon) {
+  animation: docsearch-icon-spin 1s linear infinite !important;
+}
+
+@keyframes docsearch-icon-spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .DocSearch-AskAiScreen-ExchangesList {
@@ -418,7 +518,7 @@ a:active {
   line-height: 1.2 !important;
 }
 
-.DocSearch-Hit-title {
+.DocSearch-Modal .DocSearch-Hit-title {
   font-size: 1rem !important;
 }
 
@@ -429,6 +529,17 @@ a:active {
 .DocSearch-Footer {
   background: var(--docsearch-modal-background) !important;
   padding-inline: 1rem !important;
+}
+
+.DocSearch-Footer .DocSearch-Commands-Key > svg {
+  width: 14px !important;
+  height: 14px !important;
+}
+
+.DocSearch-Footer .DocSearch-Escape-Key {
+  font-family: var(--vp-font-family-base) !important;
+  font-weight: 500 !important;
+  transform: translate(0.25px, 0.5px) !important;
 }
 
 .DocSearch-Form .DocSearch-AskAi-Return {
@@ -484,33 +595,6 @@ a:active {
     padding-block: 0 !important;
   }
 
-  .DocSearch-Sidepanel-Action-close {
-    margin-inline: 0.75rem !important;
-  }
-
-  .DocSearch-Sidepanel-Action-close svg {
-    width: 1.25rem !important;
-    height: 1.25rem !important;
-  }
-
-  .DocSearch-Sidepanel-Header {
-    height: calc(var(--vp-nav-height) + 1px) !important;
-    min-height: calc(var(--vp-nav-height) + 1px) !important;
-    padding-block: 0 !important;
-  }
-
-  .DocSearch-Sidepanel-Header--left {
-    inset-inline-start: 1.5rem !important;
-  }
-
-  .DocSearch-Sidepanel-Header--right {
-    inset-inline-end: 0.5rem !important;
-  }
-
-  .DocSearch-Sidepanel-Content {
-    padding-inline: 1.5rem !important;
-  }
-
   .DocSearch-NewConversationScreen {
     padding-inline: calc(1.5rem - var(--docsearch-spacing)) !important;
   }
@@ -524,11 +608,6 @@ a:active {
   .DocSearch-Modal-heading:not(.shimmer) {
     padding-block: 0 !important;
     font-size: 1rem !important;
-  }
-
-  .DocSearch-Sidepanel-Title {
-    font-size: 1rem !important;
-    line-height: 1.5rem !important;
   }
 }
 
