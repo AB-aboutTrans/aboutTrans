@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onKeyStroke } from '@vueuse/core'
+import { onKeyStroke, useResizeObserver } from '@vueuse/core'
 import { onContentUpdated } from 'vitepress'
 import type { DefaultTheme } from 'vitepress/theme'
 import { nextTick, ref, useId, useTemplateRef, watch } from 'vue'
@@ -9,7 +9,7 @@ import { resolveTitle } from '../composables/outline'
 import { useBodyScrollLock } from 'vitepress/dist/client/theme-default/composables/scroll-lock.js'
 import VPDocOutlineItem from 'vitepress/dist/client/theme-default/components/VPDocOutlineItem.vue'
 
-const props = defineProps<{
+defineProps<{
   headers: DefaultTheme.OutlineItem[]
   navHeight: number
 }>()
@@ -19,9 +19,14 @@ const open = ref(false)
 const vh = ref(0)
 const main = useTemplateRef('main')
 const items = useTemplateRef('items')
+const outline = useTemplateRef<HTMLDivElement>('outline')
 const itemsId = useId()
 
 const isLocked = useBodyScrollLock()
+
+useResizeObserver(outline, ([entry]) => {
+  outline.value?.style.setProperty('--outline-viewport-height', `${entry.contentRect.height}px`)
+})
 
 function closeOnClickOutside(e: Event) {
   if (!main.value?.contains(e.target as Node)) {
@@ -29,12 +34,27 @@ function closeOnClickOutside(e: Event) {
   }
 }
 
+function updateAvailableHeight() {
+  const trigger = main.value?.getBoundingClientRect()
+  if (!trigger?.height) {
+    open.value = false
+    return
+  }
+  vh.value = window.innerHeight - trigger.top
+}
+
 watch(open, (value, _, onCleanup) => {
   isLocked.value = value
-  if (value) {
-    document.addEventListener('click', closeOnClickOutside)
-    onCleanup(() => document.removeEventListener('click', closeOnClickOutside))
-  }
+  if (!value) return
+
+  updateAvailableHeight()
+  window.addEventListener('resize', updateAvailableHeight)
+  document.addEventListener('click', closeOnClickOutside)
+
+  onCleanup(() => {
+    window.removeEventListener('resize', updateAvailableHeight)
+    document.removeEventListener('click', closeOnClickOutside)
+  })
 })
 
 onKeyStroke('Escape', () => {
@@ -47,11 +67,10 @@ onContentUpdated(() => {
 
 function toggle() {
   open.value = !open.value
-  vh.value = window.innerHeight + Math.min(window.scrollY - props.navHeight, 0)
 }
 
 function onItemClick(e: Event) {
-  if ((e.target as HTMLElement).classList.contains('outline-link')) {
+  if (e.target instanceof Element && e.target.closest('a.outline-link')) {
     if (items.value) {
       items.value.style.transition = 'none'
     }
@@ -96,7 +115,7 @@ function scrollToTop() {
               {{ theme.returnToTopLabel || 'Return to top' }}
             </a>
           </div>
-          <div class="outline">
+          <div ref="outline" class="outline">
             <VPDocOutlineItem :headers />
           </div>
         </div>
@@ -161,10 +180,10 @@ function scrollToTop() {
 
 .items-scroll {
   display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
   gap: 1px;
   max-height: calc(var(--vp-vh, 100vh) - 5.375rem - 2px);
-  overflow: hidden auto;
-  overscroll-behavior: contain;
+  overflow: clip;
 }
 
 @media (min-width: 60rem) {
@@ -188,8 +207,13 @@ function scrollToTop() {
 }
 
 .outline {
-  padding: 0.5rem 0;
   background-color: var(--vp-c-bg-soft);
+  overflow: hidden auto;
+  overscroll-behavior: contain;
+}
+
+.outline > :deep(ul) {
+  padding-block: 0.5rem;
 }
 
 .flyout-enter-active {
