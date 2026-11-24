@@ -20,13 +20,32 @@ const vh = ref(0)
 const main = useTemplateRef('main')
 const items = useTemplateRef('items')
 const outline = useTemplateRef<HTMLDivElement>('outline')
+const outlineViewport = useTemplateRef<HTMLDivElement>('outlineViewport')
 const itemsId = useId()
 
 const isLocked = useBodyScrollLock()
 
-useResizeObserver(outline, ([entry]) => {
-  outline.value?.style.setProperty('--outline-viewport-height', `${entry.contentRect.height}px`)
+useResizeObserver(outline, () => {
+  const scroller = outline.value
+  if (!scroller) return
+  outlineViewport.value?.style.setProperty(
+    '--outline-scrollbar-gutter',
+    `${scroller.offsetWidth - scroller.clientWidth}px`
+  )
+  updateOutlineFade()
 })
+
+function updateOutlineFade() {
+  const scroller = outline.value
+  const viewport = outlineViewport.value
+  if (!scroller || !viewport) return
+
+  const maxScroll = scroller.scrollHeight - scroller.clientHeight
+  const offset = Math.min(maxScroll, Math.max(0, scroller.scrollTop))
+  const fadeRange = Math.min(40, maxScroll)
+  viewport.style.setProperty('--outline-top-opacity', fadeRange ? String(Math.min(1, offset / fadeRange)) : '0')
+  viewport.style.setProperty('--outline-bottom-opacity', fadeRange ? String(Math.min(1, (maxScroll - offset) / fadeRange)) : '0')
+}
 
 function closeOnClickOutside(e: Event) {
   if (!main.value?.contains(e.target as Node)) {
@@ -115,8 +134,10 @@ function scrollToTop() {
               {{ theme.returnToTopLabel || 'Return to top' }}
             </a>
           </div>
-          <div ref="outline" class="outline">
-            <VPDocOutlineItem :headers />
+          <div ref="outlineViewport" class="outline-viewport">
+            <div ref="outline" class="outline" @scroll.passive="updateOutlineFade">
+              <VPDocOutlineItem :headers />
+            </div>
           </div>
         </div>
       </div>
@@ -206,7 +227,36 @@ function scrollToTop() {
   color: var(--vp-c-brand-1);
 }
 
+.outline-viewport {
+  position: relative;
+  display: grid;
+  min-height: 0;
+}
+
+.outline-viewport::before,
+.outline-viewport::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  inset-inline: 0 max(1rem, var(--outline-scrollbar-gutter, 0px));
+  height: 40px;
+  pointer-events: none;
+}
+
+.outline-viewport::before {
+  inset-block-start: 0;
+  background: linear-gradient(to bottom, var(--vp-c-bg-alt), transparent);
+  opacity: var(--outline-top-opacity, 0);
+}
+
+.outline-viewport::after {
+  inset-block-end: 0;
+  background: linear-gradient(to top, var(--vp-c-bg-alt), transparent);
+  opacity: var(--outline-bottom-opacity, 0);
+}
+
 .outline {
+  min-height: 0;
   background-color: var(--vp-c-bg-soft);
   overflow: hidden auto;
   overscroll-behavior: contain;

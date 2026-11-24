@@ -271,8 +271,7 @@ a:active {
 }
 
 @supports (animation-timeline: scroll(self block)) {
-  .VPDocAsideOutline .VPDocOutlineItem.root,
-  .VPLocalNavOutlineDropdown .outline > .VPDocOutlineItem {
+  .VPDocAsideOutline .VPDocOutlineItem.root {
     mask-image: linear-gradient(
       transparent,
       #000 var(--outline-fade-top) calc(100% - var(--outline-fade-bottom)),
@@ -280,15 +279,7 @@ a:active {
     ) !important;
     mask-repeat: no-repeat !important;
     animation: outline-scroll-fade linear both !important;
-  }
-
-  .VPDocAsideOutline .VPDocOutlineItem.root {
     animation-timeline: scroll(self block) !important;
-  }
-
-  .VPLocalNavOutlineDropdown .outline > .VPDocOutlineItem {
-    mask-size: 100% var(--outline-viewport-height, 100%) !important;
-    animation-timeline: scroll(nearest block) !important;
   }
 }
 
